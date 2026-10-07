@@ -1,0 +1,57 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Secrets live outside the repo (C:\Users\surya\.golem\secrets.env); never commit any .env
+*.env
+.env*
+
+# Generated and downloaded 3D assets (large binaries)
+assets/raw/
+assets/split/
+assets/tmp/
+
+# Generated renders
+assets/preview/
+
+# Unity: GOLEM > Import Split Props copies the split models in; regenerate rather than commit
+GolemUnity/Assets/GolemProps/
+GolemUnity/Assets/GolemProps.meta
+*.csproj
+*.sln
+.vs/
+.idea/
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Written by the Editor during a timed rebuild
+assets/unity_timing.json
+
+# Release archive of the generated models (published as a release asset, not committed)
+assets_release.zip
+
+# run_demo.py: frames, split models and logs are regenerated per run; proof.json, the choices and the MP4 are kept
+tencent/demo/*/split/
+tencent/demo/*/frames/
+tencent/demo/*/unity.log
+tencent/demo/stage2_check/
+tencent/demo/unity_first_import.log
+
+# Orchestrator runs: regenerated binaries and logs stay out of git (proof.json holds their hashes)
+runs/*/split/
+runs/*/frames/
+runs/*/unity.log
+runs/*/component/*.glb
+runs/*/component/*.fbx
+runs/unity_first_import.log
+runs/generate_unseen.log

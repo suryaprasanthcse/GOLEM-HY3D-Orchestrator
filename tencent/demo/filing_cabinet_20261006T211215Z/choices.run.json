@@ -1,0 +1,197 @@
+{
+  "model": "hy4-preview",
+  "glb": "..\\golem_oct3\\assets\\raw\\filing_cabinet_bang.glb",
+  "endpoint": "https://tokenhub-intl.tencentcloudmaas.com/v1/chat/completions",
+  "outcome": "accepted",
+  "problems": [],
+  "latency_ms": 109850,
+  "status": 200,
+  "sent_utc": "2026-10-06T21:12:17Z",
+  "response_headers": {
+    "X-Request-Id": "79cb3a56-6859-4a31-9ada-ab9bb1645fa3",
+    "X-Trace-Id": "79cb3a5668594a319adaab9bb1645fa3"
+  },
+  "completion_id": "79cb3a56-6859-4a31-9ada-ab9bb1645fa3",
+  "created": 1791321137,
+  "served_model": "hy4-preview",
+  "usage": {
+    "prompt_tokens": 944,
+    "completion_tokens": 10061,
+    "total_tokens": 11005,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 9857
+    }
+  },
+  "finish_reason": "stop",
+  "reasoning": "We need output a JSON object: \"splitter\":\"parts\", \"parts\": mapping id->role, \"joints\": mapping role->joint, \"unsure\": [list of roles if choice not settled by boxes? or maybe list role names], \"why\": mapping role->short reason.\n\nWe have a filing cabinet model. Parts: root.0 to root.8.\nLet's list parts with centre and size (all as shares 0-1). Coordinates: x left->right, y bottom->top, z back->front. Whole model size: x=1.18, y=1.9, z=1.42. Wait centre and size are shares of whole model, so centre in [0,1]? Here centre x around 0.5, y 0.16 to 0.86, z 0.05 to 0.97. Size x ~0.84-1.0, y ~0.13-0.27, z ~0.02-0.07. Wait root.7 is centre [0.5,0.5,0.5], size [1.0,1.0,1.0]. That is the body/whole cabinet shell? It touches all other parts. Likely body is root.7 (the main frame/body). The other parts are panels/drawers? Let's examine.\n\nGiven centre z: parts with z=0.05 or 0.06 are at back (z=0 is back, z=1 is front). Parts with z=0.96/0.97 are at front. So root.0, root.2, root.3, root.5, root.6 are at back? Wait z=0.05 is near back. root.0 centre z=0.05, size z=0.03 -> thin panel at back. root.2 centre z=0.06 size z=0.02 -> thin panel at back. root.3 centre z=0.05 size z=0.02 -> thin back panel. root.5 centre z=0.05 size z=0.04 -> thin back panel. root.6 centre z=0.05 size z=0.02 -> thin back panel. Hmm all those z~0.05 are at back, very thin in z (depth), meaning they are back panels or drawer backs? Wait size y varies: root.0 y=0.13 (short height 0.13), root.2 y=0.27, root.3 y=0.18, root.5 y=0.18, root.6 y=0.23. Their x sizes ~0.84-0.87 (width), y heights various, z thin (0.02-0.04). They are likely drawer fronts? But fronts should be at front (z~0.96). Actually at front: root.1 centre z=0.97 size z=0.06 (thin front panel), y=0.21. root.4 centre z=0.96 size z=0.07, y=0.18. root.8 centre z=0.96 size z=0.07, y=0.2. Those are at front (z~0.96). They have x width ~0.86, y height ~0.18-0.21, z thin ~0.06-0.07: these look like drawer fronts (the visible faces of drawers) at front of cabinet. But wait typical drawers have a front panel and a body? The parts at back (z=0.05) with various y heights might be drawer backs or drawer bottoms? Let's inspect y positions.\n\nCabinet height y from 0 to 1 (shares). Model height 1.9 m, so y=1 is top, y=0 bottom. root.7 body spans y=0 to 1 (centre 0.5, size 1). So root.7 is the cabinet carcass/body (maybe the outer shell or internal structure). It touches everything.\n\nNow the moving parts could be drawers. A filing cabinet typically has multiple drawers that slide out (slide joint, direction front). Each drawer might consist of a front panel (at z~0.96) and maybe a back or bottom? Wait a drawer in a simple decomposition: a drawer is a box that slides out. But here we only have panels, not full boxes. The parts at front (root.1, root.4, root.8) are at z~0.96, thin in z, spanning x ~0.86, y various. They could be the drawer fronts. The parts at back (root.0, root.2, root.3, root.5, root.6) are at z~0.05, thin in z, spanning x~0.86, y various. Could these be the drawer backs/bottoms? Wait a drawer bottom would be horizontal (large x and z, thin y). But these back parts have size y moderate (0.13-0.27) and z thin (0.02-0.04), x large. That is a vertical panel (face) at the back of the drawer, not a bottom. Actually a panel with large x (width), moderate y (height), very small z (depth) is a flat panel facing front/back (i.e., a vertical plane parallel to xy plane). At z=0.05 (near back of cabinet) or z=0.96 (near front). Wait a vertical panel parallel to xy plane has normal along z, so it faces front/back. Its extent: x width, y height, z thickness. So yes, all these parts (both at z~0.05 and z~0.96) are vertical planes (like drawer fronts and drawer backs). But why are there both front and back panels at various heights? Let's list by y centre and height:\n\nPart, centre y, size y => y range (centre \u00b1 size/2):\nroot.2: cy=0.16, sy=0.27 => y from 0.025 to 0.295. height 0.27. z=0.06 (back). So lower back panel, bottom drawer back? Wait bottom of cabinet y~0.025 to 0.295: that's lower portion.\nroot.6: cy=0.46, sy=0.23 => y 0.345 to 0.575. z=0.05 back. Middle back panel.\nroot.5: cy=0.64, sy=0.18 => y 0.55 to 0.73. z=0.05 back. Upper-middle back panel? Wait overlaps with root.6? root.6 top 0.575, root.5 bottom 0.55, slight overlap? Actually root.5 bottom 0.64-0.09=0.55, top 0.73. root.6 top 0.575. They overlap between 0.55 and 0.575? That's weird. But maybe root.5 and root.6 are adjacent? Let's compute precisely: root.6 cy=0.46 sy=0.23 => half=0.115, bottom=0.345, top=0.575. root.5 cy=0.64 sy=0.18 => half=0.09, bottom=0.55, top=0.73. Yes overlap 0.55-0.575. That's odd; maybe they are not adjacent but slightly overlapping due to shares? Or maybe root.5 is above root.6? Wait root.5 y centre 0.64 > root.6 y 0.46, so yes above. Overlap suggests maybe root.6 is actually a divider? Let's check root.0: cy=0.7 sy=0.13 => y 0.635 to 0.765. z=0.05 back. root.0 touches root.5 and root.7. root.0 y range 0.635-0.765 overlaps root.5 (0.55-0.73) and root.0 is above? root.0 centre 0.7, root.5 centre 0.64. Overlap a lot. Hmm maybe my interpretation of \"size\" as full size (length) and centre as midpoint in share of whole is correct, but perhaps these panels are not stacked vertically as separate drawers; maybe they are parts of the cabinet body? Wait root.7 is size [1.0,1.0,1.0] and centre [0.5,0.5,0.5], touching all. root.7 could be the entire cabinet body (outer shell). Then root.0, root.2, root.3, root.5, root.6 are maybe internal shelves or back panels? Let's check z: root.0 z=0.05, root.2 z=0.06, root.3 z=0.05, root.5 z=0.05, root.6 z=0.06. All near back (z~0.05). x ~0.84-0.87 (almost full width), y various. These could be the rear panels of drawers? But a filing cabinet has drawers that slide forward; each drawer has a front at z~0.96 and a back at z~0.05 (the back of the drawer box). The drawer would also have sides (x extremes) and bottom (horizontal). But we don't have side panels listed, maybe the sides are part of root.7 (body). Wait root.7 is the body, maybe the cabinet carcass includes sides, top, bottom, and maybe the drawer slides. But root.7 is size [1,1,1] meaning it's the whole volume; that seems like a bounding box, not a shell. However in these tasks, often the main body part is a box that represents the static structure, and other parts represent movable panels like doors/drawers. The body part often has size close to [1,1,1] or smaller. Here root.7 is exactly [1,1,1] and centre [0.5,0.5,0.5], so it's likely the static body (the cabinet case). It touches all parts. So root.7 gets role \"body\". Good.\n\nNow moving roles: We have front panels at z~0.96: root.1 (cy=0.45, sy=0.21 => y 0.345 to 0.555), root.4 (cy=0.86, sy=0.18 => y 0.77 to 0.95), root.8 (cy=0.66, sy=0.2 => y 0.56 to 0.76). Wait root.8 cy=0.66 sy=0.2 => y 0.56 to 0.76. root.1 y 0.345-0.555. root.4 y 0.77-0.95. These are three front panels at low, middle, high. They likely correspond to three drawers: bottom drawer front (root.1), middle drawer front (root.8), top drawer front (root.4). Yes! Let's match with back panels: back panels at z~0.05: root.6 cy=0.46 sy=0.23 => y 0.345-0.575 (matches root.1 front y 0.345-0.555!). root.5 cy=0.64 sy=0.18 => y 0.55-0.73 (matches root.8 front y 0.56-0.76). root.0 cy=0.7 sy=0.13 => y 0.635-0.765? That doesn't match root.4 (0.77-0.95). Wait root.0 is at y 0.7 centre, height 0.13, so 0.635-0.765. root.3 cy=0.86 sy=0.18 => y 0.77-0.95! Yes root.3 is at back, y 0.77-0.95, matches root.4 front (y 0.77-0.95). So top drawer: front root.4, back root.3. Middle drawer: front root.8 (y 0.56-0.76), back root.5 (y 0.55-0.73) and also root.0? root.0 y 0.635-0.765, z=0.05, touches root.5 and root.7. Hmm root.0 is also at back, y 0.635-0.765, overlapping middle and top? Wait root.5 back for middle is y 0.55-0.73. root.3 back for top is y 0.77-0.95. There is a gap between 0.73 and 0.77: that could be a rail/divider? root.0 spans 0.635-0.765, covering the gap and overlapping both root.5 and root.3? Let's check: root.0 touches root.5 and root.7 (not root.3). Root.0 y 0.635-0.765, root.5 y 0.55-0.73 -> overlap 0.635-0.73. root.3 y 0.77-0.95, no overlap with root.0 (root.0 top 0.765 < 0.77). So root.0 does NOT touch root.3. But root.0 is a back panel at y 0.7 centre, which sits between middle and top drawers? Actually if root.5 is middle drawer back (0.55-0.73) and root.3 is top drawer back (0.77-0.95), the space 0.73-0.77 is a horizontal divider (bottom of top drawer / top of middle drawer) maybe represented by root.0? But root.0 is a vertical panel at z=0.05 (back), spanning y 0.635-0.765, i.e., covers upper part of middle drawer back and lower part of top drawer front? Wait root.0 is at back, z=0.05. It touches root.5 (middle back) and root.7. It does not touch root.3 (top back). Its y range 0.635-0.765 overlaps the bottom of top drawer (0.77? no, top back starts at 0.77, so root.0 ends at 0.765, just below top drawer). So root.0 might be the back of the middle drawer? But we already have root.5 as middle back? Let's re-evaluate.\n\nMaybe the parts at back (z=0.05) are actually the drawer bodies (the back wall of each drawer), and there are four drawers? Let's count back panels: root.2 (y 0.025-0.295), root.6 (y 0.345-0.575), root.5 (y 0.55-0.73), root.0 (y 0.635-0.765), root.3 (y 0.77-0.95). That's five back panels. Front panels: root.1 (0.345-0.555), root.8 (0.56-0.76), root.4 (0.77-0.95). That's three front panels. Wait filing cabinet usually has 2, 3, or 4 drawers. Here front panels: 3 (root.1, root.8, root.4). Back panels: maybe each drawer has a back panel, but we have 5 back panels. Some back panels might be fixed shelves/back of cabinet? Let's examine touches: root.0 touches root.5, root.7. root.5 touches root.0, root.6, root.7. root.6 touches root.5, root.7. root.2 touches root.7 only. root.3 touches root.7 only. root.1 touches root.7 only. root.4 touches root.7 only. root.8 touches root.7 only.\n\nSo root.0, root.5, root.6 form a chain touching each other: root.0 - root.5 - root.6 - root.7? Wait root.6 touches root.5 and root.7. root.5 touches root.0, root.6, root.7. root.0 touches root.5, root.7. So these four form connected component: root.0, root.5, root.6, and root.7 (body). This suggests root.0, root.5, root.6 might be parts that move together? But they are at back (z=0.05) and not touching any front panels. If they were a moving drawer, they would need to connect to the front panel via shared role parts that touch. A drawer typically includes front and back connected by sides/bottom, but sides aren't listed. However the rule says: \"Parts that move together share one role, and must be connected through parts of that role that touch.\" So a moving role's parts must be connected via touching parts of the same role. If a drawer front (root.1) is at front z=0.97 and its back (root.6) is at back z=0.05, they do NOT touch each other (distance in z is large, and touches lists: root.1 touches only root.7; root.6 touches root.5 and root.7). So root.1 and root.6 are not connected through same-role parts. Therefore they cannot be the same moving role unless there are intermediate parts of the same role connecting them, which there aren't (root.1 doesn't touch root.6). So a drawer cannot consist of root.1 + root.6 because they don't touch and no other part of that role connects them. Wait but the rule: \"Parts that move together share one role, and must be connected through parts of that role that touch.\" This means the subgraph induced by parts assigned to that role must be connected. root.1 only touches root.7 (body). If root.1 is a moving role alone (just the front panel), it's connected (trivially). But a drawer front alone as a moving part? It could be a \"drawer\" that is just a front panel that slides? But physically the drawer front is attached to the drawer box; if the box is part of body? No, in these part labelling tasks, often each visible panel is a separate part; a drawer might be represented by its front panel only as the moving part, while the drawer box is not represented or is considered part of the body? Wait root.7 is the body, size [1,1,1] (whole volume). It touches everything. If a drawer front (root.1) is assigned role \"drawer_bottom\" (or drawer...), it touches body root.7. That's allowed: \"Every moving role must touch the body.\" Yes, root.1 touches root.7, so it touches body. The moving part is just the front panel? But then why are there back panels root.6, root.5, root.0, root.3, root.2? Those are at back, touching body. Are they also drawer fronts? No, they are at back. Could they be drawers that slide out from the back? No, filing cabinet drawers slide forward (front). The front panels are the ones you pull. So root.1, root.8, root.4 are likely the drawer fronts, each a separate drawer (since they are at different heights and don't touch each other). Each would be a moving role: drawer_bottom (root.1), drawer_middle (root.8), drawer_top (root.4)? Wait y positions: root.1 lowest (y~0.45), root.8 middle (y~0.66), root.4 highest (y~0.86). So bottom, middle, top. They are separate moving roles. They each touch body root.7. They are not connected to each other (root.1 touches only root.7; root.8 only root.7; root.4 only root.7), so they are separate roles. That matches: three drawers.\n\nBut what are the back panels root.2, root.6, root.5, root.0, root.3? They are at back (z~0.05), touching body. They could be fixed parts of the body (back panels of the cabinet or internal dividers). But the body is root.7 which is already a part. The instructions: \"Fixed parts get 'body' (one or more parts).\" So we can have multiple parts with role \"body\". Indeed root.7 is one body part, but other panels can also be \"body\" if they are fixed. Wait role is assigned per part: \"Every part id gets exactly one role. Fixed parts get 'body' (one or more parts).\" So multiple parts can have role \"body\". The body parts don't need to touch each other? They are all connected via root.7? root.7 touches all, so all body parts touch body. That's fine. So the fixed panels (back panels, maybe internal shelves) can be role \"body\". The moving roles are the front panels? But are the back panels perhaps the backs of the drawers, and thus part of the moving drawer roles? Let's test connectivity if we include both front and back as same drawer role.\n\nSuppose bottom drawer: front root.1 (z=0.97) and back root.6 (z=0.06, y matching). Do they touch? No. The induced subgraph for role drawer_bottom would have vertices {root.1, root.6}. Edge exists only if they touch. They don't. So not connected. Could we include root.5? root.6 touches root.5. root.5 touches root.0. But root.1 doesn't touch root.5 or root.0. So no path. So cannot have front+back in same role. Therefore the back panels cannot be part of the drawer moving roles with the fronts, because they aren't connected via same-role touching. Unless there are other parts (like sides) not listed. But only given parts exist. So each moving role must be just a single front panel (or a set of touching panels, but the fronts only touch body). Wait root.1 touches root.7 (body). It doesn't touch root.8 or root.4. So each front is isolated from other fronts. So each is its own role.\n\nBut then what about root.0, root.5, root.6? They touch each other (root.0-root.5-root.6). They are at back. Could they be a moving role, like a back door? But filing cabinet doesn't have a back door. They could be drawers that slide out the back? No. They could be fixed body parts (the back of the cabinet or internal panels). But root.7 already is the whole volume body. Having additional body parts is allowed. So root.2, root.6, root.5, root.0, root.3 are likely fixed body panels (e.g., backboard, shelves, dividers). Wait root.2 is at back (z=0.06) y 0.025-0.295: that's the back panel of the bottom section (maybe the bottom drawer's back? But bottom drawer front is root.1 y 0.345-0.555, not matching root.2 y 0.025-0.295! Ah! root.2 y range 0.025-0.295 is BELOW root.1 (0.345-0.555). So root.2 is not the back of bottom drawer; it's lower, maybe the back of a bottom compartment or a base? Let's check: root.1 bottom is 0.345. root.2 top is 0.295. Gap 0.295-0.345. So root.2 is a panel lower than the bottom drawer front. Could be a fixed bottom panel or kick plate? Actually filing cabinet often has a base at bottom, then drawers above. root.2 could be the back of the base (fixed). Then root.6 (0.345-0.575) matches root.1 (0.345-0.555) as the back of the bottom drawer. But root.6 is at back, root.1 at front. They don't touch. So maybe root.6 is the back of the bottom drawer, but as a fixed part of the body? Wait if root.6 is fixed, it's just the cabinet's back panel at that height, not moving. The drawer box (not represented) slides, but the front is the only moving part? In many of these synthetic datasets (like part mobility from ShapeNet etc.), a \"drawer\" part is often just the front face, while the sides/bottom/back of the drawer are either not segmented or are part of the body? Actually in these tasks, all parts are given; if a drawer has a back panel that moves with it, they'd be touching the front via sides. But here no sides. So the dataset likely models each moving part as a separate thin panel (the drawer front) that slides. The interior of the drawer is not a separate part; the \"body\" root.7 is the whole cabinet including the drawer cavities. The back panels might be the rear walls of the cabinet (part of body). So root.6 is the rear interior panel at the bottom drawer level, fixed. root.5 and root.0 maybe rear panels at middle/upper levels, fixed. root.3 rear panel at top, fixed. root.2 rear panel at bottom base, fixed. All fixed body.\n\nWait but root.0, root.5, root.6 are connected as body parts. That's fine: body can have multiple parts. They all touch root.7. So they are body.\n\nBut let's double-check front panels: root.1 touches only root.7. root.8 touches only root.7. root.4 touches only root.7. So indeed three moving parts, each its own role. Are they drawers or doors? A filing cabinet has drawers, not doors. The front panels at different heights that slide out are drawers. They are not doors because doors are usually full height or hinged; these are stacked horizontally and would slide forward (direction front). Also filing cabinet drawers slide out to the front. So joint type: \"slide\", direction \"front\". For a slide joint: {\"type\":\"slide\",\"direction\":SIDE}. SIDE is one of left,right,back,front,top,bottom. Drawers slide out to the front (z increases towards front). So direction: \"front\". That makes sense.\n\nBut wait: root.1, root.8, root.4 are at front (z=0.96). They are the fronts of the drawers. When they slide, they move towards front (z=1). Yes direction front.\n\nNow naming roles: Moving roles are lid, door or drawer, with a suffix when there are several (drawer_top, drawer_middle). We have three drawers. Need suffix for each: drawer_bottom, drawer_middle, drawer_top? The instruction says \"with a suffix when there are several (drawer_top, drawer_middle)\". So we should name them drawer_bottom, drawer_middle, drawer_top (or use top/middle/bottom). Since there are three, we need three distinct suffixes. Order by y position: root.4 is highest (top), root.8 is middle, root.1 is bottom. So:\n- root.4 -> drawer_top\n- root.8 -> drawer_middle\n- root.1 -> drawer_bottom\n\nCheck if any other moving parts: Are any of the back panels actually drawers that slide? No, because they are at back, sliding would be direction back? Filing cabinet doesn't have back drawers. Could root.7 be a door? No, root.7 is body (size whole). Could root.0, root.5, root.6 be a lid? No.\n\nBut wait: The top of the cabinet: root.4 is at y 0.77-0.95, z=0.96. That's the top drawer front. There is also root.3 back panel at y 0.77-0.95 (back). So the top drawer would have front root.4 and back root.3, but they don't touch. So again only front moves. That's okay; the back is fixed body. But is root.3 fixed? Yes, body.\n\nNow joints: Each moving role gets one joint. For drawers: type slide, direction front. So:\n\"joints\": {\n  \"drawer_bottom\": {\"type\":\"slide\",\"direction\":\"front\"},\n  \"drawer_middle\": {\"type\":\"slide\",\"direction\":\"front\"},\n  \"drawer_top\": {\"type\":\"slide\",\"direction\":\"front\"}\n}\n\nWait: Is direction \"front\" allowed? SIDE includes front. Yes.\n\nNow \"why\" gives one short reason per moving role. Example: \"why\": {\"drawer_bottom\":\"stacked front panel slides out to front\"} or \"front panel at bottom, slides forward\". Must be one short reason per moving role. So for each drawer role, give a brief reason. E.g., \"bottom front panel, slides out front\", \"middle front panel, slides out front\", \"top front panel, slides out front\". Or just \"drawer front panel slides forward\". Since they are all similar, we can say \"front panel of bottom drawer slides out to front\", etc. Let's craft concise:\n- drawer_bottom: \"front panel at lowest height, slides out to front\"\n- drawer_middle: \"front panel at middle height, slides out to front\"\n- drawer_top: \"front panel at top height, slides out to front\"\n\n\"unsure\": If the boxes don't settle a choice, still give best choice and list that role in \"unsure\". Do we have any uncertainty? Let's verify if the front panels could be doors hinged? They are stacked, separate, full width (x~0.86), thin vertical panels. A door would be hinged on a side (left or right) and open to front? But hinge and opens must be on different axes. For a door, hinge on left/right (x-axis side) and opens to front (z-axis) maybe. But filing cabinet with three separate stacked panels that are full width and don't span full height aren't doors; they are drawer fronts. Also drawers slide, not hinge. The parts are at front, vertical, full width, stacked: classic drawer fronts. So we are confident. No unsure needed? The instruction: \"If the boxes don't settle a choice, still give your best choice and list that role in 'unsure'.\" Since we are confident, \"unsure\": [] (empty list). But wait, is there ambiguity about which front panel is top/middle/bottom? That's settled by y coordinates. No ambiguity. Is there ambiguity about body vs moving for root.0 etc? root.0, root.5, root.6 are at back, touching each other and body. They are not at front, so they don't look like drawers. Could root.0 be a drawer that slides out the back? No, filing cabinet doesn't have that. So they are body. Confident.\n\nBut hold on: root.7 is size [1.0,1.0,1.0]. That is the whole model bounding box. If root.7 is the body, and also all other panels are inside it, okay. But root.2, root.3, root.6, root.5, root.0 are at z~0.05, which is within root.7. They touch root.7. All good.\n\nWait, check touches: root.0 touches root.5 and root.7. root.5 touches root.0, root.6, root.7. root.6 touches root.5, root.7. So root.0, root.5, root.6 form a connected chain. If they were all \"body\", that's fine. root.2 touches only root.7. root.3 touches only root.7. root.1, root.8, root.4 touch only root.7. So the only connected components among non-body parts would be each moving part alone. That's allowed: a moving role can be a single part (must touch body). Yes.\n\nBut is there a possibility that root.0, root.5, root.6 together form a moving \"door\" or \"lid\" at the back? They are connected. Could they be a back panel that slides? No, they are at back (z=0.05), spanning multiple heights, connected. Actually root.0, root.5, root.6 chain covers y from 0.345 to 0.765? Let's compute: root.6 0.345-0.575, root.5 0.55-0.73, root.0 0.635-0.765. Together they cover 0.345 to 0.765 continuously (with overlaps). That's a large back panel area from y=0.345 to 0.765. That's exactly the height range covering bottom and middle drawers (root.1 0.345-0.555, root.8 0.56-0.76). So this chain is the rear wall of the cabinet behind the bottom and middle drawers, fixed. So body.\n\nWhat about root.3 (0.77-0.95) back panel behind top drawer. root.2 (0.025-0.295) back panel behind base (below bottom drawer). All body. Yes.\n\nNow check if any part should be \"lid\" or \"door\". No lid (top is root.7 body, no separate top panel). No door (no side-hinged full panel). So just drawers.\n\nWait: The instruction says moving roles are lid, door or drawer, with a suffix when there are several (drawer_top, drawer_middle). It doesn't say we must name them drawer_bottom if there are three? It says \"with a suffix when there are several (drawer_top, drawer_middle)\". That implies for several drawers, use suffixes like top, middle, bottom if three. We should use drawer_bottom, drawer_middle, drawer_top. Or maybe drawer_top, drawer_middle, drawer_bottom. Need to map correctly:\n- root.4 highest (y centre 0.86) => drawer_top\n- root.8 middle (y centre 0.66) => drawer_middle\n- root.1 lowest (y centre 0.45) => drawer_bottom\n\nCheck root.8 y centre 0.66, root.5 back y 0.64 middle, so yes middle. root.1 y 0.45, back root.6 y 0.46 bottom. root.4 y 0.86, back root.3 y 0.86 top.\n\nNow assign roles in \"parts\" map:\nroot.0: body\nroot.1: drawer_bottom\nroot.2: body\nroot.3: body\nroot.4: drawer_top\nroot.5: body\nroot.6: body\nroot.7: body\nroot.8: drawer_middle\n\nWait, but root.7 is the main body. All others either body or drawers. Let's ensure every part id gets exactly one role. Yes.\n\nJoints: for each moving role (drawer_bottom, drawer_middle, drawer_top) slide front.\n\nWhy reasons:\n\"drawer_bottom\": \"lowest front panel, slides out to front\"\n\"drawer_middle\": \"middle front panel, slides out to front\"\n\"drawer_top\": \"highest front panel, slides out to front\"\n\nOr shorter: \"bottom drawer front slides forward\". The instruction: \"why\" gives one short reason per moving role. So value is a string. Could be \"front panel at bottom, slides to front\". Good.\n\nUnsure: [] (no uncertainty). But maybe we should list nothing. The example shows \"unsure\":[] . We'll output empty array.\n\nLet's double-check joint format: {\"type\":\"slide\",\"direction\":SIDE}. So exactly:\n\"joints\": {\n  \"drawer_bottom\": {\"type\":\"slide\",\"direction\":\"front\"},\n  \"drawer_middle\": {\"type\":\"slide\",\"direction\":\"front\"},\n  \"drawer_top\": {\"type\":\"slide\",\"direction\":\"front\"}\n}\nNo hinge for drawers. Good.\n\nWait, check the SIDE values: left, right, back, front, top, bottom. Yes \"front\" is allowed. The drawer slides out towards the front of the cabinet (z increasing). The part is at front (z=0.96), moving to front means moving in +z direction, which is towards viewer. Yes.\n\nPotential issue: The slide direction indicates the direction the part moves when opening. If the drawer is at front and slides out, it goes further front (positive z). So direction \"front\" is correct. If it were a drawer inside the cabinet represented by its front panel at z=0.96, sliding out means it goes to larger z, i.e., front. Good.\n\nLet's think if drawers could be considered to slide \"forward\" but SIDE must be \"front\". Yes.\n\nNow, is there any chance the three front panels are doors that hinge at top or bottom? They are stacked vertically, full width. A door would be as tall as the cabinet or a compartment. Each is about 0.18-0.21 height, which is small, like a drawer front. Filing cabinet drawers are typically wider than tall, which matches (height 0.18, width 0.86). So drawers.\n\nNow check the instruction: \"Never output numbers, coordinates, axes, angles or distances\". Our output JSON must not contain numbers, coordinates, axes, angles, distances. Wait! The output must not output numbers, coordinates, axes, angles or distances. But the joint objects have no numbers. The why strings: \"lowest front panel, slides out to front\" - no numbers, no coordinates, no axes (we say \"front\" which is a SIDE, allowed). \"highest\" is not a number. \"bottom\", \"middle\", \"top\" are suffixes, allowed. The parts map has ids like \"root.0\" - that's the given id, contains a number but it's an id from input, we must output it. Is that allowed? The instruction says never output numbers, coordinates, axes, angles or distances. But the part ids inherently contain numbers (root.0). We have to use the ids as given; that's required. The restriction likely means we shouldn't output new numbers like sizes, centre coordinates, or talk about axes like \"z axis\". We must avoid words like \"axis\" or \"z\". In why, we said \"front\" (allowed side), not \"z axis\". Avoid \"y\" or \"height\" maybe? \"lowest front panel\" uses no number, but \"lowest\" is qualitative. It doesn't output coordinates. That's fine. Avoid saying \"y=0.45\". We didn't.\n\nWait: \"Never output numbers, coordinates, axes, angles or distances:\" Means the JSON values shouldn't contain e.g., \"direction: [0,1,0]\" or \"angle 90\" or \"size 0.5\". Our output has no numbers except in part ids (root.0). Is \"root.0\" considered outputting a number? It's part of the identifier; we must output it exactly. The instruction says \"Each part's centre and size are shares... Code computes all geometry.\" and \"Reply with one JSON object only, in this form: {\"splitter\":\"parts\",\"parts\":{\"<id>\":\"<role>\"},...}\". So <id> is like \"root.0\". We must use the id strings as given. That's okay.\n\nBut need to ensure why strings don't contain numbers. \"bottom\", \"middle\", \"top\" are not numbers. \"slides out to front\" uses \"front\" side. Good.\n\nWait, is \"front\" an axis? No, it's a SIDE. Allowed. We must not say \"z\". We didn't.\n\nCheck joints: \"direction\":\"front\" - front is a SIDE, allowed.\n\nNow, do we need to specify \"hinge\" and \"opens\"? Not for slide. Good.\n\nLet's verify connectivity and body touching:\n- drawer_bottom (root.1) touches root.7 (body). Yes, touches list: root.1 touches [\"root.7\"].\n- drawer_middle (root.8) touches [\"root.7\"]. Yes.\n- drawer_top (root.4) touches [\"root.7\"]. Yes.\nAll moving roles touch the body. Good.\n\nBody parts: root.7 is body. root.0, root.2, root.3, root.5, root.6 are body. They all touch root.7, so body is connected? root.2 touches root.7, root.3 touches root.7, etc. Yes.\n\nOne more check: The instruction says \"Fixed parts get 'body' (one or more parts).\" So multiple parts can be body. We don't need to suffix body. Just \"body\".\n\nNow, ensure JSON structure:\n{\n  \"splitter\": \"parts\",\n  \"parts\": {\n    \"root.0\": \"body\",\n    \"root.1\": \"drawer_bottom\",\n    \"root.2\": \"body\",\n    \"root.3\": \"body\",\n    \"root.4\": \"drawer_top\",\n    \"root.5\": \"body\",\n    \"root.6\": \"body\",\n    \"root.7\": \"body\",\n    \"root.8\": \"drawer_middle\"\n  },\n  \"joints\": {\n    \"drawer_bottom\": {\"type\": \"slide\", \"direction\": \"front\"},\n    \"drawer_middle\": {\"type\": \"slide\", \"direction\": \"front\"},\n    \"drawer_top\": {\"type\": \"slide\", \"direction\": \"front\"}\n  },\n  \"unsure\": [],\n  \"why\": {\n    \"drawer_bottom\": \"lowest front panel, slides out to front\",\n    \"drawer_middle\": \"middle front panel, slides out to front\",\n    \"drawer_top\": \"highest front panel, slides out to front\"\n  }\n}\n\nWait, why is root.8 drawer_middle? root.8 centre y=0.66, root.1 y=0.45, root.4 y=0.86. Yes.\n\nCould the suffix be \"drawer_lower\", \"drawer_upper\"? The example says drawer_top, drawer_middle. So for three, bottom/middle/top is natural: drawer_bottom, drawer_middle, drawer_top. We used that.\n\nCheck if any role names have uppercase? No, lower case.\n\nNow, is there any possibility that root.1 is \"door\" and root.8, root.4 are \"drawer\"? No, all three are same type. Filing cabinet all are drawers.\n\nWait, look at root.1 size y=0.21, x=0.86, z=0.06. It's a front panel. root.4 size y=0.18, root.8 size y=0.2. All similar. Yes.\n\nOne more thought: The parts at back (root.0, root.5, root.6) are connected. Could they be a single moving drawer that includes multiple back panels? But they are at back, not front. If they were a drawer, they would slide front? But they are at z=0.05 (back), if they slid front they'd move through the cabinet, but they are connected to body only via root.7, not to any front. And they are labelled as touching each other. If they were a moving role, they'd need a joint (slide front). But then the front panels would also need to be part of that role to be the front of the drawer, but they aren't connected. So no.\n\nThus final answer is as above.\n\nWait, the instruction: \"If the boxes don't settle a choice, still give your best choice and list that role in 'unsure'.\" Are we unsure about root.2 being body vs something else? It's at back, bottom, below the bottom drawer. It could be a drawer? No front panel at that height (no front at y 0.025-0.295). So it's not a drawer. It's a fixed base/back. Confident.\n\nLet's ensure we don't accidentally output numbers in why. \"lowest front panel, slides out to front\" - no digits. \"middle front panel, slides out to front\" - no digits. \"highest front panel, slides out to front\" - no digits. Good.\n\nBut wait: \"front\" appears; that's a side, allowed. \"lowest\", \"middle\", \"highest\" are not numbers. Good.\n\nOne final check: The JSON must be one object only, no markdown. We'll output raw JSON.\n\nActually, the prompt says: \"Reply with one JSON object only, in this form: ...\". So we should output exactly the JSON, no code fences. I will output without ```.\n\nLet's review the exact form:\n{\"splitter\":\"parts\",\"parts\":{\"<id>\":\"<role>\"},\"joints\":{\"<role>\":{...}},\"unsure\":[],\"why\":{\"<role>\":\"...\"}}\n\nOur output matches.\n\nDouble-check joints: For slide, the object is {\"type\":\"slide\",\"direction\":SIDE}. Yes.\n\nEverything good.",
+  "content": "{\"splitter\": \"parts\", \"parts\": {\"root.0\": \"body\", \"root.1\": \"drawer_bottom\", \"root.2\": \"body\", \"root.3\": \"body\", \"root.4\": \"drawer_top\", \"root.5\": \"body\", \"root.6\": \"body\", \"root.7\": \"body\", \"root.8\": \"drawer_middle\"}, \"joints\": {\"drawer_bottom\": {\"type\": \"slide\", \"direction\": \"front\"}, \"drawer_middle\": {\"type\": \"slide\", \"direction\": \"front\"}, \"drawer_top\": {\"type\": \"slide\", \"direction\": \"front\"}}, \"unsure\": [], \"why\": {\"drawer_bottom\": \"lowest front panel, slides out to front\", \"drawer_middle\": \"middle front panel, slides out to front\", \"drawer_top\": \"highest front panel, slides out to front\"}}",
+  "system": "You label the parts of a 3D prop so a physics engine can make it move.\nChoose only from the allowed values. Never output numbers, coordinates, axes, angles or distances:\ncode computes all geometry.\nFrame: x runs left to right, y bottom to top, z back to front, as seen standing in front of the prop.\nEach part's centre and size are shares of the whole model (0 to 1). \"touches\" lists the parts its\nsurface touches.\n- Every part id gets exactly one role. Fixed parts get \"body\" (one or more parts).\n- Moving roles are lid, door or drawer, with a suffix when there are several (drawer_top,\n  drawer_middle). Parts that move together share one role, and must be connected through parts of\n  that role that touch. Every moving role must touch the body.\n- Each moving role gets one joint: {\"type\":\"hinge\",\"hinge\":SIDE,\"opens\":SIDE} or\n  {\"type\":\"slide\",\"direction\":SIDE}. hinge and opens must be on different axes.\n- SIDE is one of: left, right, back, front, top, bottom.\n- If the boxes don't settle a choice, still give your best choice and list that role in \"unsure\".\n- \"why\" gives one short reason per moving role.\nReply with one JSON object only, in this form:\n{\"splitter\":\"parts\",\"parts\":{\"<id>\":\"<role>\"},\"joints\":{\"<role>\":{...}},\"unsure\":[],\"why\":{\"<role>\":\"...\"}}",
+  "part_list": {
+    "prop": "filing_cabinet",
+    "model_size": {
+      "x": 1.18,
+      "y": 1.9,
+      "z": 1.42
+    },
+    "parts": [
+      {
+        "id": "root.0",
+        "centre": [
+          0.49,
+          0.7,
+          0.05
+        ],
+        "size": [
+          0.84,
+          0.13,
+          0.03
+        ],
+        "touches": [
+          "root.5",
+          "root.7"
+        ]
+      },
+      {
+        "id": "root.1",
+        "centre": [
+          0.49,
+          0.45,
+          0.97
+        ],
+        "size": [
+          0.86,
+          0.21,
+          0.06
+        ],
+        "touches": [
+          "root.7"
+        ]
+      },
+      {
+        "id": "root.2",
+        "centre": [
+          0.48,
+          0.16,
+          0.06
+        ],
+        "size": [
+          0.86,
+          0.27,
+          0.02
+        ],
+        "touches": [
+          "root.7"
+        ]
+      },
+      {
+        "id": "root.3",
+        "centre": [
+          0.5,
+          0.86,
+          0.05
+        ],
+        "size": [
+          0.86,
+          0.18,
+          0.02
+        ],
+        "touches": [
+          "root.7"
+        ]
+      },
+      {
+        "id": "root.4",
+        "centre": [
+          0.49,
+          0.86,
+          0.96
+        ],
+        "size": [
+          0.86,
+          0.18,
+          0.07
+        ],
+        "touches": [
+          "root.7"
+        ]
+      },
+      {
+        "id": "root.5",
+        "centre": [
+          0.51,
+          0.64,
+          0.05
+        ],
+        "size": [
+          0.87,
+          0.18,
+          0.04
+        ],
+        "touches": [
+          "root.0",
+          "root.6",
+          "root.7"
+        ]
+      },
+      {
+        "id": "root.6",
+        "centre": [
+          0.5,
+          0.46,
+          0.05
+        ],
+        "size": [
+          0.86,
+          0.23,
+          0.02
+        ],
+        "touches": [
+          "root.5",
+          "root.7"
+        ]
+      },
+      {
+        "id": "root.7",
+        "centre": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "size": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "touches": [
+          "root.0",
+          "root.1",
+          "root.2",
+          "root.3",
+          "root.4",
+          "root.5",
+          "root.6",
+          "root.8"
+        ]
+      },
+      {
+        "id": "root.8",
+        "centre": [
+          0.49,
+          0.66,
+          0.96
+        ],
+        "size": [
+          0.86,
+          0.2,
+          0.07
+        ],
+        "touches": [
+          "root.7"
+        ]
+      }
+    ]
+  }
+}

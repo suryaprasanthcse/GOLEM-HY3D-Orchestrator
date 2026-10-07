@@ -1,0 +1,16 @@
+{
+  "source": "artist",
+  "note": "The artist's choices for the cabinet from golem_props.json, in golem_auto.py's format. The fourth drawer (front_4) is carved out of root.7 with a hand-typed box (--carve), which golem_auto.py can't do and the model must not set, so it is left out here.",
+  "name": "filing_cabinet",
+  "splitter": "parts",
+  "parts": {
+    "root.7": "body", "root.0": "body", "root.2": "body", "root.3": "body", "root.5": "body", "root.6": "body",
+    "root.4": "drawer_top", "root.8": "drawer_middle", "root.1": "drawer_lower"
+  },
+  "joints": {
+    "drawer_top": {"type": "slide", "direction": "front"},
+    "drawer_middle": {"type": "slide", "direction": "front"},
+    "drawer_lower": {"type": "slide", "direction": "front"}
+  },
+  "drawer_boxes": true
+}

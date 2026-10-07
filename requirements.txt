@@ -1,0 +1,7 @@
+requests==2.34.2
+trimesh==5.1.1
+numpy==2.5.3
+# trimesh needs scipy for convex hulls (and so every oriented bounding box)
+scipy==1.18.1
+# and networkx to repair the hull of flat, zero-thickness parts
+networkx==3.7

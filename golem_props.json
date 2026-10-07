@@ -1,0 +1,36 @@
+{
+  "note": "How each demo prop was made: the Hyper3D jobs (records in assets/raw/<job>.job.json) and the GOLEM split step with the artist's choices (Artist-in-the-Loop). golem_metrics.py replays the split steps to time them.",
+  "props": [
+    {
+      "name": "chest",
+      "hyper3d_jobs": ["chest"],
+      "split": ["golem_cutter.py", "assets/raw/chest.glb"]
+    },
+    {
+      "name": "toolbox",
+      "hyper3d_jobs": ["toolbox"],
+      "split": ["golem_cutter.py", "assets/raw/toolbox.glb"]
+    },
+    {
+      "name": "laptop",
+      "hyper3d_jobs": ["laptop"],
+      "split": ["golem_cutter.py", "assets/raw/laptop.glb", "--open-part"]
+    },
+    {
+      "name": "vault_door",
+      "hyper3d_jobs": ["vault_door", "vault_door_bang"],
+      "split": ["golem_assemble.py", "assets/raw/vault_door_bang.glb", "--root", "root.5",
+                "--move", "door=root.12,root.1,root.2:left:front:100", "--hinge-arms", "--name", "vault_door"]
+    },
+    {
+      "name": "filing_cabinet",
+      "hyper3d_jobs": ["filing_cabinet", "filing_cabinet_bang"],
+      "split": ["golem_assemble.py", "assets/raw/filing_cabinet_bang.glb",
+                "--carve", "front_4=root.7:-0.53,0.52,-0.817,-0.286,0.60,0.72",
+                "--root", "root.7,root.0,root.2,root.3,root.5,root.6",
+                "--slide", "drawer_top=root.4:front", "--slide", "drawer_middle=root.8:front",
+                "--slide", "drawer_lower=root.1:front", "--slide", "drawer_bottom=front_4:front",
+                "--drawer-boxes", "--name", "filing_cabinet"]
+    }
+  ]
+}

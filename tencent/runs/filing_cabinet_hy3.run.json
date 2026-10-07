@@ -1,0 +1,178 @@
+{
+  "model": "hy3",
+  "glb": "..\\golem_oct3\\assets\\raw\\filing_cabinet_bang.glb",
+  "endpoint": "https://tokenhub-intl.tencentcloudmaas.com/v1/chat/completions",
+  "outcome": "fallback",
+  "problems": [
+    "HTTP 402: {\"error\":{\"type\":\"invalid_request_error\",\"code\":\"401006\",\"message\":\"The service ID does not exist, or the model does not match the service. Please confirm the service ID in the Online Inference Service list in the console.\",\"message_zh\":\"\u8f93\u5165\u7684\u670d\u52a1 ID \u4e0d\u5b58\u5728\uff0c\u6216\u6a21\u578b\u4e0e\u670d\u52a1\u4e0d\u5339\u914d\uff0c\u8bf7\u5728\u63a7\u5236\u53f0\u7684\u5728\u7ebf\u63a8\u7406\u670d\u52a1\u5217\u8868\u4e2d\u786e\u8ba4\u670d\u52a1 ID\u3002\",\"source\":\"clie"
+  ],
+  "latency_ms": 248,
+  "status": 402,
+  "system": "You label the parts of a 3D prop so a physics engine can make it move.\nChoose only from the allowed values. Never output numbers, coordinates, axes, angles or distances:\ncode computes all geometry.\nFrame: x runs left to right, y bottom to top, z back to front, as seen standing in front of the prop.\nEach part's centre and size are shares of the whole model (0 to 1). \"touches\" lists the parts its\nsurface touches.\n- Every part id gets exactly one role. Fixed parts get \"body\" (one or more parts).\n- Moving roles are lid, door or drawer, with a suffix when there are several (drawer_top,\n  drawer_middle). Parts that move together share one role, and must be connected through parts of\n  that role that touch. Every moving role must touch the body.\n- Each moving role gets one joint: {\"type\":\"hinge\",\"hinge\":SIDE,\"opens\":SIDE} or\n  {\"type\":\"slide\",\"direction\":SIDE}. hinge and opens must be on different axes.\n- SIDE is one of: left, right, back, front, top, bottom.\n- If the boxes don't settle a choice, still give your best choice and list that role in \"unsure\".\n- \"why\" gives one short reason per moving role.\nReply with one JSON object only, in this form:\n{\"splitter\":\"parts\",\"parts\":{\"<id>\":\"<role>\"},\"joints\":{\"<role>\":{...}},\"unsure\":[],\"why\":{\"<role>\":\"...\"}}",
+  "part_list": {
+    "prop": "filing_cabinet",
+    "model_size": {
+      "x": 1.18,
+      "y": 1.9,
+      "z": 1.42
+    },
+    "parts": [
+      {
+        "id": "root.0",
+        "centre": [
+          0.49,
+          0.7,
+          0.05
+        ],
+        "size": [
+          0.84,
+          0.13,
+          0.03
+        ],
+        "touches": [
+          "root.5",
+          "root.7"
+        ]
+      },
+      {
+        "id": "root.1",
+        "centre": [
+          0.49,
+          0.45,
+          0.97
+        ],
+        "size": [
+          0.86,
+          0.21,
+          0.06
+        ],
+        "touches": [
+          "root.7"
+        ]
+      },
+      {
+        "id": "root.2",
+        "centre": [
+          0.48,
+          0.16,
+          0.06
+        ],
+        "size": [
+          0.86,
+          0.27,
+          0.02
+        ],
+        "touches": [
+          "root.7"
+        ]
+      },
+      {
+        "id": "root.3",
+        "centre": [
+          0.5,
+          0.86,
+          0.05
+        ],
+        "size": [
+          0.86,
+          0.18,
+          0.02
+        ],
+        "touches": [
+          "root.7"
+        ]
+      },
+      {
+        "id": "root.4",
+        "centre": [
+          0.49,
+          0.86,
+          0.96
+        ],
+        "size": [
+          0.86,
+          0.18,
+          0.07
+        ],
+        "touches": [
+          "root.7"
+        ]
+      },
+      {
+        "id": "root.5",
+        "centre": [
+          0.51,
+          0.64,
+          0.05
+        ],
+        "size": [
+          0.87,
+          0.18,
+          0.04
+        ],
+        "touches": [
+          "root.0",
+          "root.6",
+          "root.7"
+        ]
+      },
+      {
+        "id": "root.6",
+        "centre": [
+          0.5,
+          0.46,
+          0.05
+        ],
+        "size": [
+          0.86,
+          0.23,
+          0.02
+        ],
+        "touches": [
+          "root.5",
+          "root.7"
+        ]
+      },
+      {
+        "id": "root.7",
+        "centre": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "size": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "touches": [
+          "root.0",
+          "root.1",
+          "root.2",
+          "root.3",
+          "root.4",
+          "root.5",
+          "root.6",
+          "root.8"
+        ]
+      },
+      {
+        "id": "root.8",
+        "centre": [
+          0.49,
+          0.66,
+          0.96
+        ],
+        "size": [
+          0.86,
+          0.2,
+          0.07
+        ],
+        "touches": [
+          "root.7"
+        ]
+      }
+    ]
+  },
+  "response": "{\"error\":{\"type\":\"invalid_request_error\",\"code\":\"401006\",\"message\":\"The service ID does not exist, or the model does not match the service. Please confirm the service ID in the Online Inference Service list in the console.\",\"message_zh\":\"\u8f93\u5165\u7684\u670d\u52a1 ID \u4e0d\u5b58\u5728\uff0c\u6216\u6a21\u578b\u4e0e\u670d\u52a1\u4e0d\u5339\u914d\uff0c\u8bf7\u5728\u63a7\u5236\u53f0\u7684\u5728\u7ebf\u63a8\u7406\u670d\u52a1\u5217\u8868\u4e2d\u786e\u8ba4\u670d\u52a1 ID\u3002\",\"source\":\"client\",\"request_id\":\"74fcc577-f11f-4583-91b3-d72470f31034\"}}"
+}

@@ -1,0 +1,33 @@
+{
+  "source": "blueprint-a sweep + deepseek-v4.1-flash",
+  "name": "filing_cabinet",
+  "splitter": "parts",
+  "parts": {
+    "root.7": "body",
+    "root.1": "drawer_1",
+    "root.2": "body",
+    "root.3": "body",
+    "root.4": "drawer_2",
+    "root.0": "body",
+    "root.5": "body",
+    "root.6": "body",
+    "root.8": "drawer_3"
+  },
+  "joints": {
+    "drawer_1": {
+      "type": "slide",
+      "direction": "front"
+    },
+    "drawer_2": {
+      "type": "slide",
+      "direction": "front"
+    },
+    "drawer_3": {
+      "type": "slide",
+      "direction": "front"
+    }
+  },
+  "drawer_boxes": true,
+  "size_m": 1.3,
+  "density": 150
+}

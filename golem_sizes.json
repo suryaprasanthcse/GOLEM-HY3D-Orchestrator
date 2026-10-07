@@ -1,0 +1,10 @@
+{
+  "note": "Real-world size (largest dimension, metres) and effective density (kg/m3) per prop. Generated meshes arrive normalized to ~2 units; Unity scales each prop to size_m before building its joints, and each part's mass is density x its enclosed mesh volume. Generated meshes are solid where the real object is hollow, so densities are effective values (material density x how full the object really is). anchored: the prop is a fixture (a vault door is set in a wall), so its body stays put on the demo stage; every other prop stands free.",
+  "props": [
+    { "name": "chest",          "size_m": 0.90, "density": 150,  "material": "wood, hollow box" },
+    { "name": "toolbox",        "size_m": 0.55, "density": 350,  "material": "sheet steel, hollow" },
+    { "name": "laptop",         "size_m": 0.36, "density": 1300, "material": "aluminium and plastic, nearly solid" },
+    { "name": "vault_door",     "size_m": 2.20, "density": 3000, "material": "cast iron and steel", "anchored": true },
+    { "name": "filing_cabinet", "size_m": 1.30, "density": 120,  "material": "wood, hollow carcass" }
+  ]
+}

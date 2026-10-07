@@ -1,0 +1,4 @@
+Part choices: hy4-preview via Tencent TokenHub
+completion 8a202925-6f0a-40f3-b897-137c5b1f59fe, 162091 ms
+Joints and physics: GOLEM code (Blender split, Unity PhysX)
+self-test PASS | choices sha256 ec5312c59534bfe9

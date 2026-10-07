@@ -1,0 +1,36 @@
+{
+  "source": "hy4-preview",
+  "name": "filing_cabinet",
+  "splitter": "parts",
+  "parts": {
+    "root.0": "body",
+    "root.1": "drawer_bottom",
+    "root.2": "body",
+    "root.3": "body",
+    "root.4": "drawer_top",
+    "root.5": "body",
+    "root.6": "body",
+    "root.7": "body",
+    "root.8": "drawer_middle"
+  },
+  "joints": {
+    "drawer_bottom": {
+      "type": "slide",
+      "direction": "front"
+    },
+    "drawer_middle": {
+      "type": "slide",
+      "direction": "front"
+    },
+    "drawer_top": {
+      "type": "slide",
+      "direction": "front"
+    }
+  },
+  "unsure": [],
+  "why": {
+    "drawer_bottom": "Lowest front panel, slides out to the front.",
+    "drawer_middle": "Middle front panel, slides out to the front.",
+    "drawer_top": "Highest front panel, slides out to the front."
+  }
+}

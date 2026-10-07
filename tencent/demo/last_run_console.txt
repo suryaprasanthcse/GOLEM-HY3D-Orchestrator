@@ -1,0 +1,128 @@
+
+==============================================================================
+  1/5  PART CHOICES: hy4-preview on Tencent TokenHub
+==============================================================================
+[golem] filing_cabinet: 9 parts; asking hy4-preview on https://tokenhub-intl.tencentcloudmaas.com
+[golem] TokenHub latency: 162091 ms (HTTP 200)
+[golem] TokenHub completion id: 8a202925-6f0a-40f3-b897-137c5b1f59fe (model served: hy4-preview, sent 2026-10-06T21:18:02Z)
+[golem] tokens: 944 in, 13700 out, about 0.0351 USD at list price
+[golem] answer accepted
+[golem] run record: C:\myspace\cambridge\golem_tencent\tencent\demo\filing_cabinet_20261006T211801Z\choices.run.json
+[golem] wrote C:\myspace\cambridge\golem_tencent\tencent\demo\filing_cabinet_20261006T211801Z\choices.json
+{
+  "source": "hy4-preview",
+  "name": "filing_cabinet",
+  "splitter": "parts",
+  "parts": {
+    "root.0": "body",
+    "root.1": "drawer_bottom",
+    "root.2": "body",
+    "root.3": "body",
+    "root.4": "drawer_top",
+    "root.5": "body",
+    "root.6": "body",
+    "root.7": "body",
+    "root.8": "drawer_middle"
+  },
+  "joints": {
+    "drawer_bottom": {
+      "type": "slide",
+      "direction": "front"
+    },
+    "drawer_middle": {
+      "type": "slide",
+      "direction": "front"
+    },
+    "drawer_top": {
+      "type": "slide",
+      "direction": "front"
+    }
+  },
+  "unsure": [],
+  "why": {
+    "drawer_bottom": "lowest front panel slides out toward front",
+    "drawer_middle": "middle front panel slides out toward front",
+    "drawer_top": "highest front panel slides out toward front"
+  }
+}
+[golem] against C:\myspace\cambridge\golem_tencent\tencent\artist_choices\filing_cabinet.json:
+body or moving: 9 of 9 parts agree
+moving groups: 3 of 3 found exactly; joints agree on 3 of 3
+  drawer_lower ['root.1'] = model's drawer_bottom: joint agrees ({"type": "slide", "direction": "front"})
+  drawer_middle ['root.8'] = model's drawer_middle: joint agrees ({"type": "slide", "direction": "front"})
+  drawer_top ['root.4'] = model's drawer_top: joint agrees ({"type": "slide", "direction": "front"})
+
+[demo] part choices by: hy4-preview (TokenHub completion id 8a202925-6f0a-40f3-b897-137c5b1f59fe)
+[demo] latency 162091 ms, tokens 944 in / 13700 out
+
+==============================================================================
+  2/5  GEOMETRY: golem_auto.py -> golem_assemble.py (Blender) computes every joint
+==============================================================================
+[demo] code option added for the split: drawer_boxes (GOLEM builds a box behind each drawer front)
+[golem] choices from hy4-preview: C:\myspace\cambridge\golem_tencent\tencent\demo\filing_cabinet_20261006T211801Z\split_input.json
+[golem] running: python C:\myspace\cambridge\golem_tencent\golem_assemble.py ..\golem_oct3\assets\raw\filing_cabinet_bang.glb --out C:\myspace\cambridge\golem_tencent\tencent\demo\filing_cabinet_20261006T211801Z\split --name filing_cabinet --root root.0,root.2,root.3,root.5,root.6,root.7 --slide drawer_bottom=root.1:front --slide drawer_top=root.4:front --slide drawer_middle=root.8:front --drawer-boxes
+[golem] parts in filing_cabinet_bang.glb: ['root.0', 'root.1', 'root.2', 'root.3', 'root.4', 'root.5', 'root.6', 'root.7', 'root.8']
+[golem] drawer_bottom: nodes ['root.1'], slides front up to 0.711
+[golem] drawer_bottom: drawer box 0.936 x 0.314 x 0.889 deep, wall 0.0187, colour [0.4969, 0.1221, 0.0012]
+[golem] drawer_top: nodes ['root.4'], slides front up to 0.711
+[golem] drawer_top: drawer box 0.939 x 0.274 x 0.889 deep, wall 0.0188, colour [0.5149, 0.1274, 0.0009]
+[golem] drawer_middle: nodes ['root.8'], slides front up to 0.711
+[golem] drawer_middle: drawer box 0.935 x 0.304 x 0.889 deep, wall 0.0187, colour [0.521, 0.1329, 0.0015]
+[golem] wrote C:\myspace\cambridge\golem_tencent\tencent\demo\filing_cabinet_20261006T211801Z\split\filing_cabinet\filing_cabinet_split.glb
+[golem] wrote C:\myspace\cambridge\golem_tencent\tencent\demo\filing_cabinet_20261006T211801Z\split\filing_cabinet\filing_cabinet_joints.json
+[golem] wrote C:\myspace\cambridge\golem_tencent\tencent\demo\filing_cabinet_20261006T211801Z\split\filing_cabinet\filing_cabinet_choices.json
+
+==============================================================================
+  3/5  PHYSICS: Unity 6.6 headless (PhysX articulations), self-test and frames
+==============================================================================
+  [GOLEM] filing_cabinet: 3 joint(s) built
+  [GOLEM] DEMO import: 1 prop(s) from C:\myspace\cambridge\golem_tencent\tencent\demo\filing_cabinet_20261006T211801Z\split: filing_cabinet (GOLEM): filing_cabinet_split 59.63 kg, drawer_bottom 1.64 kg (PrismaticJoint, limits 0.0..0.5), drawer_middle 1.60 kg (PrismaticJoint, limits 0.0..0.5), drawer_top 1.52 kg (PrismaticJoint, limits 0.0..0.5)
+  [GOLEM] DEMO wrote 241 frames to C:\myspace\cambridge\golem_tencent\tencent\demo\filing_cabinet_20261006T211801Z\frames
+  [GOLEM] SELFTEST filing_cabinet (GOLEM)/drawer_bottom: slid 0.34 of +0.34, right way, drag agrees -> PASS
+  [GOLEM] SELFTEST filing_cabinet (GOLEM)/drawer_middle: slid 0.34 of +0.34, right way, drag agrees -> PASS
+  [GOLEM] SELFTEST filing_cabinet (GOLEM)/drawer_top: slid 0.34 of +0.34, right way, drag agrees -> PASS
+  [GOLEM] DEMO self-test PASS
+
+==============================================================================
+  4/5  VIDEO: FFmpeg
+==============================================================================
+[demo] C:\myspace\cambridge\golem_tencent\tencent\demo\filing_cabinet_20261006T211801Z\filing_cabinet_hy4-preview.mp4 (221 KB, 241 frames)
+
+==============================================================================
+  5/5  PROOF: proof.json
+==============================================================================
+{
+  "choices_by": "hy4-preview",
+  "tokenhub": {
+    "endpoint": "https://tokenhub-intl.tencentcloudmaas.com/v1/chat/completions",
+    "completion_id": "8a202925-6f0a-40f3-b897-137c5b1f59fe",
+    "served_model": "hy4-preview",
+    "sent_utc": "2026-10-06T21:18:02Z",
+    "latency_ms": 162091,
+    "usage": {
+      "prompt_tokens": 944,
+      "completion_tokens": 13700,
+      "total_tokens": 14644,
+      "prompt_tokens_details": {
+        "cached_tokens": 832
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 13537
+      }
+    },
+    "finish_reason": "stop",
+    "response_headers": {
+      "X-Request-Id": "8a202925-6f0a-40f3-b897-137c5b1f59fe",
+      "X-Trace-Id": "8a2029256f0a40f3b897137c5b1f59fe"
+    }
+  },
+  "self_test_passed": true,
+  "seconds": {
+    "choose_s": 163.4,
+    "split_s": 3.8,
+    "unity_s": 26.8,
+    "encode_s": 1.2
+  }
+}
+
+[demo] proof: C:\myspace\cambridge\golem_tencent\tencent\demo\filing_cabinet_20261006T211801Z\proof.json

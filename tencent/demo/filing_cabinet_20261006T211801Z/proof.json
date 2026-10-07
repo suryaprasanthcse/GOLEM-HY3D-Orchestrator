@@ -1,0 +1,54 @@
+{
+  "created_utc": "20261006T211801Z",
+  "replay": false,
+  "model": "hy4-preview",
+  "choices_by": "hy4-preview",
+  "tokenhub": {
+    "endpoint": "https://tokenhub-intl.tencentcloudmaas.com/v1/chat/completions",
+    "completion_id": "8a202925-6f0a-40f3-b897-137c5b1f59fe",
+    "served_model": "hy4-preview",
+    "sent_utc": "2026-10-06T21:18:02Z",
+    "latency_ms": 162091,
+    "usage": {
+      "prompt_tokens": 944,
+      "completion_tokens": 13700,
+      "total_tokens": 14644,
+      "prompt_tokens_details": {
+        "cached_tokens": 832
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 13537
+      }
+    },
+    "finish_reason": "stop",
+    "response_headers": {
+      "X-Request-Id": "8a202925-6f0a-40f3-b897-137c5b1f59fe",
+      "X-Trace-Id": "8a2029256f0a40f3b897137c5b1f59fe"
+    }
+  },
+  "refused_because": [],
+  "code_options_added": {
+    "drawer_boxes": true
+  },
+  "self_test": [
+    "[GOLEM] SELFTEST filing_cabinet (GOLEM)/drawer_bottom: slid 0.34 of +0.34, right way, drag agrees -> PASS",
+    "[GOLEM] SELFTEST filing_cabinet (GOLEM)/drawer_middle: slid 0.34 of +0.34, right way, drag agrees -> PASS",
+    "[GOLEM] SELFTEST filing_cabinet (GOLEM)/drawer_top: slid 0.34 of +0.34, right way, drag agrees -> PASS"
+  ],
+  "self_test_passed": true,
+  "seconds": {
+    "choose_s": 163.4,
+    "split_s": 3.8,
+    "unity_s": 26.8,
+    "encode_s": 1.2
+  },
+  "sha256": {
+    "model_glb": "a4a64c48598cb8a6d7c4416d15b7896af29a08a880666e33111bc4a8290391d8",
+    "part_list_and_reply": "07182d2046b8499d3c930e6f65c5b9ce0e36548b5136534be659ea85d9be8b7f",
+    "choices": "ec5312c59534bfe94d53ee5cba6a4de8af9c94c175a05e30d7048c7ff2cabc9e",
+    "split_glb": "90b79cb5b5a1fd5b58b7253337692a90d69039f9f4cc046b263fd213afda1769",
+    "joints": "2ae134ad09e543d67040f5789af2f68c4f3d9e3d203d68b1661c7041d152c87f",
+    "video": "3bad789cd54fd76c2fae08da41c34ce0f1a8fdf9ae6f44fdc859de3c64799a4e"
+  },
+  "chain": "model_glb -> part list -> TokenHub reply -> checks -> choices -> Blender split + joints -> Unity PhysX self-test -> video"
+}
