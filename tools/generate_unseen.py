@@ -31,10 +31,16 @@ ASSETS = [
 
 
 def credits() -> float:
-    out = subprocess.run(["hyper3d", "--output", "json", "auth", "status"], capture_output=True, text=True,
-                         shell=True).stdout
-    wallet = json.loads(out)["wallet"]
-    return float(wallet["balance"]) + float(wallet["subscription_balance"])
+    """The credit balance; stops everything if it can't be read, since retries depend on it."""
+    for _ in range(3):
+        out = subprocess.run(["hyper3d", "--output", "json", "auth", "status"], capture_output=True, text=True,
+                             shell=True).stdout
+        try:
+            wallet = json.loads(out)["wallet"]
+            return float(wallet["balance"]) + float(wallet["subscription_balance"])
+        except (json.JSONDecodeError, KeyError):
+            time.sleep(10)
+    sys.exit("[credits] can't read the Hyper3D balance; stopping before any submit")
 
 
 def main() -> int:

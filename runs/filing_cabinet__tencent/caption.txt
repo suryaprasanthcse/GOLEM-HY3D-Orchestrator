@@ -1,0 +1,4 @@
+GOLEM-HY3D | filing_cabinet | split: tencent hy-3d-component
+joints: geometric sweep + deepseek-v4.1-flash+hy4-preview tie-break
+physics: Unity PhysX self-test PASS
+choices sha256 13a80430cb3cf177de9ab5a1

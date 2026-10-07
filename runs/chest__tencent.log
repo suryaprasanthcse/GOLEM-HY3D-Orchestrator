@@ -1,0 +1,209 @@
+
+==============================================================================
+  1/9  RAW: ..\golem_oct3\assets\raw\chest.glb
+==============================================================================
+
+==============================================================================
+  2/9  SPLIT: Tencent HY-3D-Component
+==============================================================================
+[component] chest__tencent: HTTP 200 in 1344 ms: {"id": "1499472674684985344", "request_id": "63efb596-e406-4d68-a96b-7382b4fcd755", "object": "3d_job", "created_at": 1791396544, "status": "queued"}
+[component] chest__tencent: in_progress (829 ms)
+[component] chest__tencent: in_progress (329 ms)
+[component] chest__tencent: in_progress (285 ms)
+[component] chest__tencent: in_progress (257 ms)
+[component] chest__tencent: in_progress (716 ms)
+[component] chest__tencent: in_progress (279 ms)
+[component] chest__tencent: in_progress (685 ms)
+[component] chest__tencent: in_progress (286 ms)
+[component] chest__tencent: in_progress (515 ms)
+[component] chest__tencent: in_progress (258 ms)
+[component] chest__tencent: in_progress (846 ms)
+[component] chest__tencent: in_progress (275 ms)
+[component] chest__tencent: in_progress (422 ms)
+[component] chest__tencent: in_progress (281 ms)
+[component] chest__tencent: in_progress (236 ms)
+[component] chest__tencent: in_progress (263 ms)
+[component] chest__tencent: in_progress (280 ms)
+[component] chest__tencent: in_progress (277 ms)
+[component] chest__tencent: in_progress (273 ms)
+[component] chest__tencent: in_progress (633 ms)
+[component] chest__tencent: completed (321 ms)
+[component] chest__tencent: 26 file(s) in 240.4 s -> 26 part node(s)
+  chest__tencent_result_00.glb: 1 node(s), 32041 KB
+    part_1: 820011 v, 1640811 f, watertight False, texture False, bounds [[-0.877, 0.111, -0.6365], [0.8755, 0.7337, 0.6222]]
+  chest__tencent_result_01.glb: 1 node(s), 2129 KB
+    part_9: 54498 v, 109000 f, watertight True, texture False, bounds [[-0.5823, 0.1257, -0.6392], [-0.4315, 0.7559, 0.6073]]
+  chest__tencent_result_02.glb: 1 node(s), 759 KB
+    part_10: 19416 v, 38828 f, watertight True, texture False, bounds [[0.6956, 0.1414, 0.4234], [0.9258, 0.4024, 0.6458]]
+  chest__tencent_result_03.glb: 1 node(s), 2704 KB
+    part_11: 69202 v, 138404 f, watertight True, texture False, bounds [[-0.9298, -0.7803, 0.2301], [-0.684, 0.1349, 0.6515]]
+  chest__tencent_result_04.glb: 1 node(s), 728 KB
+    part_12: 18614 v, 37228 f, watertight True, texture False, bounds [[-0.9233, 0.1565, 0.4183], [-0.7173, 0.3867, 0.6458]]
+  chest__tencent_result_05.glb: 1 node(s), 3297 KB
+    part_14: 84386 v, 168768 f, watertight True, texture False, bounds [[0.0991, -0.7706, 0.2815], [0.9398, 0.1334, 0.6455]]
+  chest__tencent_result_06.glb: 1 node(s), 2037 KB
+    part_20: 52123 v, 104246 f, watertight True, texture False, bounds [[-0.7561, 0.0041, 0.5352], [0.731, 0.1371, 0.6392]]
+  chest__tencent_result_07.glb: 1 node(s), 3387 KB
+    part_6: 86686 v, 173372 f, watertight True, texture False, bounds [[-0.7603, -0.7683, -0.6611], [0.7335, -0.5687, -0.4561]]
+  chest__tencent_result_08.glb: 1 node(s), 4757 KB
+    part_7: 121755 v, 243506 f, watertight True, texture False, bounds [[-0.7246, -0.5322, -0.6997], [0.7353, 0.1367, -0.5794]]
+  chest__tencent_result_09.glb: 1 node(s), 4767 KB
+    part_8: 122026 v, 244064 f, watertight True, texture False, bounds [[0.7634, -0.5776, -0.4773], [0.9279, 0.1349, 0.5451]]
+  chest__tencent_result_10.glb: 1 node(s), 4437 KB
+    part_15: 113561 v, 227126 f, watertight True, texture False, bounds [[0.6074, 0.352, -0.6689], [0.8982, 0.7742, 0.6083]]
+  chest__tencent_result_11.glb: 1 node(s), 2526 KB
+    part_17: 64647 v, 129290 f, watertight True, texture False, bounds [[0.7038, -0.773, -0.643], [0.9008, -0.5727, 0.546]]
+  chest__tencent_result_12.glb: 1 node(s), 6643 KB
+    part_18: 170055 v, 340114 f, watertight True, texture False, bounds [[-0.9189, 0.1388, -0.7095], [-0.6839, 0.7814, 0.6052]]
+  chest__tencent_result_13.glb: 1 node(s), 797 KB
+    part_19: 20394 v, 40792 f, watertight True, texture False, bounds [[0.669, 0.1383, -0.7133], [0.9232, 0.3985, 0.5575]]
+  chest__tencent_result_14.glb: 1 node(s), 671 KB
+    part_21: 17172 v, 34336 f, watertight True, texture False, bounds [[0.8552, -0.2314, -0.2084], [0.9513, 0.1409, 0.1158]]
+  chest__tencent_result_15.glb: 1 node(s), 4456 KB
+    part_0: 114056 v, 228108 f, watertight True, texture False, bounds [[-0.7149, -0.7404, -0.6986], [0.9381, 0.1345, -0.347]]
+  chest__tencent_result_16.glb: 1 node(s), 7453 KB
+    part_2: 190776 v, 381552 f, watertight True, texture False, bounds [[-0.7926, -0.7682, 0.4292], [0.7345, 0.0281, 0.6262]]
+  chest__tencent_result_17.glb: 1 node(s), 2335 KB
+    part_3: 59761 v, 119526 f, watertight True, texture False, bounds [[0.3751, 0.1261, -0.6463], [0.5591, 0.7632, 0.6047]]
+  chest__tencent_result_18.glb: 1 node(s), 2555 KB
+    part_22: 65410 v, 130812 f, watertight True, texture False, bounds [[-0.9514, -0.2404, -0.5269], [-0.818, 0.1411, 0.4603]]
+  chest__tencent_result_19.glb: 1 node(s), 4034 KB
+    part_4: 103250 v, 206496 f, watertight True, texture False, bounds [[-0.926, -0.7695, -0.7037], [-0.454, 0.1346, 0.2474]]
+  chest__tencent_result_20.glb: 1 node(s), 855 KB
+    part_5: 21881 v, 43762 f, watertight True, texture False, bounds [[-0.1492, -0.257, 0.5711], [0.0691, 0.2995, 0.709]]
+  chest__tencent_result_21.glb: 1 node(s), 8333 KB
+    part_16: 213325 v, 426647 f, watertight False, texture False, bounds [[-0.7352, -0.7555, -0.5137], [0.7272, -0.7207, 0.4889]]
+  chest__tencent_result_22.glb: 1 node(s), 2179 KB
+    part_23: 55780 v, 111556 f, watertight True, texture False, bounds [[-0.8937, -0.7594, -0.5103], [-0.7021, -0.5724, 0.4861]]
+  chest__tencent_result_23.glb: 1 node(s), 268 KB
+    part_24: 6850 v, 13696 f, watertight True, texture False, bounds [[-0.8453, 0.1197, -0.5113], [-0.8034, 0.1317, 0.4702]]
+  chest__tencent_result_24.glb: 1 node(s), 2079 KB
+    part_25: 53200 v, 106396 f, watertight True, texture False, bounds [[-0.8751, -0.5763, -0.4559], [-0.8498, 0.0217, 0.4577]]
+  chest__tencent_result_25.glb: 1 node(s), 1661 KB
+    part_13: 42504 v, 85052 f, watertight True, texture False, bounds [[-0.4622, -0.2752, 0.5564], [0.2338, 0.2934, 0.6674]]
+
+==============================================================================
+  3/9  SWEEP: candidates from geometry, collision-free range of every one (no model)
+==============================================================================
+chest__tencent_parts_light.glb: 20 groups, anchor part_00, 32.77 s
+  part_00      anchor ['part_00', 'part_02']
+  part_01      fixed  0/54  nodes ['part_01']
+  part_03      choose 11/54: hinge:right:front 120.00, hinge:bottom:left 92.17, hinge:top:left 120.00, hinge:top:front 120.00, hinge:back:left 120.00, hinge-arm:right:front 120.00 ...  nodes ['part_03']
+  part_05      choose 9/54: hinge:left:front 120.00, hinge:bottom:front 92.17, hinge:top:front 120.00, hinge:back:right 120.00, hinge-arm:left:front 120.00, hinge-arm:top:front 120.00 ...  nodes ['part_05']
+  part_07      choose 7/54: hinge:left:back 120.00, hinge:right:back 120.00, hinge:top:back 120.00, hinge-arm:left:back 120.00, hinge-arm:right:back 120.00, hinge-arm:top:back 120.00 ...  nodes ['part_07']
+  part_08      choose 8/54: hinge:left:back 120.00, hinge:right:back 120.00, hinge:bottom:back 115.20, hinge:top:back 120.00, hinge-arm:left:back 120.00, hinge-arm:right:back 120.00 ...  nodes ['part_08']
+  part_09      fixed  0/54  nodes ['part_09', 'part_14']
+  part_10      choose 11/54: hinge:left:top 120.00, hinge:left:front 120.00, hinge:bottom:right 120.00, hinge:bottom:back 120.00, hinge:bottom:front 120.00, hinge-arm:left:top 120.00 ...  nodes ['part_10']
+  part_11      fixed  0/54  nodes ['part_11']
+  part_12      choose 8/54: hinge:right:top 120.00, hinge:right:back 120.00, hinge:right:front 120.00, hinge:bottom:left 120.00, hinge-arm:right:top 120.00, hinge-arm:bottom:left 108.00 ...  nodes ['part_04', 'part_12']
+  part_13      choose 7/54: hinge:left:back 120.00, hinge:front:right 120.00, hinge-arm:left:back 120.00, hinge-arm:top:back 120.00, hinge-arm:front:right 120.00, slide:right 1.08 ...  nodes ['part_13']
+  part_15      choose 3/54: hinge:top:back 120.00, hinge:front:right 120.00, hinge-arm:front:right 120.00  nodes ['part_15']
+  part_16      fixed  0/54  nodes ['part_16']
+  part_17      fixed  0/54  nodes ['part_17']
+  part_18      fixed  0/54  nodes ['part_18', 'part_23']
+  part_19      fixed  0/54  nodes ['part_19']
+  part_21      choose 1/54: hinge:bottom:back 89.19  nodes ['part_21']
+  part_22      fixed  0/54  nodes ['part_22']
+  part_24      choose 1/54: hinge-arm:bottom:left 120.00  nodes ['part_24']
+  part_25      choose 9/54: hinge:left:front 120.00, hinge:right:front 120.00, hinge:bottom:front 120.00, hinge:top:front 120.00, hinge:back:left 87.48, hinge-arm:left:front 120.00 ...  nodes ['part_06', 'part_20', 'part_25']
+
+==============================================================================
+  4/9  TIE-BREAK: DeepSeek-V4.1-Flash on TokenHub, only between passed candidates
+==============================================================================
+[tiebreak] deepseek-v4.1-flash, parts ['part_03', 'part_05', 'part_07'] (1/4): accepted (74655 ms)
+[tiebreak] deepseek-v4.1-flash, parts ['part_08', 'part_10', 'part_12'] (2/4): accepted (168222 ms)
+[tiebreak] deepseek-v4.1-flash, parts ['part_13', 'part_15', 'part_21'] (3/4): accepted (166693 ms)
+[tiebreak] deepseek-v4.1-flash, parts ['part_24', 'part_25'] (4/4): accepted (106248 ms)
+  part_03    decoration    fixed                    Vertical riveted metal strap wrapping the front-left corner of the box body; it lies flush
+  part_05    decoration    fixed                    Riveted metal corner strap on the front-right corner running down the body edge and flush 
+  part_07    decoration    fixed                    Thin riveted metal base rail along the bottom rear edge of the chest, flush with the botto
+  part_08    lid           hinge:top:back           Front panel of the lid with the lock centred on it; the hinge runs along its top edge and 
+  part_10    fixed_panel   fixed                    Right side end cap of the lid; no handle or hinge seam, and it is reinforced with fixed me
+  part_12    fixed_panel   fixed                    Left side end cap of the lid; no handle or hinge seam, and it is reinforced with fixed met
+  part_13    decoration    fixed                    In the back-right view this is the small riveted metal corner bracket/strap sitting on the
+  part_15    fixed_panel   fixed                    In the back and back-right views this is the large wooden back/side panel of the body: it 
+  part_21    fixed_panel   fixed                    This is a thin flat board at the very bottom of the chest (lowest y, inside the four walls
+  part_24    door          hinge-arm:bottom:left    Side panel on the left side with a metal ring handle and a visible seam around it; no hing
+  part_25    lid           hinge:back:left          Front panel with a central latch/lock and a horizontal gap underneath; as the chest lid it
+
+==============================================================================
+  5/9  CHOICES: roles and joints from the sweep and the tie-break
+==============================================================================
+{
+ "parts": {
+  "part_00": "body",
+  "part_02": "body",
+  "part_01": "body",
+  "part_03": "body",
+  "part_05": "body",
+  "part_07": "body",
+  "part_08": "lid_1",
+  "part_09": "body",
+  "part_14": "body",
+  "part_10": "body",
+  "part_11": "body",
+  "part_04": "body",
+  "part_12": "body",
+  "part_13": "body",
+  "part_15": "body",
+  "part_16": "body",
+  "part_17": "body",
+  "part_18": "body",
+  "part_23": "body",
+  "part_19": "body",
+  "part_21": "body",
+  "part_22": "body",
+  "part_24": "door_1",
+  "part_06": "lid_2",
+  "part_20": "lid_2",
+  "part_25": "lid_2"
+ },
+ "joints": {
+  "lid_1": {
+   "type": "hinge",
+   "hinge": "top",
+   "opens": "back",
+   "limit_deg": 110.0
+  },
+  "door_1": {
+   "type": "hinge",
+   "hinge": "bottom",
+   "opens": "left",
+   "limit_deg": 110.0
+  },
+  "lid_2": {
+   "type": "hinge",
+   "hinge": "back",
+   "opens": "left",
+   "limit_deg": 87.5
+  }
+ }
+}
+
+==============================================================================
+  6/9  JOINTS: golem_auto.py -> golem_assemble.py (Blender)
+==============================================================================
+[golem] choices from blueprint-a sweep + deepseek-v4.1-flash: C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\chest__tencent\choices.json
+[golem] running: python C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\golem_assemble.py C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\chest__tencent\component\chest__tencent_parts_light.glb --out C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\chest__tencent\split --name chest --root part_00,part_02,part_01,part_03,part_05,part_07,part_09,part_14,part_10,part_11,part_04,part_12,part_13,part_15,part_16,part_17,part_18,part_23,part_19,part_21,part_22 --move lid_1=part_08:top:back:110.0 --move door_1=part_24:bottom:left:110.0 --move lid_2=part_06,part_20,part_25:back:left:87.5 --hinge-arms
+[golem] parts in chest__tencent_parts_light.glb: ['part_00', 'part_01', 'part_02', 'part_03', 'part_04', 'part_05', 'part_06', 'part_07', 'part_08', 'part_09', 'part_10', 'part_11', 'part_12', 'part_13', 'part_14', 'part_15', 'part_16', 'part_17', 'part_18', 'part_19', 'part_20', 'part_21', 'part_22', 'part_23', 'part_24', 'part_25']
+[golem] lid_1: nodes ['part_08'], hinge top, opens back, pivot [0.00536, 0.781338, -0.71331] axis [1.0, 0.0, 0.0] (glTF)
+[golem] lid_1: hinge arm {'barrel_radius': 0.051097, 'barrel_length': 0.875942, 'arm_height': 0.233584, 'arm_reach': 0.167212, 'door_face_behind_frame': 0.074176, 'colour': [0.8, 0.8, 0.8]}
+[golem] door_1: nodes ['part_24'], hinge bottom, opens left, pivot [-0.951389, -0.780324, 0.000913] axis [-0.0, -0.0, 1.0] (glTF)
+[golem] door_1: hinge arm {'barrel_radius': 0.031975, 'barrel_length': 0.548142, 'arm_height': 0.146171, 'arm_reach': 0.1495, 'door_face_behind_frame': 0.08007, 'colour': [0.8, 0.8, 0.8]}
+[golem] lid_2: nodes ['part_06', 'part_20', 'part_25'], hinge back, opens left, pivot [-0.951389, 0.01212, -0.71331] axis [0.0, -1.0, 0.0] (glTF)
+[golem] lid_2: hinge arm {'barrel_radius': 0.020114, 'barrel_length': 0.34482, 'arm_height': 0.091952, 'arm_reach': 0.043466, 'door_face_behind_frame': 0.233969, 'colour': [0.8, 0.8, 0.8]}
+[golem] wrote C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\chest__tencent\split\chest\chest_split.glb
+[golem] wrote C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\chest__tencent\split\chest\chest_joints.json
+[golem] wrote C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\chest__tencent\split\chest\chest_choices.json
+
+==============================================================================
+  7/9  PHYSICS: Unity 6.6 batch mode, PhysX drives across every joint, frames at 60 fps
+==============================================================================
+  [GOLEM] chest: 3 joint(s) built
+  [GOLEM] DEMO import: 1 prop(s) from C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\chest__tencent\split: chest (GOLEM): chest_split 1.80 kg, door_1 0.10 kg (RevoluteJoint, limits 0.0..110.0), lid_1 0.39 kg (RevoluteJo
+  [GOLEM] DEMO wrote 480 frames to C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\chest__tencent\frames
+  [GOLEM] SELFTEST chest (GOLEM)/door_1: turned 70.50 deg of +70.00 deg, right way, drag agrees -> PASS
+  [GOLEM] SELFTEST chest (GOLEM)/lid_1: turned 69.65 deg of +70.00 deg, right way, drag agrees -> PASS
+  [GOLEM] SELFTEST chest (GOLEM)/lid_2: turned 69.99 deg of +70.00 deg, WRONG WAY, drag agrees -> FAIL
+  [GOLEM] DEMO self-test FAIL
+[orchestrator] Unity exited 1

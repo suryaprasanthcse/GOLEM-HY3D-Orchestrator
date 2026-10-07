@@ -1,0 +1,54 @@
+{
+  "source": "blueprint-a sweep + deepseek-v4.1-flash",
+  "name": "chest",
+  "splitter": "parts",
+  "parts": {
+    "part_00": "body",
+    "part_02": "body",
+    "part_01": "body",
+    "part_03": "body",
+    "part_05": "body",
+    "part_07": "body",
+    "part_08": "lid_1",
+    "part_09": "body",
+    "part_14": "body",
+    "part_10": "body",
+    "part_11": "body",
+    "part_04": "body",
+    "part_12": "body",
+    "part_13": "body",
+    "part_15": "body",
+    "part_16": "body",
+    "part_17": "body",
+    "part_18": "body",
+    "part_23": "body",
+    "part_19": "body",
+    "part_21": "body",
+    "part_22": "body",
+    "part_24": "door_1",
+    "part_06": "lid_2",
+    "part_20": "lid_2",
+    "part_25": "lid_2"
+  },
+  "joints": {
+    "lid_1": {
+      "type": "hinge",
+      "hinge": "top",
+      "opens": "back",
+      "limit_deg": 110.0
+    },
+    "door_1": {
+      "type": "hinge",
+      "hinge": "bottom",
+      "opens": "left",
+      "limit_deg": 110.0
+    },
+    "lid_2": {
+      "type": "hinge",
+      "hinge": "back",
+      "opens": "left",
+      "limit_deg": 87.5
+    }
+  },
+  "hinge_arms": true
+}

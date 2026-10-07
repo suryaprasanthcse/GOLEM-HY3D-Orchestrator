@@ -1,0 +1,318 @@
+
+==============================================================================
+  1/9  RAW: ..\golem_oct3\assets\raw\chest.glb
+==============================================================================
+
+==============================================================================
+  2/9  SPLIT: Tencent HY-3D-Component
+==============================================================================
+[orchestrator] reusing the completed HY-3D-Component job in C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\chest__tencent\component\job.json
+
+==============================================================================
+  3/9  SWEEP: candidates from geometry, collision-free range of every one (no model)
+==============================================================================
+chest__tencent_parts_light.glb: 20 groups, anchor part_00, 32.71 s
+  part_00      anchor ['part_00', 'part_02']
+  part_01      fixed  0/54  nodes ['part_01']
+  part_03      choose 11/54: hinge:right:front 120.00, hinge:bottom:left 92.17, hinge:top:left 120.00, hinge:top:front 120.00, hinge:back:left 120.00, hinge-arm:right:front 120.00 ...  nodes ['part_03']
+  part_05      choose 9/54: hinge:left:front 120.00, hinge:bottom:front 92.17, hinge:top:front 120.00, hinge:back:right 120.00, hinge-arm:left:front 120.00, hinge-arm:top:front 120.00 ...  nodes ['part_05']
+  part_07      choose 7/54: hinge:left:back 120.00, hinge:right:back 120.00, hinge:top:back 120.00, hinge-arm:left:back 120.00, hinge-arm:right:back 120.00, hinge-arm:top:back 120.00 ...  nodes ['part_07']
+  part_08      choose 8/54: hinge:left:back 120.00, hinge:right:back 120.00, hinge:bottom:back 115.20, hinge:top:back 120.00, hinge-arm:left:back 120.00, hinge-arm:right:back 120.00 ...  nodes ['part_08']
+  part_09      fixed  0/54  nodes ['part_09', 'part_14']
+  part_10      choose 11/54: hinge:left:top 120.00, hinge:left:front 120.00, hinge:bottom:right 120.00, hinge:bottom:back 120.00, hinge:bottom:front 120.00, hinge-arm:left:top 120.00 ...  nodes ['part_10']
+  part_11      fixed  0/54  nodes ['part_11']
+  part_12      choose 8/54: hinge:right:top 120.00, hinge:right:back 120.00, hinge:right:front 120.00, hinge:bottom:left 120.00, hinge-arm:right:top 120.00, hinge-arm:bottom:left 108.00 ...  nodes ['part_04', 'part_12']
+  part_13      choose 7/54: hinge:left:back 120.00, hinge:front:right 120.00, hinge-arm:left:back 120.00, hinge-arm:top:back 120.00, hinge-arm:front:right 120.00, slide:right 1.08 ...  nodes ['part_13']
+  part_15      choose 3/54: hinge:top:back 120.00, hinge:front:right 120.00, hinge-arm:front:right 120.00  nodes ['part_15']
+  part_16      fixed  0/54  nodes ['part_16']
+  part_17      fixed  0/54  nodes ['part_17']
+  part_18      fixed  0/54  nodes ['part_18', 'part_23']
+  part_19      fixed  0/54  nodes ['part_19']
+  part_21      choose 1/54: hinge:bottom:back 89.19  nodes ['part_21']
+  part_22      fixed  0/54  nodes ['part_22']
+  part_24      choose 1/54: hinge-arm:bottom:left 120.00  nodes ['part_24']
+  part_25      choose 9/54: hinge:left:front 120.00, hinge:right:front 120.00, hinge:bottom:front 120.00, hinge:top:front 120.00, hinge:back:left 87.48, hinge-arm:left:front 120.00 ...  nodes ['part_06', 'part_20', 'part_25']
+
+==============================================================================
+  4/9  TIE-BREAK: DeepSeek-V4.1-Flash on TokenHub, only between passed candidates
+==============================================================================
+[orchestrator] reusing decisions.json (decided by deepseek-v4.1-flash)
+  part_03    decoration    fixed                    Vertical riveted metal strap wrapping the front-left corner of the box body; it lies flush
+  part_05    decoration    fixed                    Riveted metal corner strap on the front-right corner running down the body edge and flush 
+  part_07    decoration    fixed                    Thin riveted metal base rail along the bottom rear edge of the chest, flush with the botto
+  part_08    lid           hinge:top:back           Front panel of the lid with the lock centred on it; the hinge runs along its top edge and 
+  part_10    fixed_panel   fixed                    Right side end cap of the lid; no handle or hinge seam, and it is reinforced with fixed me
+  part_12    fixed_panel   fixed                    Left side end cap of the lid; no handle or hinge seam, and it is reinforced with fixed met
+  part_13    decoration    fixed                    In the back-right view this is the small riveted metal corner bracket/strap sitting on the
+  part_15    fixed_panel   fixed                    In the back and back-right views this is the large wooden back/side panel of the body: it 
+  part_21    fixed_panel   fixed                    This is a thin flat board at the very bottom of the chest (lowest y, inside the four walls
+  part_24    door          hinge-arm:bottom:left    Side panel on the left side with a metal ring handle and a visible seam around it; no hing
+  part_25    lid           hinge:back:left          Front panel with a central latch/lock and a horizontal gap underneath; as the chest lid it
+
+==============================================================================
+  5/9  CHOICES: roles and joints from the sweep and the tie-break
+==============================================================================
+{
+ "parts": {
+  "part_00": "body",
+  "part_02": "body",
+  "part_01": "body",
+  "part_03": "body",
+  "part_05": "body",
+  "part_07": "body",
+  "part_08": "lid_1",
+  "part_09": "body",
+  "part_14": "body",
+  "part_10": "body",
+  "part_11": "body",
+  "part_04": "body",
+  "part_12": "body",
+  "part_13": "body",
+  "part_15": "body",
+  "part_16": "body",
+  "part_17": "body",
+  "part_18": "body",
+  "part_23": "body",
+  "part_19": "body",
+  "part_21": "body",
+  "part_22": "body",
+  "part_24": "door_1",
+  "part_06": "lid_2",
+  "part_20": "lid_2",
+  "part_25": "lid_2"
+ },
+ "joints": {
+  "lid_1": {
+   "type": "hinge",
+   "hinge": "top",
+   "opens": "back",
+   "limit_deg": 110.0
+  },
+  "door_1": {
+   "type": "hinge",
+   "hinge": "bottom",
+   "opens": "left",
+   "limit_deg": 110.0
+  },
+  "lid_2": {
+   "type": "hinge",
+   "hinge": "back",
+   "opens": "left",
+   "limit_deg": 87.5
+  }
+ }
+}
+
+==============================================================================
+  6/9  JOINTS: golem_auto.py -> golem_assemble.py (Blender)
+==============================================================================
+[golem] choices from blueprint-a sweep + deepseek-v4.1-flash: C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\chest__tencent\choices.json
+[golem] running: python C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\golem_assemble.py C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\chest__tencent\component\chest__tencent_parts_light.glb --out C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\chest__tencent\split --name chest --root part_00,part_02,part_01,part_03,part_05,part_07,part_09,part_14,part_10,part_11,part_04,part_12,part_13,part_15,part_16,part_17,part_18,part_23,part_19,part_21,part_22 --move lid_1=part_08:top:back:110.0 --move door_1=part_24:bottom:left:110.0 --move lid_2=part_06,part_20,part_25:back:left:87.5 --hinge-arms
+[golem] parts in chest__tencent_parts_light.glb: ['part_00', 'part_01', 'part_02', 'part_03', 'part_04', 'part_05', 'part_06', 'part_07', 'part_08', 'part_09', 'part_10', 'part_11', 'part_12', 'part_13', 'part_14', 'part_15', 'part_16', 'part_17', 'part_18', 'part_19', 'part_20', 'part_21', 'part_22', 'part_23', 'part_24', 'part_25']
+[golem] lid_1: nodes ['part_08'], hinge top, opens back, pivot [0.00536, 0.781338, -0.71331] axis [1.0, 0.0, 0.0] (glTF)
+[golem] lid_1: hinge arm {'barrel_radius': 0.051097, 'barrel_length': 0.875942, 'arm_height': 0.233584, 'arm_reach': 0.167212, 'door_face_behind_frame': 0.074176, 'colour': [0.8, 0.8, 0.8]}
+[golem] door_1: nodes ['part_24'], hinge bottom, opens left, pivot [-0.951389, -0.780324, 0.000913] axis [-0.0, -0.0, 1.0] (glTF)
+[golem] door_1: hinge arm {'barrel_radius': 0.031975, 'barrel_length': 0.548142, 'arm_height': 0.146171, 'arm_reach': 0.1495, 'door_face_behind_frame': 0.08007, 'colour': [0.8, 0.8, 0.8]}
+[golem] lid_2: nodes ['part_06', 'part_20', 'part_25'], hinge back, opens left, pivot [-0.951389, 0.01212, -0.71331] axis [0.0, -1.0, 0.0] (glTF)
+[golem] lid_2: hinge arm {'barrel_radius': 0.020114, 'barrel_length': 0.34482, 'arm_height': 0.091952, 'arm_reach': 0.043466, 'door_face_behind_frame': 0.233969, 'colour': [0.8, 0.8, 0.8]}
+[golem] wrote C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\chest__tencent\split\chest\chest_split.glb
+[golem] wrote C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\chest__tencent\split\chest\chest_joints.json
+[golem] wrote C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\chest__tencent\split\chest\chest_choices.json
+
+==============================================================================
+  7/9  PHYSICS: Unity 6.6 batch mode, PhysX drives across every joint, frames at 60 fps
+==============================================================================
+  [GOLEM] chest: 3 joint(s) built
+  [GOLEM] DEMO import: 1 prop(s) from C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\chest__tencent\split: chest (GOLEM): chest_split 1.80 kg, door_1 0.10 kg (RevoluteJoint, limits 0.0..110.0), lid_1 0.39 kg (RevoluteJo
+  [GOLEM] DEMO wrote 480 frames to C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\chest__tencent\frames
+  [GOLEM] SELFTEST chest (GOLEM)/door_1: turned 70.50 deg of +70.00 deg, right way, drag agrees -> PASS
+  [GOLEM] SELFTEST chest (GOLEM)/lid_1: turned 69.65 deg of +70.00 deg, right way, drag agrees -> PASS
+  [GOLEM] SELFTEST chest (GOLEM)/lid_2: turned 69.99 deg of +70.00 deg, WRONG WAY, drag agrees -> FAIL
+  [GOLEM] DEMO self-test FAIL
+[orchestrator] Unity exited 1: self-test FAIL; filming it anyway
+
+==============================================================================
+  8/9  VIDEO: FFmpeg
+==============================================================================
+
+==============================================================================
+  9/9  PROOF
+==============================================================================
+{
+  "split": {
+    "source": "tencent hy-3d-component",
+    "job_id": "1499472674684985344",
+    "submit_request_id": "63efb596-e406-4d68-a96b-7382b4fcd755",
+    "submit_headers": {
+      "X-Request-Id": "63efb596-e406-4d68-a96b-7382b4fcd755",
+      "X-Trace-Id": "63efb596e4064d68a96b7382b4fcd755"
+    },
+    "submitted": "2026-10-07T18:09:04Z",
+    "completed": "2026-10-07T18:13:03Z",
+    "polls": 21,
+    "files": [
+      {
+        "file": "chest__tencent_result_00.glb",
+        "bytes": 32810932,
+        "sha256": "a285800036493ba8f157d411879e92b0632fd1a8496aee6db2b727437caf91ec",
+        "nodes": 1,
+        "bounds": [
+          [
+            -0.877,
+            0.111,
+            -0.6365
+          ],
+          [
+            0.8755,
+            0.7337,
+            0.6222
+          ]
+        ],
+        "meshes": [
+          {
+            "node": "part_1",
+            "vertices": 820011,
+            "faces": 1640811,
+            "watertight": false,
+            "bounds": [
+              [
+                -0.877,
+                0.111,
+                -0.6365
+              ],
+              [
+                0.8755,
+                0.7337,
+                0.6222
+              ]
+            ],
+            "visual": "ColorVisuals",
+            "texture": false
+          }
+        ]
+      },
+      {
+        "file": "chest__tencent_result_01.glb",
+        "bytes": 2180988,
+        "sha256": "21d16afed55d9033cf8cbb673256c3ac9e2c53cadbc2c1bfc040e24c65d79b1f",
+        "nodes": 1,
+        "bounds": [
+          [
+            -0.5823,
+            0.1257,
+            -0.6392
+          ],
+          [
+            -0.4315,
+            0.7559,
+            0.6073
+          ]
+        ],
+        "meshes": [
+          {
+            "node": "part_9",
+            "vertices": 54498,
+            "faces": 109000,
+            "watertight": true,
+            "bounds": [
+              [
+                -0.5823,
+                0.1257,
+                -0.6392
+              ],
+              [
+                -0.4315,
+                0.7559,
+                0.6073
+              ]
+            ],
+            "visual": "ColorVisuals",
+            "texture": false
+          }
+        ]
+      },
+      {
+        "file": "chest__tencent_result_02.glb",
+        "bytes": 777604,
+        "sha256": "c4ddbd7ebbf547738dc4004f58e9d55bfb8201b060b5a7f5ff645f5180a077c0",
+        "nodes": 1,
+        "bounds": [
+          [
+            0.6956,
+            0.1414,
+            0.4234
+          ],
+          [
+            0.9258,
+            0.4024,
+            0.6458
+          ]
+        ],
+        "meshes": [
+          {
+            "node": "part_10",
+            "vertices": 19416,
+            "faces": 38828,
+            "watertight": true,
+            "bounds": [
+              [
+                0.6956,
+                0.1414,
+                0.4234
+              ],
+              [
+                0.9258,
+                0.4024,
+                0.6458
+              ]
+            ],
+            "visual": "ColorVisuals",
+            "texture": false
+          }
+        ]
+      },
+      {
+        "file": "chest__tencent_result_03.glb",
+        "bytes": 2769100,
+        "sha256": "27b689ed3c1ee3314c98461c2b79f3fc5317e8b2961d2822b8b9c90bdad450e0",
+        "nodes": 1,
+        "bounds": [
+          [
+            -0.9298,
+            -0.7803,
+            0.2301
+          ],
+          [
+            -0.684,
+            0.1349,
+            0.6515
+          ]
+        ],
+        "meshes": [
+          {
+            "node": "part_11",
+            "vertices": 69202,
+            "faces": 138404,
+            "watertight": true,
+            "bounds": [
+              [
+                -0.9298,
+                -0.7803,
+                0.2301
+              ],
+              [
+                -0.684,
+                0.1349,
+                0.6515
+              ]
+            ],
+            "visual": "ColorVisuals",
+            "texture": false
+          }
+        ]
+      },
+      {
+        "file": "chest
+
+[orchestrator] C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\chest__tencent\chest_articulation_demo.mp4
+[orchestrator] C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\chest__tencent\proof.json

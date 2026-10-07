@@ -1,0 +1,306 @@
+
+==============================================================================
+  1/9  RAW: ..\golem_oct3\assets\raw\filing_cabinet.glb
+==============================================================================
+
+==============================================================================
+  2/9  SPLIT: Tencent HY-3D-Component
+==============================================================================
+[orchestrator] reusing the completed HY-3D-Component job in C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\filing_cabinet__tencent\component\job.json
+
+==============================================================================
+  3/9  SWEEP: candidates from geometry, collision-free range of every one (no model)
+==============================================================================
+filing_cabinet__tencent_parts_light.glb: 11 groups, anchor part_05, 16.41 s
+  part_05      anchor ['part_05']
+  part_00      fixed  0/54  nodes ['part_00']
+  part_01      choose 10/54: hinge:left:front 120.00, hinge:right:front 120.00, hinge:bottom:front 120.00, hinge:top:front 120.00, hinge:back:right 96.28, hinge-arm:left:front 120.00 ...  nodes ['part_01']
+  part_02      choose 9/54: hinge:left:front 120.00, hinge:right:front 120.00, hinge:bottom:front 108.29, hinge:top:front 120.00, hinge-arm:left:front 120.00, hinge-arm:right:front 120.00 ...  nodes ['part_02']
+  part_03      choose 9/54: hinge:left:front 120.00, hinge:right:front 120.00, hinge:bottom:front 120.00, hinge:top:front 120.00, hinge-arm:left:front 120.00, hinge-arm:right:front 120.00 ...  nodes ['part_03']
+  part_04      choose 7/54: hinge:bottom:back 120.00, hinge:top:back 120.00, hinge-arm:left:back 120.00, hinge-arm:right:back 120.00, hinge-arm:bottom:back 93.18, hinge-arm:top:back 120.00 ...  nodes ['part_04']
+  part_06      choose 7/54: hinge:bottom:back 108.00, hinge:top:back 120.00, hinge-arm:left:back 120.00, hinge-arm:right:back 120.00, hinge-arm:bottom:back 96.47, hinge-arm:top:back 120.00 ...  nodes ['part_06']
+  part_07      choose 6/54: hinge:bottom:right 91.20, hinge:back:right 120.00, hinge:front:right 120.00, hinge-arm:back:right 120.00, hinge-arm:front:right 120.00, slide:right 0.76  nodes ['part_07']
+  part_08      choose 9/54: hinge:left:front 120.00, hinge:right:front 120.00, hinge:bottom:front 120.00, hinge:top:front 120.00, hinge-arm:left:front 120.00, hinge-arm:right:front 120.00 ...  nodes ['part_08']
+  part_09      choose 7/54: hinge:bottom:back 120.00, hinge:top:back 120.00, hinge-arm:left:back 120.00, hinge-arm:right:back 120.00, hinge-arm:bottom:back 91.67, hinge-arm:top:back 120.00 ...  nodes ['part_09']
+  part_10      fixed  0/54  nodes ['part_10']
+
+==============================================================================
+  4/9  TIE-BREAK: DeepSeek-V4.1-Flash on TokenHub, only between passed candidates
+==============================================================================
+[tiebreak] deepseek-v4.1-flash, parts ['part_01', 'part_02', 'part_03'] (1/3): accepted (19507 ms)
+[tiebreak] deepseek-v4.1-flash, parts ['part_04', 'part_06', 'part_07'] (2/3): refused: cut off at 32000 output tokens before answering (165529 ms)
+[tiebreak] hy4-preview, parts ['part_04', 'part_06', 'part_07'] (2/3): accepted (243796 ms)
+[tiebreak] deepseek-v4.1-flash, parts ['part_08', 'part_09'] (3/3): accepted (127394 ms)
+  part_01    drawer        slide:front              Top drawer front has a centered handle, no side hinges, and sits flush in the cabinet open
+  part_02    drawer        slide:front              Tall bottom drawer front has a centered handle, no hinge knuckles, and is set flush within
+  part_03    drawer        slide:front              Second drawer front has a centered handle, no hinge hardware, and the seam around it indic
+  part_04    drawer        slide:back               It is a wide (x), short (y), very thin (z) panel on the front face, stacked with the simil
+  part_06    drawer        slide:back               It is the lower wide, short, thin front panel (bottom drawer front), touching the base are
+  part_07    fixed_panel   fixed                    It is a large full-height and full-depth block on the right side that touches the carcass 
+  part_08    drawer        slide:front              This is a drawer front: a wide, shallow panel (0.885 x 0.385 x 0.07) set in the middle of 
+  part_09    fixed_panel   fixed                    This part is the thin (0.04), wide (0.88 x 0.24) panel flush in the cabinet's back at the 
+
+==============================================================================
+  5/9  CHOICES: roles and joints from the sweep and the tie-break
+==============================================================================
+{
+ "parts": {
+  "part_05": "body",
+  "part_00": "body",
+  "part_01": "drawer_1",
+  "part_02": "drawer_2",
+  "part_03": "drawer_3",
+  "part_04": "drawer_4",
+  "part_06": "drawer_5",
+  "part_07": "body",
+  "part_08": "drawer_6",
+  "part_09": "body",
+  "part_10": "body"
+ },
+ "joints": {
+  "drawer_1": {
+   "type": "slide",
+   "direction": "front"
+  },
+  "drawer_2": {
+   "type": "slide",
+   "direction": "front"
+  },
+  "drawer_3": {
+   "type": "slide",
+   "direction": "front"
+  },
+  "drawer_4": {
+   "type": "slide",
+   "direction": "back"
+  },
+  "drawer_5": {
+   "type": "slide",
+   "direction": "back"
+  },
+  "drawer_6": {
+   "type": "slide",
+   "direction": "front"
+  }
+ }
+}
+
+==============================================================================
+  6/9  JOINTS: golem_auto.py -> golem_assemble.py (Blender)
+==============================================================================
+[golem] choices from blueprint-a sweep + deepseek-v4.1-flash+hy4-preview: C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\filing_cabinet__tencent\choices.json
+[golem] running: python C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\golem_assemble.py C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\filing_cabinet__tencent\component\filing_cabinet__tencent_parts_light.glb --out C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\filing_cabinet__tencent\split --name filing_cabinet --root part_05,part_00,part_07,part_09,part_10 --slide drawer_1=part_01:front --slide drawer_2=part_02:front --slide drawer_3=part_03:front --slide drawer_4=part_04:back --slide drawer_5=part_06:back --slide drawer_6=part_08:front --drawer-boxes
+[golem] parts in filing_cabinet__tencent_parts_light.glb: ['part_00', 'part_01', 'part_02', 'part_03', 'part_04', 'part_05', 'part_06', 'part_07', 'part_08', 'part_09', 'part_10']
+[golem] drawer_1: nodes ['part_01'], slides front up to 0.711
+[golem] drawer_1: drawer box 0.996 x 0.408 x 0.888 deep, wall 0.0199, colour [0.8, 0.8, 0.8]
+[golem] drawer_2: nodes ['part_02'], slides front up to 0.711
+[golem] drawer_2: drawer box 0.970 x 0.728 x 0.888 deep, wall 0.0194, colour [0.8, 0.8, 0.8]
+[golem] drawer_3: nodes ['part_03'], slides front up to 0.711
+[golem] drawer_3: drawer box 0.970 x 0.317 x 0.888 deep, wall 0.0194, colour [0.8, 0.8, 0.8]
+[golem] drawer_4: nodes ['part_04'], slides back up to 0.711
+[golem] drawer_4: drawer box 0.945 x 0.355 x 0.888 deep, wall 0.0189, colour [0.8, 0.8, 0.8]
+[golem] drawer_5: nodes ['part_06'], slides back up to 0.711
+[golem] drawer_5: drawer box 0.940 x 0.416 x 0.888 deep, wall 0.0188, colour [0.8, 0.8, 0.8]
+[golem] drawer_6: nodes ['part_08'], slides front up to 0.711
+[golem] drawer_6: drawer box 0.965 x 0.584 x 0.888 deep, wall 0.0193, colour [0.8, 0.8, 0.8]
+[golem] wrote C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\filing_cabinet__tencent\split\filing_cabinet\filing_cabinet_split.glb
+[golem] wrote C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\filing_cabinet__tencent\split\filing_cabinet\filing_cabinet_joints.json
+[golem] wrote C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\filing_cabinet__tencent\split\filing_cabinet\filing_cabinet_choices.json
+
+==============================================================================
+  7/9  PHYSICS: Unity 6.6 batch mode, PhysX drives across every joint, frames at 60 fps
+==============================================================================
+  [GOLEM] filing_cabinet: 6 joint(s) built
+  [GOLEM] DEMO import: 1 prop(s) from C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\filing_cabinet__tencent\split: filing_cabinet (GOLEM): filing_cabinet_split 16.82 kg, drawer_1 1.66 kg (PrismaticJoint, limits 0.0..0.
+  [GOLEM] DEMO wrote 642 frames to C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\filing_cabinet__tencent\frames
+  [GOLEM] SELFTEST filing_cabinet (GOLEM)/drawer_1: slid 0.34 of +0.34, right way, drag agrees -> PASS
+  [GOLEM] SELFTEST filing_cabinet (GOLEM)/drawer_2: slid 0.34 of +0.34, right way, drag agrees -> PASS
+  [GOLEM] SELFTEST filing_cabinet (GOLEM)/drawer_3: slid 0.34 of +0.34, right way, drag agrees -> PASS
+  [GOLEM] SELFTEST filing_cabinet (GOLEM)/drawer_4: slid 0.34 of +0.34, right way, drag agrees -> PASS
+  [GOLEM] SELFTEST filing_cabinet (GOLEM)/drawer_5: slid 0.34 of +0.34, right way, drag agrees -> PASS
+  [GOLEM] SELFTEST filing_cabinet (GOLEM)/drawer_6: slid 0.34 of +0.34, right way, drag agrees -> PASS
+  [GOLEM] DEMO self-test PASS
+
+==============================================================================
+  8/9  VIDEO: FFmpeg
+==============================================================================
+
+==============================================================================
+  9/9  PROOF
+==============================================================================
+{
+  "split": {
+    "source": "tencent hy-3d-component",
+    "job_id": "1499458775675895808",
+    "submit_request_id": "94407bb2-45f3-485e-8058-79e424185cbc",
+    "submit_headers": {
+      "X-Request-Id": "94407bb2-45f3-485e-8058-79e424185cbc",
+      "X-Trace-Id": "94407bb245f3485e805879e424185cbc"
+    },
+    "submitted": "2026-10-07T17:13:50Z",
+    "completed": "2026-10-07T17:16:05Z",
+    "polls": 12,
+    "files": [
+      {
+        "file": "filing_cabinet__tencent_result_00.glb",
+        "bytes": 12054980,
+        "sha256": "99bdf0bb08f2f159466b5c9a8337f435b3a171b259acceeaacc4f085a0fb95d5",
+        "nodes": 1,
+        "bounds": [
+          [
+            -0.5347,
+            -0.936,
+            -0.6728
+          ],
+          [
+            0.5274,
+            -0.3985,
+            0.6984
+          ]
+        ],
+        "meshes": [
+          {
+            "node": "part_0",
+            "vertices": 301350,
+            "faces": 602696,
+            "watertight": true,
+            "bounds": [
+              [
+                -0.5347,
+                -0.936,
+                -0.6728
+              ],
+              [
+                0.5274,
+                -0.3985,
+                0.6984
+              ]
+            ],
+            "visual": "ColorVisuals",
+            "texture": false
+          }
+        ]
+      },
+      {
+        "file": "filing_cabinet__tencent_result_01.glb",
+        "bytes": 3530244,
+        "sha256": "471b44ea6ba160ead289d2c7fb3e01f4ca7a7dd84b5f19d7fed327cdd0d7e5fb",
+        "nodes": 1,
+        "bounds": [
+          [
+            -0.5372,
+            0.4259,
+            0.6078
+          ],
+          [
+            0.546,
+            0.9358,
+            0.7045
+          ]
+        ],
+        "meshes": [
+          {
+            "node": "part_1",
+            "vertices": 88232,
+            "faces": 176460,
+            "watertight": true,
+            "bounds": [
+              [
+                -0.5372,
+                0.4259,
+                0.6078
+              ],
+              [
+                0.546,
+                0.9358,
+                0.7045
+              ]
+            ],
+            "visual": "ColorVisuals",
+            "texture": false
+          }
+        ]
+      },
+      {
+        "file": "filing_cabinet__tencent_result_02.glb",
+        "bytes": 4280572,
+        "sha256": "1bfe8d2622783643e4ba6cfc638c97829d6ef52dc6d0914063048c37e3237a31",
+        "nodes": 1,
+        "bounds": [
+          [
+            -0.536,
+            -0.8166,
+            0.6061
+          ],
+          [
+            0.5185,
+            0.0931,
+            0.7055
+          ]
+        ],
+        "meshes": [
+          {
+            "node": "part_2",
+            "vertices": 106990,
+            "faces": 213976,
+            "watertight": true,
+            "bounds": [
+              [
+                -0.536,
+                -0.8166,
+                0.6061
+              ],
+              [
+                0.5185,
+                0.0931,
+                0.7055
+              ]
+            ],
+            "visual": "ColorVisuals",
+            "texture": false
+          }
+        ]
+      },
+      {
+        "file": "filing_cabinet__tencent_result_03.glb",
+        "bytes": 3028884,
+        "sha256": "960b5664cad8d2f0fd74c9e0d99b8898212cf7e7b90fa194f110b7470e4e9c80",
+        "nodes": 1,
+        "bounds": [
+          [
+            -0.5361,
+            0.1299,
+            0.6046
+          ],
+          [
+            0.5183,
+            0.5264,
+            0.7047
+          ]
+        ],
+        "meshes": [
+          {
+            "node": "part_4",
+            "vertices": 75698,
+            "faces": 151392,
+            "watertight": true,
+            "bounds": [
+              [
+                -0.5361,
+                0.1299,
+                0.6046
+              ],
+              [
+                0.5183,
+                0.5264,
+                0.7047
+              ]
+            ],
+            "visual": "ColorVisuals",
+            "texture": false
+          }
+        ]
+    
+
+[orchestrator] C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\filing_cabinet__tencent\filing_cabinet_articulation_demo.mp4
+[orchestrator] C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\filing_cabinet__tencent\proof.json

@@ -1,0 +1,24 @@
+{
+  "name": "vault_door",
+  "run": "vault_door__bang",
+  "started_utc": "2026-10-07T18:04:13Z",
+  "seconds": {
+    "sweep": 1.9,
+    "views": 4.0,
+    "tiebreak": 0.0
+  },
+  "fallbacks_used": [
+    "split by Hyper3D BANG, not Tencent HY-3D-Component (free-call budget)"
+  ],
+  "sha256": {
+    "raw_glb": "62987e800e7269aa9edb580eaa12e74dd68279241145ee69168b6856a6cb73df",
+    "parts_glb": "572d3699cfc63d1a7c3b5aa977e173d73664864802f3d099a36a1ecd2b05af74",
+    "choices": "e4df7e8450fd9484ca633967954b929761cb61d9e91ce73fd995484de689ea99"
+  },
+  "split": {
+    "source": "hyper3d bang (hackathon, 3 Oct 2026)",
+    "parts_glb": "vault_door_bang.glb"
+  },
+  "code_options_added": {},
+  "result": "no moving parts"
+}

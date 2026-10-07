@@ -1,6 +1,8 @@
 """Headless Blender helpers for the orchestrator (run by golem_tiebreak.py and run_orchestrator.py):
 
   blender -b --python tools/blender_tools.py -- fbx2glb IN.fbx OUT.glb
+  blender -b --python tools/blender_tools.py -- glb2fbx IN.glb OUT.fbx
+  blender -b --python tools/blender_tools.py -- decimate IN.glb OUT.glb MAX_FACES_PER_PART
   blender -b --python tools/blender_tools.py -- render PARTS.glb COLOURS.json OUT_DIR
 
 render writes four views: textured.png (the model as generated, from the front-left), and ids.png,
@@ -27,6 +29,32 @@ def fbx2glb(source: str, target: str):
     bpy.ops.import_scene.fbx(filepath=source)
     bpy.ops.export_scene.gltf(filepath=target, export_format="GLB")
     print(f"[blender] {source} -> {target}")
+
+
+def glb2fbx(source: str, target: str):
+    """For Tencent HY-3D-Component, whose only input is FBX; textures are embedded in the file."""
+    clear()
+    bpy.ops.import_scene.gltf(filepath=source)
+    bpy.ops.export_scene.fbx(filepath=str(Path(target).resolve()), path_mode="COPY", embed_textures=True)
+    print(f"[blender] {source} -> {target}")
+
+
+def decimate(source: str, target: str, max_faces: str):
+    """Collapse every part above max_faces down to about max_faces, keeping part names. Tencent
+    HY-3D-Component returns parts of up to ~1M faces, and PhysX spent over 12 minutes on one convex hull."""
+    clear()
+    bpy.ops.import_scene.gltf(filepath=source)
+    limit, depsgraph = int(max_faces), bpy.context.evaluated_depsgraph_get()
+    for o in [o for o in bpy.context.scene.objects if o.type == "MESH"]:
+        faces = len(o.data.polygons)
+        if faces > limit:
+            modifier = o.modifiers.new("decimate", "DECIMATE")
+            modifier.decimate_type, modifier.ratio = "COLLAPSE", limit / faces
+            depsgraph.update()
+            o.data = bpy.data.meshes.new_from_object(o.evaluated_get(depsgraph))
+            o.modifiers.clear()
+            print(f"[blender] {o.name}: {faces} -> {len(o.data.polygons)} faces")
+    bpy.ops.export_scene.gltf(filepath=str(Path(target).resolve()), export_format="GLB")
 
 
 def bounds(objects):
@@ -88,4 +116,4 @@ def render(parts: str, colours_path: str, out_dir: str):
 
 if __name__ == "__main__":
     args = sys.argv[sys.argv.index("--") + 1:]
-    {"fbx2glb": fbx2glb, "render": render}[args[0]](*args[1:])
+    {"fbx2glb": fbx2glb, "glb2fbx": glb2fbx, "decimate": decimate, "render": render}[args[0]](*args[1:])

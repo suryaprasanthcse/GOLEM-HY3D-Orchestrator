@@ -1,0 +1,4055 @@
+{
+  "name": "filing_cabinet",
+  "run": "filing_cabinet__tencent",
+  "started_utc": "2026-10-07T17:47:26Z",
+  "seconds": {
+    "sweep": 17.1,
+    "views": 8.0,
+    "tiebreak": 556.3,
+    "joints": 10.2,
+    "unity": 101.9,
+    "video": 3.0
+  },
+  "fallbacks_used": [
+    "tie-break decided by deepseek-v4.1-flash+hy4-preview"
+  ],
+  "sha256": {
+    "raw_fbx": "d4956edd9ad3968711f298af1f6c1bb5702f106474e61dbc72d3ad53f7ebbe5e",
+    "raw_glb": "b2754f6348644a65e013f2fc8d609df3c929b47337aadd4e318dcbe5230eb65d",
+    "parts_glb_from_tencent": "aedd8c55a090fe9f333a813b15ce16c3218445f715109ab0dd87cfa18c31f370",
+    "parts_glb": "1e3e15152d64ab312168114ae53a41e9bbf941cdac33b9655d7f6458c3928c8c",
+    "choices": "13a80430cb3cf177de9ab5a1f5e10c0492c40656adcbc7dcf439ca25465a2831",
+    "split_glb": "801befb65cd346b391899f7f155844ea8758f44f3f2e402e3b19af2175b5c9be",
+    "joints": "3075ccab15b62c7678179d66aa51fe716ee4d9031371c1b2f35934a8fe9e1154",
+    "video": "6731ccf80170e74a7be34fa7ad075fe169ecb928d11b3c6d789139e16461eeb7"
+  },
+  "hyper3d": null,
+  "mesh_simplified": {
+    "max_faces_per_part": 60000,
+    "tool": "Blender Decimate (collapse)",
+    "why": "Tencent's parts are up to ~1M faces; PhysX convex hulls stalled"
+  },
+  "split": {
+    "source": "tencent hy-3d-component",
+    "job_id": "1499458775675895808",
+    "submit_request_id": "94407bb2-45f3-485e-8058-79e424185cbc",
+    "submit_headers": {
+      "X-Request-Id": "94407bb2-45f3-485e-8058-79e424185cbc",
+      "X-Trace-Id": "94407bb245f3485e805879e424185cbc"
+    },
+    "submitted": "2026-10-07T17:13:50Z",
+    "completed": "2026-10-07T17:16:05Z",
+    "polls": 12,
+    "files": [
+      {
+        "file": "filing_cabinet__tencent_result_00.glb",
+        "bytes": 12054980,
+        "sha256": "99bdf0bb08f2f159466b5c9a8337f435b3a171b259acceeaacc4f085a0fb95d5",
+        "nodes": 1,
+        "bounds": [
+          [
+            -0.5347,
+            -0.936,
+            -0.6728
+          ],
+          [
+            0.5274,
+            -0.3985,
+            0.6984
+          ]
+        ],
+        "meshes": [
+          {
+            "node": "part_0",
+            "vertices": 301350,
+            "faces": 602696,
+            "watertight": true,
+            "bounds": [
+              [
+                -0.5347,
+                -0.936,
+                -0.6728
+              ],
+              [
+                0.5274,
+                -0.3985,
+                0.6984
+              ]
+            ],
+            "visual": "ColorVisuals",
+            "texture": false
+          }
+        ]
+      },
+      {
+        "file": "filing_cabinet__tencent_result_01.glb",
+        "bytes": 3530244,
+        "sha256": "471b44ea6ba160ead289d2c7fb3e01f4ca7a7dd84b5f19d7fed327cdd0d7e5fb",
+        "nodes": 1,
+        "bounds": [
+          [
+            -0.5372,
+            0.4259,
+            0.6078
+          ],
+          [
+            0.546,
+            0.9358,
+            0.7045
+          ]
+        ],
+        "meshes": [
+          {
+            "node": "part_1",
+            "vertices": 88232,
+            "faces": 176460,
+            "watertight": true,
+            "bounds": [
+              [
+                -0.5372,
+                0.4259,
+                0.6078
+              ],
+              [
+                0.546,
+                0.9358,
+                0.7045
+              ]
+            ],
+            "visual": "ColorVisuals",
+            "texture": false
+          }
+        ]
+      },
+      {
+        "file": "filing_cabinet__tencent_result_02.glb",
+        "bytes": 4280572,
+        "sha256": "1bfe8d2622783643e4ba6cfc638c97829d6ef52dc6d0914063048c37e3237a31",
+        "nodes": 1,
+        "bounds": [
+          [
+            -0.536,
+            -0.8166,
+            0.6061
+          ],
+          [
+            0.5185,
+            0.0931,
+            0.7055
+          ]
+        ],
+        "meshes": [
+          {
+            "node": "part_2",
+            "vertices": 106990,
+            "faces": 213976,
+            "watertight": true,
+            "bounds": [
+              [
+                -0.536,
+                -0.8166,
+                0.6061
+              ],
+              [
+                0.5185,
+                0.0931,
+                0.7055
+              ]
+            ],
+            "visual": "ColorVisuals",
+            "texture": false
+          }
+        ]
+      },
+      {
+        "file": "filing_cabinet__tencent_result_03.glb",
+        "bytes": 3028884,
+        "sha256": "960b5664cad8d2f0fd74c9e0d99b8898212cf7e7b90fa194f110b7470e4e9c80",
+        "nodes": 1,
+        "bounds": [
+          [
+            -0.5361,
+            0.1299,
+            0.6046
+          ],
+          [
+            0.5183,
+            0.5264,
+            0.7047
+          ]
+        ],
+        "meshes": [
+          {
+            "node": "part_4",
+            "vertices": 75698,
+            "faces": 151392,
+            "watertight": true,
+            "bounds": [
+              [
+                -0.5361,
+                0.1299,
+                0.6046
+              ],
+              [
+                0.5183,
+                0.5264,
+                0.7047
+              ]
+            ],
+            "visual": "ColorVisuals",
+            "texture": false
+          }
+        ]
+      },
+      {
+        "file": "filing_cabinet__tencent_result_04.glb",
+        "bytes": 3109172,
+        "sha256": "440574ea137ca995b75c3ad73682480fa38eff59cf1f9e825f89f386dc95f5c3",
+        "nodes": 1,
+        "bounds": [
+          [
+            -0.5308,
+            -0.3174,
+            -0.6633
+          ],
+          [
+            0.4965,
+            0.1269,
+            -0.6273
+          ]
+        ],
+        "meshes": [
+          {
+            "node": "part_6",
+            "vertices": 77705,
+            "faces": 155406,
+            "watertight": true,
+            "bounds": [
+              [
+                -0.5308,
+                -0.3174,
+                -0.6633
+              ],
+              [
+                0.4965,
+                0.1269,
+                -0.6273
+              ]
+            ],
+            "visual": "ColorVisuals",
+            "texture": false
+          }
+        ]
+      },
+      {
+        "file": "filing_cabinet__tencent_result_05.glb",
+        "bytes": 19698052,
+        "sha256": "22fda0a2f4a4c9010f071853bb16ede0fffc4d9b259bced24b108c9ac40a1c67",
+        "nodes": 1,
+        "bounds": [
+          [
+            -0.5925,
+            -0.9463,
+            -0.7125
+          ],
+          [
+            0.4906,
+            0.9515,
+            0.7088
+          ]
+        ],
+        "meshes": [
+          {
+            "node": "part_7",
+            "vertices": 492426,
+            "faces": 984851,
+            "watertight": false,
+            "bounds": [
+              [
+                -0.5925,
+                -0.9463,
+                -0.7125
+              ],
+              [
+                0.4906,
+                0.9515,
+                0.7088
+              ]
+            ],
+            "visual": "ColorVisuals",
+            "texture": false
+          }
+        ]
+      },
+      {
+        "file": "filing_cabinet__tencent_result_06.glb",
+        "bytes": 3551212,
+        "sha256": "6400badbe99b51a4b97e24969bfbf0394618fb7b74c58b03c2d00d850d7dd3a9",
+        "nodes": 1,
+        "bounds": [
+          [
+            -0.522,
+            -0.8159,
+            -0.6618
+          ],
+          [
+            0.5,
+            -0.2961,
+            -0.6248
+          ]
+        ],
+        "meshes": [
+          {
+            "node": "part_8",
+            "vertices": 88756,
+            "faces": 177508,
+            "watertight": true,
+            "bounds": [
+              [
+                -0.522,
+                -0.8159,
+                -0.6618
+              ],
+              [
+                0.5,
+                -0.2961,
+                -0.6248
+              ]
+            ],
+            "visual": "ColorVisuals",
+            "texture": false
+          }
+        ]
+      },
+      {
+        "file": "filing_cabinet__tencent_result_07.glb",
+        "bytes": 16811900,
+        "sha256": "9c82edb582a2e90fed73ec3108d594c99db0dc4881e0feacb63eacc713e2d611",
+        "nodes": 1,
+        "bounds": [
+          [
+            -0.1683,
+            -0.9411,
+            -0.7108
+          ],
+          [
+            0.593,
+            0.9515,
+            0.6549
+          ]
+        ],
+        "meshes": [
+          {
+            "node": "part_9",
+            "vertices": 420273,
+            "faces": 840542,
+            "watertight": true,
+            "bounds": [
+              [
+                -0.1683,
+                -0.9411,
+                -0.7108
+              ],
+              [
+                0.593,
+                0.9515,
+                0.6549
+              ]
+            ],
+            "visual": "ColorVisuals",
+            "texture": false
+          }
+        ]
+      },
+      {
+        "file": "filing_cabinet__tencent_result_08.glb",
+        "bytes": 3703932,
+        "sha256": "6b2a0ddab01d60181572f7d4fafd68a948d8c0a30bf337fe93a12e49d8b9e109",
+        "nodes": 1,
+        "bounds": [
+          [
+            -0.5363,
+            -0.3065,
+            0.6059
+          ],
+          [
+            0.5127,
+            0.4238,
+            0.7078
+          ]
+        ],
+        "meshes": [
+          {
+            "node": "part_3",
+            "vertices": 92573,
+            "faces": 185146,
+            "watertight": true,
+            "bounds": [
+              [
+                -0.5363,
+                -0.3065,
+                0.6059
+              ],
+              [
+                0.5127,
+                0.4238,
+                0.7078
+              ]
+            ],
+            "visual": "ColorVisuals",
+            "texture": false
+          }
+        ]
+      },
+      {
+        "file": "filing_cabinet__tencent_result_09.glb",
+        "bytes": 3128060,
+        "sha256": "b4d27223e1216ccd5715fe680a553027ad05007695fdd7c84edbad46e4cccca8",
+        "nodes": 1,
+        "bounds": [
+          [
+            -0.5331,
+            0.4274,
+            -0.6659
+          ],
+          [
+            0.5073,
+            0.8822,
+            -0.6097
+          ]
+        ],
+        "meshes": [
+          {
+            "node": "part_5",
+            "vertices": 78176,
+            "faces": 156352,
+            "watertight": true,
+            "bounds": [
+              [
+                -0.5331,
+                0.4274,
+                -0.6659
+              ],
+              [
+                0.5073,
+                0.8822,
+                -0.6097
+              ]
+            ],
+            "visual": "ColorVisuals",
+            "texture": false
+          }
+        ]
+      },
+      {
+        "file": "filing_cabinet__tencent_result_10.glb",
+        "bytes": 18331944,
+        "sha256": "7a8b30376ac832f98226fe46e27b70ae88fed4a7f03b02ef7e7a608a41439ec3",
+        "nodes": 1,
+        "bounds": [
+          [
+            -0.5853,
+            0.8735,
+            -0.6815
+          ],
+          [
+            0.5643,
+            0.9518,
+            0.7043
+          ]
+        ],
+        "meshes": [
+          {
+            "node": "part_10",
+            "vertices": 458274,
+            "faces": 916544,
+            "watertight": false,
+            "bounds": [
+              [
+                -0.5853,
+                0.8735,
+                -0.6815
+              ],
+              [
+                0.5643,
+                0.9518,
+                0.7043
+              ]
+            ],
+            "visual": "ColorVisuals",
+            "texture": false
+          }
+        ]
+      }
+    ],
+    "result_links": [
+      "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/94407bb2-45f3-485e-8058-79e424185cbc_1791393330_part_0.glb (+signed query)",
+      "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/94407bb2-45f3-485e-8058-79e424185cbc_1791393330_part_1.glb (+signed query)",
+      "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/94407bb2-45f3-485e-8058-79e424185cbc_1791393330_part_2.glb (+signed query)",
+      "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/94407bb2-45f3-485e-8058-79e424185cbc_1791393330_part_3.glb (+signed query)",
+      "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/94407bb2-45f3-485e-8058-79e424185cbc_1791393330_part_4.glb (+signed query)",
+      "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/94407bb2-45f3-485e-8058-79e424185cbc_1791393330_part_5.glb (+signed query)",
+      "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/94407bb2-45f3-485e-8058-79e424185cbc_1791393330_part_6.glb (+signed query)",
+      "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/94407bb2-45f3-485e-8058-79e424185cbc_1791393330_part_7.glb (+signed query)",
+      "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/94407bb2-45f3-485e-8058-79e424185cbc_1791393330_part_8.glb (+signed query)",
+      "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/94407bb2-45f3-485e-8058-79e424185cbc_1791393330_part_9.glb (+signed query)",
+      "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/94407bb2-45f3-485e-8058-79e424185cbc_1791393330_part_10.glb (+signed query)"
+    ]
+  },
+  "code_options_added": {
+    "drawer_boxes": true,
+    "size_m_and_density": "SIZES['filing_cabinet'] (code constants)"
+  },
+  "self_test": [
+    "[GOLEM] SELFTEST filing_cabinet (GOLEM)/drawer_1: slid 0.34 of +0.34, right way, drag agrees -> PASS",
+    "[GOLEM] SELFTEST filing_cabinet (GOLEM)/drawer_2: slid 0.34 of +0.34, right way, drag agrees -> PASS",
+    "[GOLEM] SELFTEST filing_cabinet (GOLEM)/drawer_3: slid 0.34 of +0.34, right way, drag agrees -> PASS",
+    "[GOLEM] SELFTEST filing_cabinet (GOLEM)/drawer_4: slid 0.34 of +0.34, right way, drag agrees -> PASS",
+    "[GOLEM] SELFTEST filing_cabinet (GOLEM)/drawer_5: slid 0.34 of +0.34, right way, drag agrees -> PASS",
+    "[GOLEM] SELFTEST filing_cabinet (GOLEM)/drawer_6: slid 0.34 of +0.34, right way, drag agrees -> PASS"
+  ],
+  "self_test_passed": true,
+  "video_frames": 642,
+  "tiebreak": {
+    "decided_by": "deepseek-v4.1-flash+hy4-preview",
+    "attempts": [
+      {
+        "model": "deepseek-v4.1-flash",
+        "http": 200,
+        "completion_id": "ad767f88-0383-43a6-bb48-34f12a3a1570",
+        "served_model": "deepseek-v4.1-flash",
+        "sent_utc": "2026-10-07T17:47:51Z",
+        "latency_ms": 19507,
+        "usage": {
+          "prompt_tokens": 2641,
+          "completion_tokens": 2298,
+          "total_tokens": 4939,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 2136
+          }
+        },
+        "finish_reason": "stop",
+        "response_headers": {
+          "X-Request-Id": "ad767f88-0383-43a6-bb48-34f12a3a1570",
+          "X-Trace-Id": "ad767f88038343a6bb4834f12a3a1570"
+        },
+        "accepted": true,
+        "problems": [],
+        "images": [
+          "textured.png",
+          "ids.png",
+          "ids_front.png",
+          "ids_back.png"
+        ]
+      },
+      {
+        "model": "deepseek-v4.1-flash",
+        "http": 200,
+        "completion_id": "1e9f1b22-023e-4d90-bbb2-8b60155398ef",
+        "served_model": "deepseek-v4.1-flash",
+        "sent_utc": "2026-10-07T17:48:11Z",
+        "latency_ms": 165529,
+        "usage": {
+          "prompt_tokens": 2616,
+          "completion_tokens": 32000,
+          "total_tokens": 34616,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 32000
+          }
+        },
+        "finish_reason": "length",
+        "response_headers": {
+          "X-Request-Id": "1e9f1b22-023e-4d90-bbb2-8b60155398ef",
+          "X-Trace-Id": "1e9f1b22023e4d90bbb28b60155398ef"
+        },
+        "accepted": false,
+        "problems": [
+          "cut off at 32000 output tokens before answering"
+        ],
+        "images": [
+          "textured.png",
+          "ids.png",
+          "ids_front.png",
+          "ids_back.png"
+        ]
+      },
+      {
+        "model": "hy4-preview",
+        "http": 200,
+        "completion_id": "82bfcc81-d07f-4829-8565-cde1e514a07c",
+        "served_model": "hy4-preview",
+        "sent_utc": "2026-10-07T17:50:56Z",
+        "latency_ms": 243796,
+        "usage": {
+          "prompt_tokens": 1049,
+          "completion_tokens": 20242,
+          "total_tokens": 21291,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 19949
+          }
+        },
+        "finish_reason": "stop",
+        "response_headers": {
+          "X-Request-Id": "82bfcc81-d07f-4829-8565-cde1e514a07c",
+          "X-Trace-Id": "82bfcc81d07f48298565cde1e514a07c"
+        },
+        "accepted": true,
+        "problems": [],
+        "images": []
+      },
+      {
+        "model": "deepseek-v4.1-flash",
+        "http": 200,
+        "completion_id": "1fbaff19-28c2-4ee6-8833-82c80b3e5777",
+        "served_model": "deepseek-v4.1-flash",
+        "sent_utc": "2026-10-07T17:55:00Z",
+        "latency_ms": 127394,
+        "usage": {
+          "prompt_tokens": 2401,
+          "completion_tokens": 21297,
+          "total_tokens": 23698,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 21004
+          }
+        },
+        "finish_reason": "stop",
+        "response_headers": {
+          "X-Request-Id": "1fbaff19-28c2-4ee6-8833-82c80b3e5777",
+          "X-Trace-Id": "1fbaff1928c24ee6883382c80b3e5777"
+        },
+        "accepted": true,
+        "problems": [],
+        "images": [
+          "textured.png",
+          "ids.png",
+          "ids_front.png",
+          "ids_back.png"
+        ]
+      }
+    ],
+    "decision": {
+      "body_material": "wood",
+      "parts": {
+        "part_01": {
+          "role": "drawer",
+          "material": "wood",
+          "choice": "slide:front",
+          "why": "Top drawer front has a centered handle, no side hinges, and sits flush in the cabinet opening with visible gaps; it pulls forward as a drawer.",
+          "by": "deepseek-v4.1-flash"
+        },
+        "part_02": {
+          "role": "drawer",
+          "material": "wood",
+          "choice": "slide:front",
+          "why": "Tall bottom drawer front has a centered handle, no hinge knuckles, and is set flush within the frame; it slides forward.",
+          "by": "deepseek-v4.1-flash"
+        },
+        "part_03": {
+          "role": "drawer",
+          "material": "wood",
+          "choice": "slide:front",
+          "why": "Second drawer front has a centered handle, no hinge hardware, and the seam around it indicates a sliding drawer rather than a hinged door.",
+          "by": "deepseek-v4.1-flash"
+        },
+        "part_04": {
+          "role": "drawer",
+          "material": "wood",
+          "choice": "slide:back",
+          "why": "It is a wide (x), short (y), very thin (z) panel on the front face, stacked with the similar magenta front below and another drawer front above, with gaps but no hinge hardware; it is one of the three",
+          "by": "hy4-preview"
+        },
+        "part_06": {
+          "role": "drawer",
+          "material": "wood",
+          "choice": "slide:back",
+          "why": "It is the lower wide, short, thin front panel (bottom drawer front), touching the base area and the middle drawer front above, with no hinge seams on its edges; it is a drawer front, so it must slide,",
+          "by": "hy4-preview"
+        },
+        "part_07": {
+          "role": "fixed_panel",
+          "material": "wood",
+          "choice": "fixed",
+          "why": "It is a large full-height and full-depth block on the right side that touches the carcass parts and both thin drawer fronts, with no thin door/drawer profile, no handle, and flush seams with the body;",
+          "by": "hy4-preview"
+        },
+        "part_08": {
+          "role": "drawer",
+          "material": "wood",
+          "choice": "slide:front",
+          "why": "This is a drawer front: a wide, shallow panel (0.885 x 0.385 x 0.07) set in the middle of the cabinet's front with a horizontal pull handle near its top edge and a seam gap all around it in the face f",
+          "by": "deepseek-v4.1-flash"
+        },
+        "part_09": {
+          "role": "fixed_panel",
+          "material": "wood",
+          "choice": "fixed",
+          "why": "This part is the thin (0.04), wide (0.88 x 0.24) panel flush in the cabinet's back at the top, level with the top of the cabinet. It has no handle, no pull, no hinge hardware and no seam or gap that w",
+          "by": "deepseek-v4.1-flash"
+        }
+      }
+    }
+  },
+  "sweep": {
+    "constants": {
+      "contact_reach": 0.005,
+      "contact_share": 0.01,
+      "bond_share": 0.2,
+      "attach_share": 0.35,
+      "sweep_reach": 0.01,
+      "hit_share": 0.002,
+      "hinge_test_deg": 120.0,
+      "hinge_min_deg": 75.0,
+      "slide_test_share": 0.6,
+      "slide_min_share": 0.5,
+      "face_share": 0.12,
+      "thin_share": 0.2,
+      "moving_samples": 3000,
+      "seed": 0
+    },
+    "reach": 0.02651,
+    "anchor": "part_05",
+    "matrix": {
+      "part_05": {
+        "nodes": [
+          "part_05"
+        ],
+        "decision": "fixed",
+        "candidates": {}
+      },
+      "part_00": {
+        "nodes": [
+          "part_00"
+        ],
+        "decision": "fixed",
+        "candidates": {
+          "hinge:left:bottom": {
+            "pass": false,
+            "free": 2.8235,
+            "unit": "deg",
+            "stopped_by": "floor"
+          },
+          "hinge:left:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge:left:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge:left:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge:right:bottom": {
+            "pass": false,
+            "free": 2.8235,
+            "unit": "deg",
+            "stopped_by": "floor"
+          },
+          "hinge:right:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge:right:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:right:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:bottom:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_06"
+          },
+          "hinge:bottom:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge:bottom:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge:bottom:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_06"
+          },
+          "hinge:top:left": {
+            "pass": false,
+            "free": 1.2903,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:top:right": {
+            "pass": false,
+            "free": 1.2766,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge:top:back": {
+            "pass": false,
+            "free": 2.069,
+            "unit": "deg",
+            "stopped_by": "floor"
+          },
+          "hinge:top:front": {
+            "pass": false,
+            "free": 2.069,
+            "unit": "deg",
+            "stopped_by": "floor"
+          },
+          "hinge:back:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:back:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge:back:bottom": {
+            "pass": false,
+            "free": 1.1009,
+            "unit": "deg",
+            "stopped_by": "floor"
+          },
+          "hinge:back:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge:front:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:front:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge:front:bottom": {
+            "pass": false,
+            "free": 1.1009,
+            "unit": "deg",
+            "stopped_by": "floor"
+          },
+          "hinge:front:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_06"
+          },
+          "hinge-arm:left:bottom": {
+            "pass": false,
+            "free": 2.6966,
+            "unit": "deg",
+            "stopped_by": "floor"
+          },
+          "hinge-arm:left:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:left:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:left:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:right:bottom": {
+            "pass": false,
+            "free": 2.9268,
+            "unit": "deg",
+            "stopped_by": "floor"
+          },
+          "hinge-arm:right:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:right:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:right:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:bottom:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_06"
+          },
+          "hinge-arm:bottom:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge-arm:bottom:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge-arm:bottom:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_06"
+          },
+          "hinge-arm:top:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:top:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:top:back": {
+            "pass": false,
+            "free": 1.9459,
+            "unit": "deg",
+            "stopped_by": "floor"
+          },
+          "hinge-arm:top:front": {
+            "pass": false,
+            "free": 1.9565,
+            "unit": "deg",
+            "stopped_by": "floor"
+          },
+          "hinge-arm:back:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:back:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:back:bottom": {
+            "pass": false,
+            "free": 1.0714,
+            "unit": "deg",
+            "stopped_by": "floor"
+          },
+          "hinge-arm:back:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_06"
+          },
+          "hinge-arm:front:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:front:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:front:bottom": {
+            "pass": false,
+            "free": 1.0909,
+            "unit": "deg",
+            "stopped_by": "floor"
+          },
+          "hinge-arm:front:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "slide:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_05"
+          },
+          "slide:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_07"
+          },
+          "slide:bottom": {
+            "pass": false,
+            "free": 0.0265,
+            "unit": "scene units",
+            "stopped_by": "floor"
+          },
+          "slide:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_02"
+          },
+          "slide:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_02"
+          },
+          "slide:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_06"
+          }
+        }
+      },
+      "part_01": {
+        "nodes": [
+          "part_01"
+        ],
+        "decision": "choose",
+        "candidates": {
+          "hinge:left:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_03"
+          },
+          "hinge:left:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge:left:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_03"
+          },
+          "hinge:left:front": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge:right:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_03"
+          },
+          "hinge:right:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge:right:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_03"
+          },
+          "hinge:right:front": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge:bottom:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge:bottom:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge:bottom:back": {
+            "pass": false,
+            "free": 9.0,
+            "unit": "deg",
+            "stopped_by": "part_03"
+          },
+          "hinge:bottom:front": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge:top:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_03"
+          },
+          "hinge:top:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_03"
+          },
+          "hinge:top:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_03"
+          },
+          "hinge:top:front": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge:back:left": {
+            "pass": false,
+            "free": 9.7674,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:back:right": {
+            "pass": true,
+            "free": 96.2791,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge:back:bottom": {
+            "pass": false,
+            "free": 96.0,
+            "unit": "deg",
+            "stopped_by": "not on the bottom face (on ['left', 'right', 'top', 'front'])"
+          },
+          "hinge:back:top": {
+            "pass": false,
+            "free": 10.5882,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge:front:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_03"
+          },
+          "hinge:front:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_03"
+          },
+          "hinge:front:bottom": {
+            "pass": false,
+            "free": 3.0,
+            "unit": "deg",
+            "stopped_by": "part_03"
+          },
+          "hinge:front:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_03"
+          },
+          "hinge-arm:left:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:left:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge-arm:left:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:left:front": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge-arm:right:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:right:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge-arm:right:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:right:front": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge-arm:bottom:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:bottom:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:bottom:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge-arm:bottom:front": {
+            "pass": true,
+            "free": 90.8108,
+            "unit": "deg",
+            "stopped_by": "floor"
+          },
+          "hinge-arm:top:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_03"
+          },
+          "hinge-arm:top:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_03"
+          },
+          "hinge-arm:top:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_03"
+          },
+          "hinge-arm:top:front": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge-arm:back:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:back:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:back:bottom": {
+            "pass": false,
+            "free": 46.7027,
+            "unit": "deg",
+            "stopped_by": "floor"
+          },
+          "hinge-arm:back:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge-arm:front:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_03"
+          },
+          "hinge-arm:front:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_03"
+          },
+          "hinge-arm:front:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_03"
+          },
+          "hinge-arm:front:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_03"
+          },
+          "slide:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_05"
+          },
+          "slide:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_07"
+          },
+          "slide:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_03"
+          },
+          "slide:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_10"
+          },
+          "slide:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_03"
+          },
+          "slide:front": {
+            "pass": true,
+            "free": 0.8528,
+            "unit": "scene units",
+            "stopped_by": null
+          }
+        }
+      },
+      "part_02": {
+        "nodes": [
+          "part_02"
+        ],
+        "decision": "choose",
+        "candidates": {
+          "hinge:left:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge:left:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_08"
+          },
+          "hinge:left:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge:left:front": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge:right:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge:right:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_08"
+          },
+          "hinge:right:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge:right:front": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge:bottom:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_08"
+          },
+          "hinge:bottom:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_08"
+          },
+          "hinge:bottom:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_08"
+          },
+          "hinge:bottom:front": {
+            "pass": true,
+            "free": 108.2927,
+            "unit": "deg",
+            "stopped_by": "floor"
+          },
+          "hinge:top:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge:top:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge:top:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge:top:front": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge:back:left": {
+            "pass": false,
+            "free": 8.7805,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:back:right": {
+            "pass": false,
+            "free": 24.878,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge:back:bottom": {
+            "pass": false,
+            "free": 15.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge:back:top": {
+            "pass": false,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": "not on the top face (on ['left', 'right', 'bottom', 'front'])"
+          },
+          "hinge:front:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge:front:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge:front:bottom": {
+            "pass": false,
+            "free": 8.7805,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge:front:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge-arm:left:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge-arm:left:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:left:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:left:front": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge-arm:right:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge-arm:right:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:right:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:right:front": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge-arm:bottom:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_08"
+          },
+          "hinge-arm:bottom:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_08"
+          },
+          "hinge-arm:bottom:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_08"
+          },
+          "hinge-arm:bottom:front": {
+            "pass": true,
+            "free": 94.1176,
+            "unit": "deg",
+            "stopped_by": "floor"
+          },
+          "hinge-arm:top:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:top:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:top:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge-arm:top:front": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge-arm:back:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:back:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:back:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge-arm:back:top": {
+            "pass": false,
+            "free": 0.678,
+            "unit": "deg",
+            "stopped_by": "part_08"
+          },
+          "hinge-arm:front:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge-arm:front:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge-arm:front:bottom": {
+            "pass": false,
+            "free": 2.3529,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge-arm:front:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "slide:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_05"
+          },
+          "slide:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_07"
+          },
+          "slide:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_00"
+          },
+          "slide:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_08"
+          },
+          "slide:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_00"
+          },
+          "slide:front": {
+            "pass": true,
+            "free": 0.8528,
+            "unit": "scene units",
+            "stopped_by": null
+          }
+        }
+      },
+      "part_03": {
+        "nodes": [
+          "part_03"
+        ],
+        "decision": "choose",
+        "candidates": {
+          "hinge:left:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_08"
+          },
+          "hinge:left:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge:left:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge:left:front": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge:right:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_08"
+          },
+          "hinge:right:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge:right:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge:right:front": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge:bottom:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge:bottom:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge:bottom:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge:bottom:front": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge:top:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_08"
+          },
+          "hinge:top:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_08"
+          },
+          "hinge:top:back": {
+            "pass": false,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": "not on the back face (on ['left', 'right', 'front'])"
+          },
+          "hinge:top:front": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge:back:left": {
+            "pass": false,
+            "free": 8.6747,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:back:right": {
+            "pass": false,
+            "free": 24.878,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge:back:bottom": {
+            "pass": false,
+            "free": 8.0,
+            "unit": "deg",
+            "stopped_by": "part_08"
+          },
+          "hinge:back:top": {
+            "pass": false,
+            "free": 8.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge:front:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge:front:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge:front:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge:front:top": {
+            "pass": false,
+            "free": 8.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge-arm:left:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:left:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge-arm:left:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:left:front": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge-arm:right:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_08"
+          },
+          "hinge-arm:right:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge-arm:right:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_08"
+          },
+          "hinge-arm:right:front": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge-arm:bottom:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:bottom:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:bottom:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge-arm:bottom:front": {
+            "pass": true,
+            "free": 90.7826,
+            "unit": "deg",
+            "stopped_by": "floor"
+          },
+          "hinge-arm:top:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_08"
+          },
+          "hinge-arm:top:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_08"
+          },
+          "hinge-arm:top:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_08"
+          },
+          "hinge-arm:top:front": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge-arm:back:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:back:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:back:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_08"
+          },
+          "hinge-arm:back:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge-arm:front:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge-arm:front:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge-arm:front:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge-arm:front:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "slide:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_05"
+          },
+          "slide:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_07"
+          },
+          "slide:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_08"
+          },
+          "slide:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_01"
+          },
+          "slide:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_01"
+          },
+          "slide:front": {
+            "pass": true,
+            "free": 0.8528,
+            "unit": "scene units",
+            "stopped_by": null
+          }
+        }
+      },
+      "part_04": {
+        "nodes": [
+          "part_04"
+        ],
+        "decision": "choose",
+        "candidates": {
+          "hinge:left:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_06"
+          },
+          "hinge:left:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:left:back": {
+            "pass": false,
+            "free": 44.4444,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:left:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_06"
+          },
+          "hinge:right:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_06"
+          },
+          "hinge:right:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:right:back": {
+            "pass": false,
+            "free": 56.2963,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge:right:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_06"
+          },
+          "hinge:bottom:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:bottom:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:bottom:back": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge:bottom:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:top:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_06"
+          },
+          "hinge:top:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_06"
+          },
+          "hinge:top:back": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge:top:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_06"
+          },
+          "hinge:back:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_06"
+          },
+          "hinge:back:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_06"
+          },
+          "hinge:back:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:back:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_06"
+          },
+          "hinge:front:left": {
+            "pass": false,
+            "free": 17.7778,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:front:right": {
+            "pass": false,
+            "free": 19.2593,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge:front:bottom": {
+            "pass": false,
+            "free": 24.0,
+            "unit": "deg",
+            "stopped_by": "part_06"
+          },
+          "hinge:front:top": {
+            "pass": false,
+            "free": 35.2941,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:left:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:left:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:left:back": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge-arm:left:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:right:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:right:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:right:back": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge-arm:right:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:bottom:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:bottom:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:bottom:back": {
+            "pass": true,
+            "free": 93.1765,
+            "unit": "deg",
+            "stopped_by": "floor"
+          },
+          "hinge-arm:bottom:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:top:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:top:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:top:back": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge-arm:top:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_06"
+          },
+          "hinge-arm:back:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_06"
+          },
+          "hinge-arm:back:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_06"
+          },
+          "hinge-arm:back:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_06"
+          },
+          "hinge-arm:back:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_06"
+          },
+          "hinge-arm:front:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:front:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:front:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_06"
+          },
+          "hinge-arm:front:top": {
+            "pass": false,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": "not on the top face (on ['left', 'right', 'back'])"
+          },
+          "slide:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_05"
+          },
+          "slide:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_07"
+          },
+          "slide:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_06"
+          },
+          "slide:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_05"
+          },
+          "slide:back": {
+            "pass": true,
+            "free": 0.8528,
+            "unit": "scene units",
+            "stopped_by": null
+          },
+          "slide:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_06"
+          }
+        }
+      },
+      "part_06": {
+        "nodes": [
+          "part_06"
+        ],
+        "decision": "choose",
+        "candidates": {
+          "hinge:left:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge:left:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_04"
+          },
+          "hinge:left:back": {
+            "pass": false,
+            "free": 48.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:left:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_04"
+          },
+          "hinge:right:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge:right:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_04"
+          },
+          "hinge:right:back": {
+            "pass": false,
+            "free": 49.5,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge:right:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_04"
+          },
+          "hinge:bottom:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_04"
+          },
+          "hinge:bottom:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_04"
+          },
+          "hinge:bottom:back": {
+            "pass": true,
+            "free": 108.0,
+            "unit": "deg",
+            "stopped_by": "floor"
+          },
+          "hinge:bottom:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_04"
+          },
+          "hinge:top:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge:top:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge:top:back": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge:top:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge:back:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_04"
+          },
+          "hinge:back:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_04"
+          },
+          "hinge:back:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_04"
+          },
+          "hinge:back:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge:front:left": {
+            "pass": false,
+            "free": 16.5,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:front:right": {
+            "pass": false,
+            "free": 16.5,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge:front:bottom": {
+            "pass": false,
+            "free": 24.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge:front:top": {
+            "pass": false,
+            "free": 24.0,
+            "unit": "deg",
+            "stopped_by": "part_04"
+          },
+          "hinge-arm:left:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge-arm:left:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:left:back": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge-arm:left:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:right:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge-arm:right:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:right:back": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge-arm:right:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:bottom:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_04"
+          },
+          "hinge-arm:bottom:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_04"
+          },
+          "hinge-arm:bottom:back": {
+            "pass": true,
+            "free": 96.4706,
+            "unit": "deg",
+            "stopped_by": "floor"
+          },
+          "hinge-arm:bottom:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_04"
+          },
+          "hinge-arm:top:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:top:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:top:back": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge-arm:top:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge-arm:back:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_04"
+          },
+          "hinge-arm:back:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_04"
+          },
+          "hinge-arm:back:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_04"
+          },
+          "hinge-arm:back:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_04"
+          },
+          "hinge-arm:front:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:front:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:front:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge-arm:front:top": {
+            "pass": false,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": "not on the top face (on ['left', 'right', 'bottom', 'back'])"
+          },
+          "slide:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_05"
+          },
+          "slide:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_07"
+          },
+          "slide:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_00"
+          },
+          "slide:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_04"
+          },
+          "slide:back": {
+            "pass": true,
+            "free": 0.8528,
+            "unit": "scene units",
+            "stopped_by": null
+          },
+          "slide:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_00"
+          }
+        }
+      },
+      "part_07": {
+        "nodes": [
+          "part_07"
+        ],
+        "decision": "choose",
+        "candidates": {
+          "hinge:left:bottom": {
+            "pass": false,
+            "free": 0.7453,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge:left:top": {
+            "pass": false,
+            "free": 0.7453,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge:left:back": {
+            "pass": false,
+            "free": 0.9677,
+            "unit": "deg",
+            "stopped_by": "part_06"
+          },
+          "hinge:left:front": {
+            "pass": false,
+            "free": 0.9756,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge:right:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge:right:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge:right:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge:right:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge:bottom:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge:bottom:right": {
+            "pass": true,
+            "free": 91.2,
+            "unit": "deg",
+            "stopped_by": "floor"
+          },
+          "hinge:bottom:back": {
+            "pass": false,
+            "free": 0.6522,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge:bottom:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge:top:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge:top:right": {
+            "pass": false,
+            "free": 8.8,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge:top:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_06"
+          },
+          "hinge:top:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge:back:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge:back:right": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge:back:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge:back:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge:front:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:front:right": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge:front:bottom": {
+            "pass": false,
+            "free": 0.6557,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge:front:top": {
+            "pass": false,
+            "free": 0.6557,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge-arm:left:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge-arm:left:top": {
+            "pass": false,
+            "free": 0.6818,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge-arm:left:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_06"
+          },
+          "hinge-arm:left:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge-arm:right:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge-arm:right:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge-arm:right:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge-arm:right:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge-arm:bottom:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge-arm:bottom:right": {
+            "pass": false,
+            "free": 24.0,
+            "unit": "deg",
+            "stopped_by": "floor"
+          },
+          "hinge-arm:bottom:back": {
+            "pass": false,
+            "free": 0.6522,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge-arm:bottom:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge-arm:top:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_06"
+          },
+          "hinge-arm:top:right": {
+            "pass": false,
+            "free": 19.2,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge-arm:top:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_06"
+          },
+          "hinge-arm:top:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge-arm:back:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge-arm:back:right": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge-arm:back:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge-arm:back:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_00"
+          },
+          "hinge-arm:front:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:front:right": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge-arm:front:bottom": {
+            "pass": false,
+            "free": 0.6452,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge-arm:front:top": {
+            "pass": false,
+            "free": 0.6452,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "slide:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_01"
+          },
+          "slide:right": {
+            "pass": true,
+            "free": 0.7614,
+            "unit": "scene units",
+            "stopped_by": null
+          },
+          "slide:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_10"
+          },
+          "slide:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_10"
+          },
+          "slide:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_05"
+          },
+          "slide:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_06"
+          }
+        }
+      },
+      "part_08": {
+        "nodes": [
+          "part_08"
+        ],
+        "decision": "choose",
+        "candidates": {
+          "hinge:left:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge:left:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_03"
+          },
+          "hinge:left:back": {
+            "pass": false,
+            "free": 1.4458,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge:left:front": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge:right:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge:right:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_03"
+          },
+          "hinge:right:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge:right:front": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge:bottom:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_03"
+          },
+          "hinge:bottom:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_03"
+          },
+          "hinge:bottom:back": {
+            "pass": false,
+            "free": 2.2642,
+            "unit": "deg",
+            "stopped_by": "part_03"
+          },
+          "hinge:bottom:front": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge:top:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge:top:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge:top:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge:top:front": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge:back:left": {
+            "pass": false,
+            "free": 8.6747,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge:back:right": {
+            "pass": false,
+            "free": 24.5783,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge:back:bottom": {
+            "pass": false,
+            "free": 9.0566,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge:back:top": {
+            "pass": false,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": "not on the top face (on ['left', 'right', 'front'])"
+          },
+          "hinge:front:left": {
+            "pass": false,
+            "free": 23.1325,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge:front:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge:front:bottom": {
+            "pass": false,
+            "free": 9.0566,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge:front:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge-arm:left:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge-arm:left:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:left:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:left:front": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge-arm:right:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge-arm:right:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge-arm:right:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge-arm:right:front": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge-arm:bottom:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_03"
+          },
+          "hinge-arm:bottom:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:bottom:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_03"
+          },
+          "hinge-arm:bottom:front": {
+            "pass": true,
+            "free": 91.1538,
+            "unit": "deg",
+            "stopped_by": "floor"
+          },
+          "hinge-arm:top:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge-arm:top:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:top:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge-arm:top:front": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge-arm:back:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge-arm:back:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:back:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge-arm:back:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_03"
+          },
+          "hinge-arm:front:left": {
+            "pass": false,
+            "free": 1.3793,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge-arm:front:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge-arm:front:bottom": {
+            "pass": false,
+            "free": 1.1538,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "hinge-arm:front:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_02"
+          },
+          "slide:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_02"
+          },
+          "slide:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_07"
+          },
+          "slide:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_02"
+          },
+          "slide:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_03"
+          },
+          "slide:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_02"
+          },
+          "slide:front": {
+            "pass": true,
+            "free": 0.8528,
+            "unit": "scene units",
+            "stopped_by": null
+          }
+        }
+      },
+      "part_09": {
+        "nodes": [
+          "part_09"
+        ],
+        "decision": "choose",
+        "candidates": {
+          "hinge:left:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:left:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge:left:back": {
+            "pass": false,
+            "free": 53.3333,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:left:front": {
+            "pass": false,
+            "free": 72.5926,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:right:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:right:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge:right:back": {
+            "pass": false,
+            "free": 48.2927,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge:right:front": {
+            "pass": false,
+            "free": 89.2683,
+            "unit": "deg",
+            "stopped_by": "not on the front face (on ['left', 'right', 'top', 'back'])"
+          },
+          "hinge:bottom:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge:bottom:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge:bottom:back": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge:bottom:front": {
+            "pass": false,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": "not on the front face (on ['left', 'right', 'top', 'back'])"
+          },
+          "hinge:top:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:top:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:top:back": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge:top:front": {
+            "pass": false,
+            "free": 70.5882,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge:back:left": {
+            "pass": false,
+            "free": 14.8148,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:back:right": {
+            "pass": false,
+            "free": 23.4146,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge:back:bottom": {
+            "pass": false,
+            "free": 13.7143,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:back:top": {
+            "pass": false,
+            "free": 13.7143,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge:front:left": {
+            "pass": false,
+            "free": 13.3333,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:front:right": {
+            "pass": false,
+            "free": 11.7073,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge:front:bottom": {
+            "pass": false,
+            "free": 20.5714,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:front:top": {
+            "pass": false,
+            "free": 10.5882,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge-arm:left:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:left:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge-arm:left:back": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge-arm:left:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:right:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:right:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge-arm:right:back": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge-arm:right:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:bottom:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:bottom:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:bottom:back": {
+            "pass": true,
+            "free": 91.6667,
+            "unit": "deg",
+            "stopped_by": "floor"
+          },
+          "hinge-arm:bottom:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge-arm:top:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:top:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:top:back": {
+            "pass": true,
+            "free": 120.0,
+            "unit": "deg",
+            "stopped_by": null
+          },
+          "hinge-arm:top:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:back:left": {
+            "pass": false,
+            "free": 6.9767,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:back:right": {
+            "pass": false,
+            "free": 11.8519,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:back:bottom": {
+            "pass": false,
+            "free": 45.0,
+            "unit": "deg",
+            "stopped_by": "part_03"
+          },
+          "hinge-arm:back:top": {
+            "pass": false,
+            "free": 6.0,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "hinge-arm:front:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:front:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:front:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:front:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_10"
+          },
+          "slide:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_05"
+          },
+          "slide:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_07"
+          },
+          "slide:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_05"
+          },
+          "slide:top": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_10"
+          },
+          "slide:back": {
+            "pass": true,
+            "free": 0.8528,
+            "unit": "scene units",
+            "stopped_by": null
+          },
+          "slide:front": {
+            "pass": false,
+            "free": 0.8528,
+            "unit": "scene units",
+            "stopped_by": "not on the front face (on ['left', 'right', 'top', 'back'])"
+          }
+        }
+      },
+      "part_10": {
+        "nodes": [
+          "part_10"
+        ],
+        "decision": "fixed",
+        "candidates": {
+          "hinge:left:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge:left:top": {
+            "pass": false,
+            "free": 2.6374,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge:left:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge:left:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge:right:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge:right:top": {
+            "pass": false,
+            "free": 2.6374,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:right:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:right:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:bottom:left": {
+            "pass": false,
+            "free": 2.6374,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge:bottom:right": {
+            "pass": false,
+            "free": 2.6374,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:bottom:back": {
+            "pass": false,
+            "free": 2.1818,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:bottom:front": {
+            "pass": false,
+            "free": 2.1818,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:top:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge:top:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge:top:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge:top:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_09"
+          },
+          "hinge:back:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:back:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge:back:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge:back:top": {
+            "pass": false,
+            "free": 2.1818,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:front:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge:front:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge:front:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_09"
+          },
+          "hinge:front:top": {
+            "pass": false,
+            "free": 2.1818,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:left:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:left:top": {
+            "pass": false,
+            "free": 2.6087,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:left:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:left:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:right:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:right:top": {
+            "pass": false,
+            "free": 2.8235,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:right:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:right:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:bottom:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:bottom:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:bottom:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_09"
+          },
+          "hinge-arm:bottom:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge-arm:top:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge-arm:top:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge-arm:top:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge-arm:top:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_09"
+          },
+          "hinge-arm:back:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:back:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:back:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_01"
+          },
+          "hinge-arm:back:top": {
+            "pass": false,
+            "free": 2.1429,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:front:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "hinge-arm:front:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_07"
+          },
+          "hinge-arm:front:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "deg",
+            "stopped_by": "part_09"
+          },
+          "hinge-arm:front:top": {
+            "pass": false,
+            "free": 2.1818,
+            "unit": "deg",
+            "stopped_by": "part_05"
+          },
+          "slide:left": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_05"
+          },
+          "slide:right": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_07"
+          },
+          "slide:bottom": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_01"
+          },
+          "slide:top": {
+            "pass": false,
+            "free": 0.0265,
+            "unit": "scene units",
+            "stopped_by": "part_05"
+          },
+          "slide:back": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_09"
+          },
+          "slide:front": {
+            "pass": false,
+            "free": 0.0,
+            "unit": "scene units",
+            "stopped_by": "part_01"
+          }
+        }
+      }
+    }
+  },
+  "chain": "raw model -> split (parts) -> sweep (pass/fail, free range) -> tie-break (pick among passed) -> choices -> Blender split + joints -> Unity PhysX self-test -> video",
+  "what_this_proves": "Each file's hash shows it hasn't changed since this run; the request ids identify the calls in Tencent's and Hyper3D's records. The hashes are written by the machine that ran the pipeline: they don't prove who ran it. fallbacks_used lists every step that didn't take the primary path."
+}

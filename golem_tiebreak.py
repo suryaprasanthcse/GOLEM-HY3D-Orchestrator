@@ -5,7 +5,8 @@ candidates the sweep passed, and tag its role and material. Nothing else: no num
                            [--model deepseek-v4.1-flash]
 
 A vision model on Tencent TokenHub sees the model textured, and its parts flat-coloured by group, with
-the list of parts and their passed candidates. Code checks the answer: every open part answered exactly
+the list of parts and their passed candidates, at most CHUNK parts per question (asked about ten parts at
+once, DeepSeek reasoned past its 32,000-token cap). Code checks the answer: every asked part answered exactly
 once; role and material from fixed lists; the choice is "fixed" or one of that part's passed candidates;
 the role agrees with the motion (a drawer slides, a door hinges). On an API error or a refused answer it
 falls back to hy4-preview with the same text but no images, then to a written convention that reads the
@@ -38,6 +39,7 @@ COLOURS = [("red", [0.9, 0.1, 0.1]), ("green", [0.1, 0.7, 0.1]), ("blue", [0.1, 
            ("pink", [1.0, 0.6, 0.7]), ("lime", [0.6, 1.0, 0.2]), ("navy", [0.1, 0.1, 0.45])]
 GREY = [0.55, 0.55, 0.55]
 MAX_TOKENS = 32000  # both models reason first; 8,000 ran out before any answer
+CHUNK = 3           # parts per question
 
 SYSTEM = """You decide which parts of a 3D game prop move, for a physics engine. Code has already tested
 every possible motion of every part for collisions; for each part listed you may only answer "fixed" or
@@ -83,13 +85,13 @@ def offered(group: dict) -> dict:
     return {i: c for i, c in passed.items() if not (c.get("arm") and i.replace("hinge-arm:", "hinge:") in passed)}
 
 
-def question(sweep: dict, names: dict, prompt: str) -> str:
+def question(sweep: dict, names: dict, prompt: str, only: set | None = None) -> str:
     return json.dumps({
         "generation_prompt": prompt,
         "parts": [{"part": g["group"], "colour": names[g["group"]], "centre": g["centre"], "size": g["size"],
                    "touches": g["touches"],
                    "candidates": [{"id": c["id"], "free": c["free"], "unit": c["unit"]} for c in offered(g).values()]}
-                  for g in open_parts(sweep)]})
+                  for g in open_parts(sweep) if only is None or g["group"] in only]})
 
 
 def ask(model: str, text: str, images: list[Path]) -> dict:
@@ -125,7 +127,7 @@ def ask(model: str, text: str, images: list[Path]) -> dict:
     return record
 
 
-def check(text: str, sweep: dict) -> tuple[dict | None, list[str]]:
+def check(text: str, sweep: dict, only: set | None = None) -> tuple[dict | None, list[str]]:
     fenced = re.fullmatch(r"```(?:json)?\s*(.*?)\s*```", text.strip(), re.S)
     try:
         answer = json.loads(fenced.group(1) if fenced else text)
@@ -133,7 +135,7 @@ def check(text: str, sweep: dict) -> tuple[dict | None, list[str]]:
         return None, [f"not JSON: {error}"]
     if not isinstance(answer, dict) or not isinstance(answer.get("parts"), dict):
         return None, ['no "parts" object']
-    problems, wanted = [], {g["group"]: g for g in open_parts(sweep)}
+    problems, wanted = [], {g["group"]: g for g in open_parts(sweep) if only is None or g["group"] in only}
     if set(answer) - {"body_material", "parts"}:
         problems.append(f"unknown keys {sorted(set(answer) - {'body_material', 'parts'})}")
     if answer.get("body_material") not in MATERIALS:
@@ -202,26 +204,38 @@ def decide(sweep: dict, views: Path, prompt: str, model: str) -> dict:
     nodes, names = colour_map(sweep)
     if not open_parts(sweep):
         return {"decided_by": "geometry", "attempts": [], "decision": {"body_material": "other", "parts": {}}}
-    text = question(sweep, names, prompt)
     images = [views / f for f in ("textured.png", "ids.png", "ids_front.png", "ids_back.png") if (views / f).exists()]
-    attempts = []
-    for name, imgs in ((model, images), ("hy4-preview", [])):
-        record = ask(name, text, imgs)
-        if "error" in record:
-            decision, problems = None, [record["error"]]
-        elif record.get("finish_reason") == "length":
-            decision, problems = None, [f"cut off at {MAX_TOKENS} output tokens before answering"]
-        else:
-            decision, problems = check(record.get("content", ""), sweep)
-        record.update(problems=problems, accepted=decision is not None)
-        attempts.append(record)
-        print(f"[tiebreak] {name}: {'accepted' if decision else 'refused: ' + '; '.join(problems)}"
-              f" ({record.get('latency_ms', '-')} ms)", flush=True)
-        if decision:
-            return {"decided_by": name, "question": json.loads(text), "colours": names, "attempts": attempts,
-                    "decision": decision}
-    return {"decided_by": "convention", "question": json.loads(text), "colours": names, "attempts": attempts,
-            "decision": convention(sweep, prompt)}
+    groups = [g["group"] for g in open_parts(sweep)]
+    # A few parts per question: one question about ten parts made DeepSeek reason past 32,000 tokens.
+    chunks = [set(groups[i:i + CHUNK]) for i in range(0, len(groups), CHUNK)]
+    attempts, parts, materials, deciders = [], {}, [], set()
+    for number, chunk in enumerate(chunks, 1):
+        text = question(sweep, names, prompt, chunk)
+        decision, decider = None, "convention"
+        for name, imgs in ((model, images), ("hy4-preview", [])):
+            record = ask(name, text, imgs)
+            if "error" in record:
+                decision, problems = None, [record["error"]]
+            elif record.get("finish_reason") == "length":
+                decision, problems = None, [f"cut off at {MAX_TOKENS} output tokens before answering"]
+            else:
+                decision, problems = check(record.get("content", ""), sweep, chunk)
+            record.update(chunk=sorted(chunk), problems=problems, accepted=decision is not None)
+            attempts.append(record)
+            print(f"[tiebreak] {name}, parts {sorted(chunk)} ({number}/{len(chunks)}): "
+                  f"{'accepted' if decision else 'refused: ' + '; '.join(problems)} ({record.get('latency_ms', '-')} ms)",
+                  flush=True)
+            if decision:
+                decider = name
+                break
+        if decision is None:
+            decision = {"body_material": None, "parts": {g: p for g, p in convention(sweep, prompt)["parts"].items()
+                                                            if g in chunk}}
+        parts.update({g: {**p, "by": decider} for g, p in decision["parts"].items()})
+        materials.append(decision["body_material"])
+        deciders.add(decider)
+    return {"decided_by": "+".join(sorted(deciders)), "chunk_size": CHUNK, "colours": names, "attempts": attempts,
+            "decision": {"body_material": next((m for m in materials if m), "other"), "parts": parts}}
 
 
 def main() -> int:

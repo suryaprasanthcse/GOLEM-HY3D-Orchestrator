@@ -1,0 +1,4 @@
+GOLEM-HY3D | chest | split: tencent hy-3d-component
+joints: geometric sweep + deepseek-v4.1-flash tie-break
+physics: Unity PhysX self-test FAIL
+choices sha256 c362fb8b427d0cbaffff814b

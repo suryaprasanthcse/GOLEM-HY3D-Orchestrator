@@ -42,6 +42,7 @@ FFMPEG = os.environ.get("GOLEM_FFMPEG") or shutil.which("ffmpeg") or os.path.exp
 FONT = "C\\:/Windows/Fonts/consola.ttf"
 FPS = 60
 HINGE_LIMIT_CAP = 110.0
+MAX_PART_FACES = 60000
 # Real-world size (largest dimension, m) and effective density (kg/m3 of the closed volume, standing in for
 # a hollow object) per asset: code constants, like golem_sizes.json. Mass = volume x density, in Unity.
 SIZES = {"microwave": (0.5, 300), "credenza": (1.6, 120), "refrigerator": (1.8, 80), "dumpster": (1.9, 70),
@@ -106,17 +107,25 @@ def choices_from(name: str, sweep: dict, tiebreak: dict) -> tuple[dict, dict]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("name")
+    parser.add_argument("name", help="the prop's name (golem_sizes.json and SIZES use it)")
+    parser.add_argument("--run", help="run folder under runs/ (default: NAME), to run one prop through several splitters")
     parser.add_argument("--split", choices=["component", "bang"])
     parser.add_argument("--glb", type=Path, help="a model already in parts (skips raw and split)")
+    parser.add_argument("--glb-source", default="given", help="where --glb came from, for proof.json")
+    parser.add_argument("--raw", type=Path, help="the single-piece model (default: assets/raw/NAME.glb)")
+    parser.add_argument("--fbx", type=Path, help="the FBX sent to HY-3D-Component (default: assets/raw/NAME.fbx)")
+    parser.add_argument("--fbx-url", help="its public URL (default: Hyper3D's link in assets/raw/NAME.job.json)")
     parser.add_argument("--prompt", help="generation prompt (default: from assets/raw/NAME.job.json)")
     parser.add_argument("--redo-tiebreak", action="store_true")
+    parser.add_argument("--reuse-unity", action="store_true",
+                        help="keep the last Unity frames and self-test, if they were made for the same choices")
     args = parser.parse_args()
     sys.stdout.reconfigure(errors="backslashreplace")
-    out = ROOT / "runs" / args.name
+    label = args.run or args.name
+    out = ROOT / "runs" / label
     out.mkdir(parents=True, exist_ok=True)
-    proof = {"name": args.name, "started_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "seconds": {},
-             "fallbacks_used": [], "sha256": {}}
+    proof = {"name": args.name, "run": label, "started_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+             "seconds": {}, "fallbacks_used": [], "sha256": {}}
     raw_dir = ROOT / "assets" / "raw"
     job_path = raw_dir / f"{args.name}.job.json"
     job = json.loads(job_path.read_text(encoding="utf-8")) if job_path.exists() else {}
@@ -125,12 +134,16 @@ def main() -> int:
     # 1-2. Raw model and parts.
     if args.glb:
         parts_glb = args.glb.resolve()
-        proof["split"] = {"source": "given", "parts_glb": str(parts_glb)}
+        proof["split"] = {"source": args.glb_source, "parts_glb": parts_glb.name}
+        proof["sha256"]["raw_glb"] = sha(args.raw) if args.raw else None
+        if "bang" in args.glb_source.lower():
+            proof["fallbacks_used"].append("split by Hyper3D BANG, not Tencent HY-3D-Component (free-call budget)")
     else:
-        banner(f"1/9  RAW: Hyper3D {job.get('generation_id', '?')}")
+        banner(f"1/9  RAW: {'Hyper3D ' + job['generation_id'] if job else args.raw}")
         proof["hyper3d"] = {k: job.get(k) for k in ("generation_id", "prompt", "tier", "format", "submitted_at",
-                                                     "downloaded_at")}
-        fbx, raw_glb = raw_dir / f"{args.name}.fbx", raw_dir / f"{args.name}.glb"
+                                                     "downloaded_at")} if job else None
+        fbx = args.fbx or raw_dir / f"{args.name}.fbx"
+        raw_glb = args.raw or raw_dir / f"{args.name}.glb"
         if fbx.exists() and not raw_glb.exists():
             code, proof["seconds"]["fbx_to_glb"] = run([BLENDER, "-b", "--python", ROOT / "tools" / "blender_tools.py",
                                                         "--", "fbx2glb", fbx, raw_glb], capture_output=True)
@@ -138,11 +151,32 @@ def main() -> int:
         banner(f"2/9  SPLIT: {'Tencent HY-3D-Component' if args.split == 'component' else 'Hyper3D BANG'}")
         if args.split == "component":
             component_job = out / "component" / "job.json"
-            command = [PY, ROOT / "hy3d_component_probe.py"] + (
-                ["resume", args.name] if component_job.exists() else ["submit", args.name, "--url", job["fbx_urls"][0]])
-            code, proof["seconds"]["split"] = run(command, cwd=ROOT)
+            url = args.fbx_url or job["fbx_urls"][0]
+            done = component_job.exists() and json.loads(component_job.read_text(encoding="utf-8")).get("completed_at") \
+                and (out / "component" / f"{label}_parts.glb").exists()
+            if done:  # the job is recorded and its parts are on disk: nothing to send or fetch again
+                code = 0
+                say(f"[orchestrator] reusing the completed HY-3D-Component job in {component_job}")
+            else:
+                command = [PY, ROOT / "hy3d_component_probe.py"] + (
+                    ["resume", label] if component_job.exists() else ["submit", label, "--url", url])
+                code, proof["seconds"]["split"] = run(command, cwd=ROOT)
+            if not component_job.exists():
+                say("[orchestrator] HY-3D-Component submit wasn't recorded")
+                return code or 1
             record = json.loads(component_job.read_text(encoding="utf-8"))
-            parts_glb = out / "component" / f"{args.name}_parts.glb"
+            parts_glb = out / "component" / f"{label}_parts.glb"
+            # Tencent's parts run to ~1M faces each; PhysX spent over 12 minutes on one convex hull. Code
+            # simplifies every part to at most MAX_PART_FACES before anything else reads it.
+            light = out / "component" / f"{label}_parts_light.glb"
+            if parts_glb.exists() and not light.exists():
+                code, proof["seconds"]["simplify"] = run([BLENDER, "-b", "--python", ROOT / "tools" / "blender_tools.py",
+                                                          "--", "decimate", parts_glb, light, MAX_PART_FACES],
+                                                         capture_output=True)
+            proof["sha256"]["parts_glb_from_tencent"] = sha(parts_glb)
+            proof["mesh_simplified"] = {"max_faces_per_part": MAX_PART_FACES, "tool": "Blender Decimate (collapse)",
+                                        "why": "Tencent's parts are up to ~1M faces; PhysX convex hulls stalled"}
+            parts_glb = light
             proof["split"] = {"source": "tencent hy-3d-component", "job_id": record["submit"]["body"].get("id"),
                               "submit_request_id": record["submit"]["body"].get("request_id"),
                               "submit_headers": record["submit"]["headers"], "submitted": record["submit"]["at"],
@@ -219,19 +253,30 @@ def main() -> int:
     # 7. Physics.
     banner("7/9  PHYSICS: Unity 6.6 batch mode, PhysX drives across every joint, frames at 60 fps")
     frames, unity_log = out / "frames", out / "unity.log"
-    code, proof["seconds"]["unity"] = run([UNITY, "-batchmode", "-projectPath", ROOT / "GolemUnity",
-                                           "-executeMethod", "Golem.EditorTools.GolemDemo.Run",
-                                           "-golemSplit", split_dir, "-golemFrames", frames, "-logFile", unity_log])
+    if args.reuse_unity and unity_log.exists() and any(frames.glob("frame_*.png")):
+        # The frames and self-test of the last run, for this same choices file (its hash is checked).
+        last = json.loads((out / "unity_inputs.json").read_text(encoding="utf-8")) if (out / "unity_inputs.json").exists() else {}
+        if last.get("choices") != proof["sha256"]["choices"]:
+            sys.exit("[orchestrator] --reuse-unity: the last Unity run was for different choices")
+        code = 0 if "DEMO self-test PASS" in unity_log.read_text(encoding="utf-8", errors="replace") else 1
+        proof["unity_reused_from_previous_run"] = True
+    else:
+        code, proof["seconds"]["unity"] = run([UNITY, "-batchmode", "-projectPath", ROOT / "GolemUnity",
+                                               "-executeMethod", "Golem.EditorTools.GolemDemo.Run",
+                                               "-golemSplit", split_dir, "-golemFrames", frames, "-logFile", unity_log])
+        (out / "unity_inputs.json").write_text(json.dumps({"choices": proof["sha256"]["choices"]}), encoding="utf-8")
     golem_lines = [l.strip() for l in unity_log.read_text(encoding="utf-8", errors="replace").splitlines()
                    if l.startswith("[GOLEM]")] if unity_log.exists() else []
     for line in golem_lines:
         say("  " + line[:220])
     proof["self_test"] = [l for l in golem_lines if "SELFTEST" in l]
     proof["self_test_passed"] = code == 0 and any("DEMO self-test PASS" in l for l in golem_lines)
-    if code:
-        say(f"[orchestrator] Unity exited {code}")
+    if code and not any(frames.glob("frame_*.png")):
+        say(f"[orchestrator] Unity exited {code} with no frames")
         (out / "proof.json").write_text(json.dumps(proof, indent=2), encoding="utf-8")
         return code
+    if code:  # a failed self-test still gets its video: it shows what the physics gate refused
+        say(f"[orchestrator] Unity exited {code}: self-test FAIL; filming it anyway")
 
     # 8. Video.
     banner("8/9  VIDEO: FFmpeg")

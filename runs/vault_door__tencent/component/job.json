@@ -1,0 +1,1248 @@
+{
+  "name": "vault_door__tencent",
+  "model": "hy-3d-component",
+  "endpoint": "https://tokenhub-intl.tencentcloudmaas.com/v1/api/3d/submit",
+  "input": "https://raw.githubusercontent.com/suryaprasanthcse/Golem-tencent-hy4-preview/main/inputs/vault_door.fbx",
+  "submit": {
+    "http": 200,
+    "ms": 2473,
+    "headers": {
+      "X-Request-Id": "1424e8c4-f863-45a5-8b21-80aaa4c73840",
+      "X-Trace-Id": "1424e8c4f86345a58b2180aaa4c73840"
+    },
+    "body": {
+      "id": "1499471492306501632",
+      "request_id": "1424e8c4-f863-45a5-8b21-80aaa4c73840",
+      "object": "3d_job",
+      "created_at": 1791396262,
+      "status": "queued"
+    },
+    "at": "2026-10-07T18:04:22Z"
+  },
+  "submitted_epoch": 1791396260.2913063,
+  "polls": 21,
+  "last_query": {
+    "http": 200,
+    "ms": 311,
+    "headers": {
+      "X-Request-Id": "9a4578d9-328c-4bd3-98d5-8cba8f078a56",
+      "X-Trace-Id": "9a4578d9328c4bd398d58cba8f078a56"
+    },
+    "body": {
+      "request_id": "9a4578d9-328c-4bd3-98d5-8cba8f078a56",
+      "object": "3d_job",
+      "created_at": 1791396470,
+      "completed_at": 1791396470,
+      "status": "completed",
+      "data": [
+        {
+          "type": "glb",
+          "url": "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_0.glb (+signed query)"
+        },
+        {
+          "type": "glb",
+          "url": "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_1.glb (+signed query)"
+        },
+        {
+          "type": "glb",
+          "url": "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_2.glb (+signed query)"
+        },
+        {
+          "type": "glb",
+          "url": "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_3.glb (+signed query)"
+        },
+        {
+          "type": "glb",
+          "url": "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_4.glb (+signed query)"
+        },
+        {
+          "type": "glb",
+          "url": "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_5.glb (+signed query)"
+        },
+        {
+          "type": "glb",
+          "url": "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_6.glb (+signed query)"
+        },
+        {
+          "type": "glb",
+          "url": "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_7.glb (+signed query)"
+        },
+        {
+          "type": "glb",
+          "url": "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_8.glb (+signed query)"
+        },
+        {
+          "type": "glb",
+          "url": "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_9.glb (+signed query)"
+        },
+        {
+          "type": "glb",
+          "url": "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_10.glb (+signed query)"
+        },
+        {
+          "type": "glb",
+          "url": "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_11.glb (+signed query)"
+        },
+        {
+          "type": "glb",
+          "url": "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_12.glb (+signed query)"
+        },
+        {
+          "type": "glb",
+          "url": "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_13.glb (+signed query)"
+        },
+        {
+          "type": "glb",
+          "url": "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_14.glb (+signed query)"
+        },
+        {
+          "type": "glb",
+          "url": "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_15.glb (+signed query)"
+        },
+        {
+          "type": "glb",
+          "url": "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_16.glb (+signed query)"
+        },
+        {
+          "type": "glb",
+          "url": "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_17.glb (+signed query)"
+        },
+        {
+          "type": "glb",
+          "url": "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_18.glb (+signed query)"
+        },
+        {
+          "type": "glb",
+          "url": "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_19.glb (+signed query)"
+        },
+        {
+          "type": "glb",
+          "url": "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_20.glb (+signed query)"
+        },
+        {
+          "type": "glb",
+          "url": "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_21.glb (+signed query)"
+        },
+        {
+          "type": "glb",
+          "url": "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_22.glb (+signed query)"
+        },
+        {
+          "type": "glb",
+          "url": "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_23.glb (+signed query)"
+        },
+        {
+          "type": "glb",
+          "url": "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_24.glb (+signed query)"
+        },
+        {
+          "type": "glb",
+          "url": "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_25.glb (+signed query)"
+        }
+      ]
+    },
+    "at": "2026-10-07T18:07:50Z"
+  },
+  "completed_at": "2026-10-07T18:08:16Z",
+  "files": [
+    {
+      "file": "vault_door__tencent_result_00.glb",
+      "bytes": 541968,
+      "sha256": "dbbbb01600f589cd3fb950c9a560ea9fce81271c498a953f419e54f904bf7dfa",
+      "nodes": 1,
+      "bounds": [
+        [
+          -0.6559,
+          -0.1336,
+          0.0265
+        ],
+        [
+          -0.2991,
+          0.0808,
+          0.1087
+        ]
+      ],
+      "meshes": [
+        {
+          "node": "part_11",
+          "vertices": 13525,
+          "faces": 27046,
+          "watertight": true,
+          "bounds": [
+            [
+              -0.6559,
+              -0.1336,
+              0.0265
+            ],
+            [
+              -0.2991,
+              0.0808,
+              0.1087
+            ]
+          ],
+          "visual": "ColorVisuals",
+          "texture": false
+        }
+      ]
+    },
+    {
+      "file": "vault_door__tencent_result_01.glb",
+      "bytes": 721376,
+      "sha256": "df0990e06d1607531e495f589d0102b4f472394533772009125ad6c4aa33ea59",
+      "nodes": 1,
+      "bounds": [
+        [
+          -0.5323,
+          0.0966,
+          0.0212
+        ],
+        [
+          -0.2039,
+          0.3791,
+          0.1252
+        ]
+      ],
+      "meshes": [
+        {
+          "node": "part_15",
+          "vertices": 18009,
+          "faces": 36018,
+          "watertight": true,
+          "bounds": [
+            [
+              -0.5323,
+              0.0966,
+              0.0212
+            ],
+            [
+              -0.2039,
+              0.3791,
+              0.1252
+            ]
+          ],
+          "visual": "ColorVisuals",
+          "texture": false
+        }
+      ]
+    },
+    {
+      "file": "vault_door__tencent_result_02.glb",
+      "bytes": 5580812,
+      "sha256": "333b338e5dfc64d2e35c6267ba3811725ca1c859c9a26ebbb71253809bc18520",
+      "nodes": 1,
+      "bounds": [
+        [
+          -0.2989,
+          -0.3857,
+          0.0781
+        ],
+        [
+          0.304,
+          0.2317,
+          0.2629
+        ]
+      ],
+      "meshes": [
+        {
+          "node": "part_4",
+          "vertices": 139460,
+          "faces": 279036,
+          "watertight": true,
+          "bounds": [
+            [
+              -0.2989,
+              -0.3857,
+              0.0781
+            ],
+            [
+              0.304,
+              0.2317,
+              0.2629
+            ]
+          ],
+          "visual": "ColorVisuals",
+          "texture": false
+        }
+      ]
+    },
+    {
+      "file": "vault_door__tencent_result_03.glb",
+      "bytes": 924056,
+      "sha256": "d2de561d9fbcb651e4674492aa152cb955160836219dbb38349e76016eca010c",
+      "nodes": 1,
+      "bounds": [
+        [
+          -0.1127,
+          -0.2145,
+          -0.2228
+        ],
+        [
+          0.1081,
+          0.0685,
+          -0.1263
+        ]
+      ],
+      "meshes": [
+        {
+          "node": "part_5",
+          "vertices": 23076,
+          "faces": 46152,
+          "watertight": true,
+          "bounds": [
+            [
+              -0.1127,
+              -0.2145,
+              -0.2228
+            ],
+            [
+              0.1081,
+              0.0685,
+              -0.1263
+            ]
+          ],
+          "visual": "ColorVisuals",
+          "texture": false
+        }
+      ]
+    },
+    {
+      "file": "vault_door__tencent_result_04.glb",
+      "bytes": 730492,
+      "sha256": "daa8b177897aff60d72f1b36d4df3cdef3bebf5f74d31f0527e1f1af131111a7",
+      "nodes": 1,
+      "bounds": [
+        [
+          -0.3282,
+          0.2115,
+          -0.0138
+        ],
+        [
+          -0.0929,
+          0.5409,
+          0.1015
+        ]
+      ],
+      "meshes": [
+        {
+          "node": "part_14",
+          "vertices": 18238,
+          "faces": 36472,
+          "watertight": true,
+          "bounds": [
+            [
+              -0.3282,
+              0.2115,
+              -0.0138
+            ],
+            [
+              -0.0929,
+              0.5409,
+              0.1015
+            ]
+          ],
+          "visual": "ColorVisuals",
+          "texture": false
+        }
+      ]
+    },
+    {
+      "file": "vault_door__tencent_result_05.glb",
+      "bytes": 649976,
+      "sha256": "62f0802b78ed1a3c2faf7afc05d0954b293f1618b404b4360a96fefe387ca9a1",
+      "nodes": 1,
+      "bounds": [
+        [
+          -0.5298,
+          0.1005,
+          -0.188
+        ],
+        [
+          -0.1671,
+          0.3641,
+          -0.0841
+        ]
+      ],
+      "meshes": [
+        {
+          "node": "part_17",
+          "vertices": 16224,
+          "faces": 32448,
+          "watertight": true,
+          "bounds": [
+            [
+              -0.5298,
+              0.1005,
+              -0.188
+            ],
+            [
+              -0.1671,
+              0.3641,
+              -0.0841
+            ]
+          ],
+          "visual": "ColorVisuals",
+          "texture": false
+        }
+      ]
+    },
+    {
+      "file": "vault_door__tencent_result_06.glb",
+      "bytes": 663772,
+      "sha256": "b17c452a251dacc8342b3c1f2b1ba72ff3fcac8ace2ea68218517932a31b9f54",
+      "nodes": 1,
+      "bounds": [
+        [
+          0.1635,
+          -0.4476,
+          -0.1876
+        ],
+        [
+          0.535,
+          -0.1455,
+          -0.0853
+        ]
+      ],
+      "meshes": [
+        {
+          "node": "part_20",
+          "vertices": 16570,
+          "faces": 33136,
+          "watertight": true,
+          "bounds": [
+            [
+              0.1635,
+              -0.4476,
+              -0.1876
+            ],
+            [
+              0.535,
+              -0.1455,
+              -0.0853
+            ]
+          ],
+          "visual": "ColorVisuals",
+          "texture": false
+        }
+      ]
+    },
+    {
+      "file": "vault_door__tencent_result_07.glb",
+      "bytes": 742532,
+      "sha256": "e78857d29e725e8bbcb569eb9c748a1369541e96eb8233189392c2ddd1c20b15",
+      "nodes": 1,
+      "bounds": [
+        [
+          0.1339,
+          0.059,
+          0.0181
+        ],
+        [
+          0.519,
+          0.3361,
+          0.1124
+        ]
+      ],
+      "meshes": [
+        {
+          "node": "part_13",
+          "vertices": 18538,
+          "faces": 37076,
+          "watertight": true,
+          "bounds": [
+            [
+              0.1339,
+              0.059,
+              0.0181
+            ],
+            [
+              0.519,
+              0.3361,
+              0.1124
+            ]
+          ],
+          "visual": "ColorVisuals",
+          "texture": false
+        }
+      ]
+    },
+    {
+      "file": "vault_door__tencent_result_08.glb",
+      "bytes": 2025252,
+      "sha256": "d9fd5710a1d55a59d34fbb4554a6124ccad39c141a4af32c99515bfc4d02e39e",
+      "nodes": 1,
+      "bounds": [
+        [
+          -0.9188,
+          -0.2428,
+          0.07
+        ],
+        [
+          0.1647,
+          0.8816,
+          0.1873
+        ]
+      ],
+      "meshes": [
+        {
+          "node": "part_0",
+          "vertices": 50607,
+          "faces": 101210,
+          "watertight": true,
+          "bounds": [
+            [
+              -0.9188,
+              -0.2428,
+              0.07
+            ],
+            [
+              0.1647,
+              0.8816,
+              0.1873
+            ]
+          ],
+          "visual": "ColorVisuals",
+          "texture": false
+        }
+      ]
+    },
+    {
+      "file": "vault_door__tencent_result_09.glb",
+      "bytes": 679208,
+      "sha256": "46dacfce032647caa00d628eb39952f28832dfb30872e9e86873fbab4126446b",
+      "nodes": 1,
+      "bounds": [
+        [
+          0.7028,
+          -0.2363,
+          0.1088
+        ],
+        [
+          0.8795,
+          0.0588,
+          0.3092
+        ]
+      ],
+      "meshes": [
+        {
+          "node": "part_3",
+          "vertices": 16955,
+          "faces": 33910,
+          "watertight": true,
+          "bounds": [
+            [
+              0.7028,
+              -0.2363,
+              0.1088
+            ],
+            [
+              0.8795,
+              0.0588,
+              0.3092
+            ]
+          ],
+          "visual": "ColorVisuals",
+          "texture": false
+        }
+      ]
+    },
+    {
+      "file": "vault_door__tencent_result_10.glb",
+      "bytes": 592700,
+      "sha256": "da1c60ff0f6cd800f90ccfe0515ab6babe908c63568af00891f647cfceafaff4",
+      "nodes": 1,
+      "bounds": [
+        [
+          -0.3312,
+          -0.6364,
+          0.0073
+        ],
+        [
+          -0.1097,
+          -0.3425,
+          0.1035
+        ]
+      ],
+      "meshes": [
+        {
+          "node": "part_9",
+          "vertices": 14792,
+          "faces": 29584,
+          "watertight": true,
+          "bounds": [
+            [
+              -0.3312,
+              -0.6364,
+              0.0073
+            ],
+            [
+              -0.1097,
+              -0.3425,
+              0.1035
+            ]
+          ],
+          "visual": "ColorVisuals",
+          "texture": false
+        }
+      ]
+    },
+    {
+      "file": "vault_door__tencent_result_11.glb",
+      "bytes": 21145704,
+      "sha256": "ca8260f2a421ff0ceb6e72813f71867f49f8e68ebe799d3f1646b5b59289f35e",
+      "nodes": 1,
+      "bounds": [
+        [
+          -0.8386,
+          -0.7692,
+          -0.1845
+        ],
+        [
+          0.7223,
+          0.7754,
+          0.1399
+        ]
+      ],
+      "meshes": [
+        {
+          "node": "part_19",
+          "vertices": 528624,
+          "faces": 1057224,
+          "watertight": false,
+          "bounds": [
+            [
+              -0.8386,
+              -0.7692,
+              -0.1845
+            ],
+            [
+              0.7223,
+              0.7754,
+              0.1399
+            ]
+          ],
+          "visual": "ColorVisuals",
+          "texture": false
+        }
+      ]
+    },
+    {
+      "file": "vault_door__tencent_result_12.glb",
+      "bytes": 524572,
+      "sha256": "32a891830f837561e415225f796574e5eda322473d978983a201b31a0a2adb12",
+      "nodes": 1,
+      "bounds": [
+        [
+          0.2111,
+          0.0441,
+          -0.1841
+        ],
+        [
+          0.5063,
+          0.3299,
+          -0.0839
+        ]
+      ],
+      "meshes": [
+        {
+          "node": "part_22",
+          "vertices": 13090,
+          "faces": 26176,
+          "watertight": true,
+          "bounds": [
+            [
+              0.2111,
+              0.0441,
+              -0.1841
+            ],
+            [
+              0.5063,
+              0.3299,
+              -0.0839
+            ]
+          ],
+          "visual": "ColorVisuals",
+          "texture": false
+        }
+      ]
+    },
+    {
+      "file": "vault_door__tencent_result_13.glb",
+      "bytes": 511372,
+      "sha256": "cc766ddee8ac4847c4619d5f0f6a2052d973cbfea7b6c961aa5c5ba5f42379f5",
+      "nodes": 1,
+      "bounds": [
+        [
+          -0.3289,
+          -0.6354,
+          -0.1571
+        ],
+        [
+          -0.1119,
+          -0.2908,
+          -0.0852
+        ]
+      ],
+      "meshes": [
+        {
+          "node": "part_23",
+          "vertices": 12760,
+          "faces": 25516,
+          "watertight": true,
+          "bounds": [
+            [
+              -0.3289,
+              -0.6354,
+              -0.1571
+            ],
+            [
+              -0.1119,
+              -0.2908,
+              -0.0852
+            ]
+          ],
+          "visual": "ColorVisuals",
+          "texture": false
+        }
+      ]
+    },
+    {
+      "file": "vault_door__tencent_result_14.glb",
+      "bytes": 494136,
+      "sha256": "5f384173dd62e5f3c5ff092d8165fde4b91bc1acb939711562518c646ff8fa62",
+      "nodes": 1,
+      "bounds": [
+        [
+          0.2744,
+          -0.1203,
+          0.0131
+        ],
+        [
+          0.6194,
+          0.0961,
+          0.1075
+        ]
+      ],
+      "meshes": [
+        {
+          "node": "part_6",
+          "vertices": 12328,
+          "faces": 24656,
+          "watertight": true,
+          "bounds": [
+            [
+              0.2744,
+              -0.1203,
+              0.0131
+            ],
+            [
+              0.6194,
+              0.0961,
+              0.1075
+            ]
+          ],
+          "visual": "ColorVisuals",
+          "texture": false
+        }
+      ]
+    },
+    {
+      "file": "vault_door__tencent_result_15.glb",
+      "bytes": 734316,
+      "sha256": "34266b0cfe1526cb32d24bb36775bed9a5bb58bad2a2117248a05879fdf7549d",
+      "nodes": 1,
+      "bounds": [
+        [
+          0.0772,
+          -0.6376,
+          0.0139
+        ],
+        [
+          0.298,
+          -0.2927,
+          0.1116
+        ]
+      ],
+      "meshes": [
+        {
+          "node": "part_10",
+          "vertices": 18330,
+          "faces": 36668,
+          "watertight": true,
+          "bounds": [
+            [
+              0.0772,
+              -0.6376,
+              0.0139
+            ],
+            [
+              0.298,
+              -0.2927,
+              0.1116
+            ]
+          ],
+          "visual": "ColorVisuals",
+          "texture": false
+        }
+      ]
+    },
+    {
+      "file": "vault_door__tencent_result_16.glb",
+      "bytes": 824860,
+      "sha256": "ebacd497e2ee4b4a04d345fd021f37f0f9e9841f38e924e079b49ca19a871c86",
+      "nodes": 1,
+      "bounds": [
+        [
+          -0.0616,
+          -0.6935,
+          -0.1583
+        ],
+        [
+          0.2892,
+          -0.3152,
+          -0.0863
+        ]
+      ],
+      "meshes": [
+        {
+          "node": "part_16",
+          "vertices": 20596,
+          "faces": 41192,
+          "watertight": true,
+          "bounds": [
+            [
+              -0.0616,
+              -0.6935,
+              -0.1583
+            ],
+            [
+              0.2892,
+              -0.3152,
+              -0.0863
+            ]
+          ],
+          "visual": "ColorVisuals",
+          "texture": false
+        }
+      ]
+    },
+    {
+      "file": "vault_door__tencent_result_17.glb",
+      "bytes": 8583196,
+      "sha256": "eaeee2b43913d6c8a304b81aff81b3f1e7a94c34ccedd23c29e6618648f1ace1",
+      "nodes": 1,
+      "bounds": [
+        [
+          -0.7269,
+          -0.7904,
+          -0.1864
+        ],
+        [
+          0.7147,
+          0.6552,
+          -0.0717
+        ]
+      ],
+      "meshes": [
+        {
+          "node": "part_18",
+          "vertices": 214523,
+          "faces": 429150,
+          "watertight": true,
+          "bounds": [
+            [
+              -0.7269,
+              -0.7904,
+              -0.1864
+            ],
+            [
+              0.7147,
+              0.6552,
+              -0.0717
+            ]
+          ],
+          "visual": "ColorVisuals",
+          "texture": false
+        }
+      ]
+    },
+    {
+      "file": "vault_door__tencent_result_18.glb",
+      "bytes": 3128888,
+      "sha256": "c6286d72fe59b2b9681b8f25b86c9c8105b70d0f4350cb69b18711e7b6aa9838",
+      "nodes": 1,
+      "bounds": [
+        [
+          -0.3307,
+          -0.3851,
+          -0.2107
+        ],
+        [
+          0.3305,
+          0.2311,
+          -0.1129
+        ]
+      ],
+      "meshes": [
+        {
+          "node": "part_21",
+          "vertices": 78193,
+          "faces": 156398,
+          "watertight": true,
+          "bounds": [
+            [
+              -0.3307,
+              -0.3851,
+              -0.2107
+            ],
+            [
+              0.3305,
+              0.2311,
+              -0.1129
+            ]
+          ],
+          "visual": "ColorVisuals",
+          "texture": false
+        }
+      ]
+    },
+    {
+      "file": "vault_door__tencent_result_19.glb",
+      "bytes": 306844,
+      "sha256": "d76c6f208028e2386c6812a312269b41f2519a7570ce4001d6e2bcbe76ceace0",
+      "nodes": 1,
+      "bounds": [
+        [
+          0.6756,
+          -0.2037,
+          0.0529
+        ],
+        [
+          0.7319,
+          0.0885,
+          0.1078
+        ]
+      ],
+      "meshes": [
+        {
+          "node": "part_24",
+          "vertices": 7647,
+          "faces": 15290,
+          "watertight": true,
+          "bounds": [
+            [
+              0.6756,
+              -0.2037,
+              0.0529
+            ],
+            [
+              0.7319,
+              0.0885,
+              0.1078
+            ]
+          ],
+          "visual": "ColorVisuals",
+          "texture": false
+        }
+      ]
+    },
+    {
+      "file": "vault_door__tencent_result_20.glb",
+      "bytes": 800732,
+      "sha256": "206c6e424f22d97fb6495d35040b7ff4bcbc7e02ea647a0ca7d68eded4eb7c54",
+      "nodes": 1,
+      "bounds": [
+        [
+          0.2982,
+          -0.3448,
+          -0.1634
+        ],
+        [
+          0.6155,
+          0.0274,
+          -0.0836
+        ]
+      ],
+      "meshes": [
+        {
+          "node": "part_25",
+          "vertices": 19994,
+          "faces": 39984,
+          "watertight": true,
+          "bounds": [
+            [
+              0.2982,
+              -0.3448,
+              -0.1634
+            ],
+            [
+              0.6155,
+              0.0274,
+              -0.0836
+            ]
+          ],
+          "visual": "ColorVisuals",
+          "texture": false
+        }
+      ]
+    },
+    {
+      "file": "vault_door__tencent_result_21.glb",
+      "bytes": 614812,
+      "sha256": "eafe497c1bbdc1f9b32f9fbcb2f990beef82cbacb43bf0d8fd29c649e8a22918",
+      "nodes": 1,
+      "bounds": [
+        [
+          0.645,
+          -0.2093,
+          0.1103
+        ],
+        [
+          0.7638,
+          0.1268,
+          0.2245
+        ]
+      ],
+      "meshes": [
+        {
+          "node": "part_12",
+          "vertices": 15346,
+          "faces": 30688,
+          "watertight": true,
+          "bounds": [
+            [
+              0.645,
+              -0.2093,
+              0.1103
+            ],
+            [
+              0.7638,
+              0.1268,
+              0.2245
+            ]
+          ],
+          "visual": "ColorVisuals",
+          "texture": false
+        }
+      ]
+    },
+    {
+      "file": "vault_door__tencent_result_22.glb",
+      "bytes": 26806796,
+      "sha256": "8bb8127ade7ff31a498da38adbe89148be16a21e3c9bc8c2eba3268615f4ca2e",
+      "nodes": 1,
+      "bounds": [
+        [
+          -0.9484,
+          -0.9089,
+          -0.3051
+        ],
+        [
+          0.9484,
+          0.9086,
+          0.2059
+        ]
+      ],
+      "meshes": [
+        {
+          "node": "part_1",
+          "vertices": 670144,
+          "faces": 1340289,
+          "watertight": false,
+          "bounds": [
+            [
+              -0.9484,
+              -0.9089,
+              -0.3051
+            ],
+            [
+              0.9484,
+              0.9086,
+              0.2059
+            ]
+          ],
+          "visual": "ColorVisuals",
+          "texture": false
+        }
+      ]
+    },
+    {
+      "file": "vault_door__tencent_result_23.glb",
+      "bytes": 828456,
+      "sha256": "9fa0cae8d7ff3ce7021a9480094c5c02eaf6e82a1d4b28b559e38b13a8d2dc7b",
+      "nodes": 1,
+      "bounds": [
+        [
+          0.1559,
+          -0.4546,
+          -0.0131
+        ],
+        [
+          0.5202,
+          -0.0936,
+          0.14
+        ]
+      ],
+      "meshes": [
+        {
+          "node": "part_2",
+          "vertices": 20686,
+          "faces": 41372,
+          "watertight": true,
+          "bounds": [
+            [
+              0.1559,
+              -0.4546,
+              -0.0131
+            ],
+            [
+              0.5202,
+              -0.0936,
+              0.14
+            ]
+          ],
+          "visual": "ColorVisuals",
+          "texture": false
+        }
+      ]
+    },
+    {
+      "file": "vault_door__tencent_result_24.glb",
+      "bytes": 980136,
+      "sha256": "26766b7f156ea47675fb2111a1f42772c0b3b596652d3abaf5faa0b05ae67d4b",
+      "nodes": 1,
+      "bounds": [
+        [
+          -0.3738,
+          -0.1697,
+          -0.1857
+        ],
+        [
+          0.0034,
+          0.526,
+          -0.0873
+        ]
+      ],
+      "meshes": [
+        {
+          "node": "part_7",
+          "vertices": 24478,
+          "faces": 48956,
+          "watertight": true,
+          "bounds": [
+            [
+              -0.3738,
+              -0.1697,
+              -0.1857
+            ],
+            [
+              0.0034,
+              0.526,
+              -0.0873
+            ]
+          ],
+          "visual": "ColorVisuals",
+          "texture": false
+        }
+      ]
+    },
+    {
+      "file": "vault_door__tencent_result_25.glb",
+      "bytes": 434648,
+      "sha256": "95f5d8fa8e5dd58bb1eda07118440564df4952761ddf3f27e7c2ddbd0a2e76cd",
+      "nodes": 1,
+      "bounds": [
+        [
+          -0.0696,
+          -0.6966,
+          -0.001
+        ],
+        [
+          0.0141,
+          -0.3802,
+          0.0852
+        ]
+      ],
+      "meshes": [
+        {
+          "node": "part_8",
+          "vertices": 10842,
+          "faces": 21680,
+          "watertight": true,
+          "bounds": [
+            [
+              -0.0696,
+              -0.6966,
+              -0.001
+            ],
+            [
+              0.0141,
+              -0.3802,
+              0.0852
+            ]
+          ],
+          "visual": "ColorVisuals",
+          "texture": false
+        }
+      ]
+    }
+  ],
+  "parts_glb": "vault_door__tencent_parts.glb",
+  "part_nodes": [
+    "part_00",
+    "part_01",
+    "part_02",
+    "part_03",
+    "part_04",
+    "part_05",
+    "part_06",
+    "part_07",
+    "part_08",
+    "part_09",
+    "part_10",
+    "part_11",
+    "part_12",
+    "part_13",
+    "part_14",
+    "part_15",
+    "part_16",
+    "part_17",
+    "part_18",
+    "part_19",
+    "part_20",
+    "part_21",
+    "part_22",
+    "part_23",
+    "part_24",
+    "part_25"
+  ],
+  "parts_sha256": "7cde91e4429ccc721444955c58df750c9b9e27b329ad29c958547f40897f2ba0",
+  "result_links": [
+    "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_0.glb (+signed query)",
+    "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_1.glb (+signed query)",
+    "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_2.glb (+signed query)",
+    "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_3.glb (+signed query)",
+    "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_4.glb (+signed query)",
+    "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_5.glb (+signed query)",
+    "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_6.glb (+signed query)",
+    "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_7.glb (+signed query)",
+    "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_8.glb (+signed query)",
+    "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_9.glb (+signed query)",
+    "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_10.glb (+signed query)",
+    "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_11.glb (+signed query)",
+    "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_12.glb (+signed query)",
+    "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_13.glb (+signed query)",
+    "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_14.glb (+signed query)",
+    "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_15.glb (+signed query)",
+    "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_16.glb (+signed query)",
+    "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_17.glb (+signed query)",
+    "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_18.glb (+signed query)",
+    "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_19.glb (+signed query)",
+    "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_20.glb (+signed query)",
+    "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_21.glb (+signed query)",
+    "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_22.glb (+signed query)",
+    "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_23.glb (+signed query)",
+    "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_24.glb (+signed query)",
+    "https://hunyuan-sg-1258344699.cos.ap-singapore.tencentcos.cn/3d/output/1499744624/1424e8c4-f863-45a5-8b21-80aaa4c73840_1791396443_part_25.glb (+signed query)"
+  ],
+  "seconds": 236.3
+}

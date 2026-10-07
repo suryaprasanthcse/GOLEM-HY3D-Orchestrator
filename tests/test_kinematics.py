@@ -81,8 +81,8 @@ class GroupingTest(unittest.TestCase):
     def test_overlapping_pieces_and_a_small_knob_move_as_one_group(self):
         groups = analyse({"body": box([1, 1, 1], [0, 0, 0]),
                           "door_a": box([0.6, 0.6, 0.05], [0, 0, 0.525]),
-                          "door_b": box([0.6, 0.6, 0.05], [0, 0, 0.54]),   # overlaps door_a
-                          "knob": box([0.06, 0.06, 0.06], [0.2, 0, 0.59])})  # on door_b's face
+                          "door_b": box([0.6, 0.6, 0.05], [0, 0, 0.53]),   # stacked on door_a, 5 mm apart
+                          "knob": box([0.06, 0.06, 0.06], [0.2, 0, 0.585])})  # on door_b's face
         moving = [g for g in groups.values() if not g["anchor"]]
         self.assertEqual(len(moving), 1)
         self.assertEqual(moving[0]["nodes"], ["door_a", "door_b", "knob"])

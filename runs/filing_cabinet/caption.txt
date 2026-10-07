@@ -1,4 +1,0 @@
-GOLEM-HY3D | filing_cabinet | split: given
-joints: geometric sweep + deepseek-v4.1-flash tie-break
-physics: Unity PhysX self-test PASS
-choices sha256 8aceb7f475b7c34fd187b4ab

@@ -55,3 +55,6 @@ runs/*/component/*.glb
 runs/*/component/*.fbx
 runs/unity_first_import.log
 runs/generate_unseen.log
+
+# HY-3D-Component inputs: public in the Golem-tencent-hy4-preview repo (inputs/), pinned by SHA-256 in proof.json
+inputs/*.fbx

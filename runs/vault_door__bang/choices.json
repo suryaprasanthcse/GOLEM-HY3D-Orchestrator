@@ -1,0 +1,12 @@
+{
+  "source": "blueprint-a sweep + geometry",
+  "name": "vault_door",
+  "splitter": "parts",
+  "parts": {
+    "root.5": "body",
+    "root.1": "body",
+    "root.12": "body",
+    "root.2": "body"
+  },
+  "joints": {}
+}

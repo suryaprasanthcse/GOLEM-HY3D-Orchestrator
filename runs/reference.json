@@ -1,0 +1,23 @@
+{
+  "note": "The artist's joints from the hackathon (golem_props.json in the hackathon repository): what a correct run should produce, independent of how the mesh was split. Sides are GOLEM's words in the glTF frame, as seen from the front.",
+  "props": {
+    "filing_cabinet": {
+      "joints": [
+        {"type": "slide", "direction": "front", "what": "drawer 1 (top)"},
+        {"type": "slide", "direction": "front", "what": "drawer 2"},
+        {"type": "slide", "direction": "front", "what": "drawer 3"},
+        {"type": "slide", "direction": "front", "what": "drawer 4 (bottom; carved out by hand at the hackathon, BANG left it fused)"}
+      ]
+    },
+    "vault_door": {
+      "joints": [
+        {"type": "hinge", "hinge": "left", "opens": "front", "what": "door (the artist chose left; nothing in the model says which side)"}
+      ]
+    },
+    "chest": {
+      "joints": [
+        {"type": "hinge", "hinge": "back", "opens": "top", "what": "lid"}
+      ]
+    }
+  }
+}

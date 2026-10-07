@@ -40,7 +40,7 @@ SIDES = {"left": (-1, 0, 0), "right": (1, 0, 0), "bottom": (0, -1, 0), "top": (0
          "back": (0, 0, -1), "front": (0, 0, 1)}
 CONTACT_REACH = 0.005   # touching at rest: within this share of the model's diagonal...
 CONTACT_SHARE = 0.01    # ...for at least this share of either part's samples
-BOND_SHARE = 0.1        # parts (not the anchor) this strongly in contact move together
+BOND_SHARE = 0.2        # parts (not the anchor) this strongly in contact move together (Tencent's adjacent drawer fronts: 0.13-0.15; one vault door in 3 pieces: 0.20-0.61)
 ATTACH_SHARE = 0.35     # a part this much smaller than a part it touches moves with it
 SWEEP_REACH = 0.01      # collision distance and largest step, as a share of the model's diagonal
 HIT_SHARE = 0.002       # share of a group's samples that must hit for the motion to stop

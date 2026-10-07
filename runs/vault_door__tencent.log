@@ -1,0 +1,133 @@
+
+==============================================================================
+  1/9  RAW: ..\golem_oct3\assets\raw\vault_door.glb
+==============================================================================
+
+==============================================================================
+  2/9  SPLIT: Tencent HY-3D-Component
+==============================================================================
+[component] vault_door__tencent: HTTP 200 in 2473 ms: {"id": "1499471492306501632", "request_id": "1424e8c4-f863-45a5-8b21-80aaa4c73840", "object": "3d_job", "created_at": 1791396262, "status": "queued"}
+[component] vault_door__tencent: in_progress (1983 ms)
+[component] vault_door__tencent: in_progress (270 ms)
+[component] vault_door__tencent: in_progress (278 ms)
+[component] vault_door__tencent: in_progress (276 ms)
+[component] vault_door__tencent: in_progress (238 ms)
+[component] vault_door__tencent: in_progress (271 ms)
+[component] vault_door__tencent: in_progress (257 ms)
+[component] vault_door__tencent: in_progress (255 ms)
+[component] vault_door__tencent: in_progress (285 ms)
+[component] vault_door__tencent: in_progress (273 ms)
+[component] vault_door__tencent: in_progress (727 ms)
+[component] vault_door__tencent: in_progress (258 ms)
+[component] vault_door__tencent: in_progress (549 ms)
+[component] vault_door__tencent: in_progress (252 ms)
+[component] vault_door__tencent: in_progress (279 ms)
+[component] vault_door__tencent: in_progress (255 ms)
+[component] vault_door__tencent: in_progress (316 ms)
+[component] vault_door__tencent: in_progress (238 ms)
+[component] vault_door__tencent: in_progress (274 ms)
+[component] vault_door__tencent: in_progress (289 ms)
+[component] vault_door__tencent: completed (311 ms)
+[component] vault_door__tencent: 26 file(s) in 236.3 s -> 26 part node(s)
+  vault_door__tencent_result_00.glb: 1 node(s), 529 KB
+    part_11: 13525 v, 27046 f, watertight True, texture False, bounds [[-0.6559, -0.1336, 0.0265], [-0.2991, 0.0808, 0.1087]]
+  vault_door__tencent_result_01.glb: 1 node(s), 704 KB
+    part_15: 18009 v, 36018 f, watertight True, texture False, bounds [[-0.5323, 0.0966, 0.0212], [-0.2039, 0.3791, 0.1252]]
+  vault_door__tencent_result_02.glb: 1 node(s), 5450 KB
+    part_4: 139460 v, 279036 f, watertight True, texture False, bounds [[-0.2989, -0.3857, 0.0781], [0.304, 0.2317, 0.2629]]
+  vault_door__tencent_result_03.glb: 1 node(s), 902 KB
+    part_5: 23076 v, 46152 f, watertight True, texture False, bounds [[-0.1127, -0.2145, -0.2228], [0.1081, 0.0685, -0.1263]]
+  vault_door__tencent_result_04.glb: 1 node(s), 713 KB
+    part_14: 18238 v, 36472 f, watertight True, texture False, bounds [[-0.3282, 0.2115, -0.0138], [-0.0929, 0.5409, 0.1015]]
+  vault_door__tencent_result_05.glb: 1 node(s), 634 KB
+    part_17: 16224 v, 32448 f, watertight True, texture False, bounds [[-0.5298, 0.1005, -0.188], [-0.1671, 0.3641, -0.0841]]
+  vault_door__tencent_result_06.glb: 1 node(s), 648 KB
+    part_20: 16570 v, 33136 f, watertight True, texture False, bounds [[0.1635, -0.4476, -0.1876], [0.535, -0.1455, -0.0853]]
+  vault_door__tencent_result_07.glb: 1 node(s), 725 KB
+    part_13: 18538 v, 37076 f, watertight True, texture False, bounds [[0.1339, 0.059, 0.0181], [0.519, 0.3361, 0.1124]]
+  vault_door__tencent_result_08.glb: 1 node(s), 1977 KB
+    part_0: 50607 v, 101210 f, watertight True, texture False, bounds [[-0.9188, -0.2428, 0.07], [0.1647, 0.8816, 0.1873]]
+  vault_door__tencent_result_09.glb: 1 node(s), 663 KB
+    part_3: 16955 v, 33910 f, watertight True, texture False, bounds [[0.7028, -0.2363, 0.1088], [0.8795, 0.0588, 0.3092]]
+  vault_door__tencent_result_10.glb: 1 node(s), 578 KB
+    part_9: 14792 v, 29584 f, watertight True, texture False, bounds [[-0.3312, -0.6364, 0.0073], [-0.1097, -0.3425, 0.1035]]
+  vault_door__tencent_result_11.glb: 1 node(s), 20650 KB
+    part_19: 528624 v, 1057224 f, watertight False, texture False, bounds [[-0.8386, -0.7692, -0.1845], [0.7223, 0.7754, 0.1399]]
+  vault_door__tencent_result_12.glb: 1 node(s), 512 KB
+    part_22: 13090 v, 26176 f, watertight True, texture False, bounds [[0.2111, 0.0441, -0.1841], [0.5063, 0.3299, -0.0839]]
+  vault_door__tencent_result_13.glb: 1 node(s), 499 KB
+    part_23: 12760 v, 25516 f, watertight True, texture False, bounds [[-0.3289, -0.6354, -0.1571], [-0.1119, -0.2908, -0.0852]]
+  vault_door__tencent_result_14.glb: 1 node(s), 482 KB
+    part_6: 12328 v, 24656 f, watertight True, texture False, bounds [[0.2744, -0.1203, 0.0131], [0.6194, 0.0961, 0.1075]]
+  vault_door__tencent_result_15.glb: 1 node(s), 717 KB
+    part_10: 18330 v, 36668 f, watertight True, texture False, bounds [[0.0772, -0.6376, 0.0139], [0.298, -0.2927, 0.1116]]
+  vault_door__tencent_result_16.glb: 1 node(s), 805 KB
+    part_16: 20596 v, 41192 f, watertight True, texture False, bounds [[-0.0616, -0.6935, -0.1583], [0.2892, -0.3152, -0.0863]]
+  vault_door__tencent_result_17.glb: 1 node(s), 8382 KB
+    part_18: 214523 v, 429150 f, watertight True, texture False, bounds [[-0.7269, -0.7904, -0.1864], [0.7147, 0.6552, -0.0717]]
+  vault_door__tencent_result_18.glb: 1 node(s), 3055 KB
+    part_21: 78193 v, 156398 f, watertight True, texture False, bounds [[-0.3307, -0.3851, -0.2107], [0.3305, 0.2311, -0.1129]]
+  vault_door__tencent_result_19.glb: 1 node(s), 299 KB
+    part_24: 7647 v, 15290 f, watertight True, texture False, bounds [[0.6756, -0.2037, 0.0529], [0.7319, 0.0885, 0.1078]]
+  vault_door__tencent_result_20.glb: 1 node(s), 781 KB
+    part_25: 19994 v, 39984 f, watertight True, texture False, bounds [[0.2982, -0.3448, -0.1634], [0.6155, 0.0274, -0.0836]]
+  vault_door__tencent_result_21.glb: 1 node(s), 600 KB
+    part_12: 15346 v, 30688 f, watertight True, texture False, bounds [[0.645, -0.2093, 0.1103], [0.7638, 0.1268, 0.2245]]
+  vault_door__tencent_result_22.glb: 1 node(s), 26178 KB
+    part_1: 670144 v, 1340289 f, watertight False, texture False, bounds [[-0.9484, -0.9089, -0.3051], [0.9484, 0.9086, 0.2059]]
+  vault_door__tencent_result_23.glb: 1 node(s), 809 KB
+    part_2: 20686 v, 41372 f, watertight True, texture False, bounds [[0.1559, -0.4546, -0.0131], [0.5202, -0.0936, 0.14]]
+  vault_door__tencent_result_24.glb: 1 node(s), 957 KB
+    part_7: 24478 v, 48956 f, watertight True, texture False, bounds [[-0.3738, -0.1697, -0.1857], [0.0034, 0.526, -0.0873]]
+  vault_door__tencent_result_25.glb: 1 node(s), 424 KB
+    part_8: 10842 v, 21680 f, watertight True, texture False, bounds [[-0.0696, -0.6966, -0.001], [0.0141, -0.3802, 0.0852]]
+
+==============================================================================
+  3/9  SWEEP: candidates from geometry, collision-free range of every one (no model)
+==============================================================================
+vault_door__tencent_parts_light.glb: 5 groups, anchor part_22, 8.71 s
+  part_22      anchor ['part_09', 'part_21', 'part_22']
+  part_02      fixed  0/54  nodes ['part_02']
+  part_08      fixed  0/54  nodes ['part_08']
+  part_11      fixed  0/54  nodes ['part_00', 'part_01', 'part_04', 'part_05', 'part_06', 'part_07', 'part_10', 'part_11', 'part_12', 'part_13', 'part_14', 'part_15', 'part_16', 'part_17', 'part_19', 'part_20', 'part_23', 'part_24', 'part_25']
+  part_18      fixed  0/54  nodes ['part_03', 'part_18']
+
+==============================================================================
+  4/9  TIE-BREAK: DeepSeek-V4.1-Flash on TokenHub, only between passed candidates
+==============================================================================
+
+==============================================================================
+  5/9  CHOICES: roles and joints from the sweep and the tie-break
+==============================================================================
+{
+ "parts": {
+  "part_09": "body",
+  "part_21": "body",
+  "part_22": "body",
+  "part_02": "body",
+  "part_08": "body",
+  "part_00": "body",
+  "part_01": "body",
+  "part_04": "body",
+  "part_05": "body",
+  "part_06": "body",
+  "part_07": "body",
+  "part_10": "body",
+  "part_11": "body",
+  "part_12": "body",
+  "part_13": "body",
+  "part_14": "body",
+  "part_15": "body",
+  "part_16": "body",
+  "part_17": "body",
+  "part_19": "body",
+  "part_20": "body",
+  "part_23": "body",
+  "part_24": "body",
+  "part_25": "body",
+  "part_03": "body",
+  "part_18": "body"
+ },
+ "joints": {}
+}
+[orchestrator] nothing moves: no joints to build

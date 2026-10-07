@@ -1,0 +1,124 @@
+
+==============================================================================
+  3/9  SWEEP: candidates from geometry, collision-free range of every one (no model)
+==============================================================================
+filing_cabinet_bang.glb: 8 groups, anchor root.7, 9.27 s
+  root.7       anchor ['root.7']
+  root.1       choose 9/54: hinge:left:front 120.00, hinge:right:front 120.00, hinge:bottom:front 120.00, hinge:top:front 120.00, hinge-arm:left:front 120.00, hinge-arm:right:front 120.00 ...  nodes ['root.1']
+  root.2       choose 2/54: hinge:back:left 85.93, hinge:back:right 85.93  nodes ['root.2']
+  root.3       choose 8/54: hinge:left:back 96.00, hinge:bottom:back 111.43, hinge:top:back 85.71, hinge-arm:left:back 120.00, hinge-arm:right:back 120.00, hinge-arm:bottom:back 92.31 ...  nodes ['root.3']
+  root.4       choose 9/54: hinge:left:front 120.00, hinge:right:front 120.00, hinge:bottom:front 120.00, hinge:top:front 120.00, hinge-arm:left:front 120.00, hinge-arm:right:front 120.00 ...  nodes ['root.4']
+  root.5       fixed  0/54  nodes ['root.0', 'root.5']
+  root.6       choose 8/54: hinge:left:back 80.00, hinge:bottom:back 120.00, hinge:top:back 120.00, hinge-arm:left:back 120.00, hinge-arm:right:back 120.00, hinge-arm:bottom:back 93.79 ...  nodes ['root.6']
+  root.8       choose 9/54: hinge:left:front 120.00, hinge:right:front 120.00, hinge:bottom:front 120.00, hinge:top:front 120.00, hinge-arm:left:front 120.00, hinge-arm:right:front 120.00 ...  nodes ['root.8']
+
+==============================================================================
+  4/9  TIE-BREAK: DeepSeek-V4.1-Flash on TokenHub, only between passed candidates
+==============================================================================
+[tiebreak] deepseek-v4.1-flash, parts ['root.1', 'root.2', 'root.3'] (1/2): accepted (153454 ms)
+[tiebreak] deepseek-v4.1-flash, parts ['root.4', 'root.6', 'root.8'] (2/2): accepted (96000 ms)
+  root.1     drawer        slide:front              Front panel has a centred handle and sits in a rectangular opening with even gaps; no hing
+  root.2     fixed_panel   fixed                    Flush back panel with no handle, hinge line, or seam indicating opening; it is a fixed par
+  root.3     fixed_panel   fixed                    Flush upper back panel with no handle or visible hinge hardware; it is a fixed part of the
+  root.4     drawer        slide:front              Rectangular top drawer front with a centered metal bar handle; sits in an opening with vis
+  root.6     fixed_panel   fixed                    Flat lower rear panel flush with the back of the cabinet; no handle, no visible hinges, tr
+  root.8     drawer        slide:front              Middle drawer front with a centered metal bar handle; same construction as the top drawer,
+
+==============================================================================
+  5/9  CHOICES: roles and joints from the sweep and the tie-break
+==============================================================================
+{
+ "parts": {
+  "root.7": "body",
+  "root.1": "drawer_1",
+  "root.2": "body",
+  "root.3": "body",
+  "root.4": "drawer_2",
+  "root.0": "body",
+  "root.5": "body",
+  "root.6": "body",
+  "root.8": "drawer_3"
+ },
+ "joints": {
+  "drawer_1": {
+   "type": "slide",
+   "direction": "front"
+  },
+  "drawer_2": {
+   "type": "slide",
+   "direction": "front"
+  },
+  "drawer_3": {
+   "type": "slide",
+   "direction": "front"
+  }
+ }
+}
+
+==============================================================================
+  6/9  JOINTS: golem_auto.py -> golem_assemble.py (Blender)
+==============================================================================
+[golem] choices from blueprint-a sweep + deepseek-v4.1-flash: C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\filing_cabinet__bang\choices.json
+[golem] running: python C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\golem_assemble.py C:\myspace\cambridge\golem_oct3\assets\raw\filing_cabinet_bang.glb --out C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\filing_cabinet__bang\split --name filing_cabinet --root root.7,root.2,root.3,root.0,root.5,root.6 --slide drawer_1=root.1:front --slide drawer_2=root.4:front --slide drawer_3=root.8:front --drawer-boxes
+[golem] parts in filing_cabinet_bang.glb: ['root.0', 'root.1', 'root.2', 'root.3', 'root.4', 'root.5', 'root.6', 'root.7', 'root.8']
+[golem] drawer_1: nodes ['root.1'], slides front up to 0.711
+[golem] drawer_1: drawer box 0.936 x 0.314 x 0.889 deep, wall 0.0187, colour [0.4969, 0.1221, 0.0012]
+[golem] drawer_2: nodes ['root.4'], slides front up to 0.711
+[golem] drawer_2: drawer box 0.939 x 0.274 x 0.889 deep, wall 0.0188, colour [0.5149, 0.1274, 0.0009]
+[golem] drawer_3: nodes ['root.8'], slides front up to 0.711
+[golem] drawer_3: drawer box 0.935 x 0.304 x 0.889 deep, wall 0.0187, colour [0.521, 0.1329, 0.0015]
+[golem] wrote C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\filing_cabinet__bang\split\filing_cabinet\filing_cabinet_split.glb
+[golem] wrote C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\filing_cabinet__bang\split\filing_cabinet\filing_cabinet_joints.json
+[golem] wrote C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\filing_cabinet__bang\split\filing_cabinet\filing_cabinet_choices.json
+
+==============================================================================
+  7/9  PHYSICS: Unity 6.6 batch mode, PhysX drives across every joint, frames at 60 fps
+==============================================================================
+  [GOLEM] filing_cabinet: 3 joint(s) built
+  [GOLEM] DEMO import: 1 prop(s) from C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\filing_cabinet__bang\split: filing_cabinet (GOLEM): filing_cabinet_split 59.63 kg, drawer_1 1.64 kg (PrismaticJoint, limits 0.0..0.5),
+  [GOLEM] DEMO wrote 480 frames to C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\filing_cabinet__bang\frames
+  [GOLEM] SELFTEST filing_cabinet (GOLEM)/drawer_1: slid 0.34 of +0.34, right way, drag agrees -> PASS
+  [GOLEM] SELFTEST filing_cabinet (GOLEM)/drawer_2: slid 0.34 of +0.34, right way, drag agrees -> PASS
+  [GOLEM] SELFTEST filing_cabinet (GOLEM)/drawer_3: slid 0.34 of +0.34, right way, drag agrees -> PASS
+  [GOLEM] DEMO self-test PASS
+
+==============================================================================
+  8/9  VIDEO: FFmpeg
+==============================================================================
+
+==============================================================================
+  9/9  PROOF
+==============================================================================
+{
+  "split": {
+    "source": "hyper3d bang (hackathon, 3 Oct 2026)",
+    "parts_glb": "filing_cabinet_bang.glb"
+  },
+  "fallbacks_used": [
+    "split by Hyper3D BANG, not Tencent HY-3D-Component (free-call budget)"
+  ],
+  "code_options_added": {
+    "drawer_boxes": true,
+    "size_m_and_density": "SIZES['filing_cabinet'] (code constants)"
+  },
+  "self_test_passed": true,
+  "seconds": {
+    "sweep": 9.9,
+    "views": 3.9,
+    "tiebreak": 249.5,
+    "joints": 3.8,
+    "unity": 40.1,
+    "video": 2.1
+  },
+  "sha256": {
+    "raw_glb": "b2754f6348644a65e013f2fc8d609df3c929b47337aadd4e318dcbe5230eb65d",
+    "parts_glb": "a4a64c48598cb8a6d7c4416d15b7896af29a08a880666e33111bc4a8290391d8",
+    "choices": "8aceb7f475b7c34fd187b4abbd922b62a57db0f0f1368cd9e076cd8ccdb5ca36",
+    "split_glb": "b0f115166a3f5695922f805a3169c35c157c10bbf923cc6ae1efa3e48116c37e",
+    "joints": "35178fda2afeb3f69f51a730b6f792bca556f86d921af7a6d8e6c97fb13d54fa",
+    "video": "a83ba8b855289d1d7b397b24bcabb5324b898cd3459014aee26f9a2bf9c0eb18"
+  }
+}
+
+[orchestrator] C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\filing_cabinet__bang\filing_cabinet_articulation_demo.mp4
+[orchestrator] C:\myspace\cambridge\GOLEM-HY3D-Orchestrator\runs\filing_cabinet__bang\proof.json

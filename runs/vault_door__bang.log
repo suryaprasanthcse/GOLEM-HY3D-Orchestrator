@@ -1,0 +1,25 @@
+
+==============================================================================
+  3/9  SWEEP: candidates from geometry, collision-free range of every one (no model)
+==============================================================================
+vault_door_bang.glb: 2 groups, anchor root.5, 1.21 s
+  root.5       anchor ['root.5']
+  root.12      fixed  0/54  nodes ['root.1', 'root.12', 'root.2']
+
+==============================================================================
+  4/9  TIE-BREAK: DeepSeek-V4.1-Flash on TokenHub, only between passed candidates
+==============================================================================
+
+==============================================================================
+  5/9  CHOICES: roles and joints from the sweep and the tie-break
+==============================================================================
+{
+ "parts": {
+  "root.5": "body",
+  "root.1": "body",
+  "root.12": "body",
+  "root.2": "body"
+ },
+ "joints": {}
+}
+[orchestrator] nothing moves: no joints to build
